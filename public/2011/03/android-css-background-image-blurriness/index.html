@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Android CSS background image blurriness | Steve Roberts</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/mbFolio2014/style.css" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://mbudm.com/wp-content/themes/mbFolio2014/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Steve Roberts &raquo; Android CSS background image blurriness Comments Feed" href="/2011/03/android-css-background-image-blurriness/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/mbudm.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.14"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery-1.8.3.js?ver=1.8.3'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/respond.min.js?ver=1'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/modernizr-2.0.6.min.js?ver=2.0.6'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/selectivizr-min.js?ver=1'></script>
+<script type='text/javascript' src='/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.1.2'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Semantic HTML' href='/2011/01/semantic-html/' />
+<link rel='next' title='Balancing opinions and data in User Experience design' href='/2011/05/balancing-opinions-and-data-in-user-experience-design/' />
+<meta name="generator" content="WordPress 4.6.14" />
+<link rel="canonical" href="/2011/03/android-css-background-image-blurriness/" />
+<link rel='shortlink' href='/?p=112' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2011%2F03%2Fandroid-css-background-image-blurriness%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2011%2F03%2Fandroid-css-background-image-blurriness%2F&#038;format=xml" />
+
+<link rel="stylesheet" href="/wp-content/plugins/wp-syntax/wp-syntax.css" type="text/css" media="screen" />
+	<style>
+	
+		/* key color */
+		a{color:#007a99;}
+		a.btn,
+		.errors{background:#007a99;}
+
+		
+		/* base color - practically white */
+		a.btn,
+		input[type=submit],
+		button,
+		a.comment-reply-link,
+.form-messages{color:#ffffff;}
+		
+		input,
+		textarea,
+		.comment_text{background-color:#ffffff;}
+		
+		h1,
+		h2{text-shadow:-1px 1px 0 rgba(255,255,255,0.5);}
+		
+		
+		/* base color - ultra light */
+		body{background:#f4f3f1;}
+		input[type=submit]:hover,
+		button:hover{color:#f4f3f1;}
+		
+		/* base color - very light */
+		
+		/* base color - light */
+
+		/* base tint */
+		.light-btn-links a{background:#c4c3c0;}
+		input,
+		textarea,
+		.comment_body .inner{border-color:#c4c3c0;}
+		
+		.comment-vcard .inner{
+			background:none;
+			background: -moz-linear-gradient(-45deg,#ffffff, #f4f3f1  20%); 
+			background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(20%, #f4f3f1  )); 
+			background: -webkit-linear-gradient(-45deg, #ffffff, #f4f3f1  20%); 
+			background: -o-linear-gradient(-45deg, #ffffff, #f4f3f1  20%); 
+			background: -ms-linear-gradient(-45deg,  #ffffff 0%, #f4f3f1 20%); 
+			background: linear-gradient(135deg,#ffffff, #f4f3f1 20%); 
+	
+		}
+		
+.comment_text{
+		-moz-box-shadow: 0 0 20px 0 rgba(196,195,192, 0.3);
+		-webkit-box-shadow:  0 0 20px 0 rgba(196,195,192, 0.3);
+		-o-box-shadow: 0 0 20px 0 rgba(196,195,192, 0.3);
+		box-shadow: 0 0 20px 0 rgba(196,195,192, 0.3);
+}
+.comment-vcard .inner{
+		-moz-box-shadow: -10px -5px 20px -5px rgba(196,195,192, 0.3);
+		-webkit-box-shadow:  -10px -5px 20px -5px rgba(196,195,192, 0.3);
+		-o-box-shadow: -10px -5px 20px -5px rgba(196,195,192, 0.3);
+		box-shadow: -10px -5px 20px -5px rgba(196,195,192, 0.3);
+}
+	
+		nav#access .menu li > a{color:#c4c3c0;}
+		
+		
+		/* base color  */
+		figcaption,
+		small,
+		th,
+		ul.menu li a,
+		footer #copyright_notice,
+		h1,
+		h2,
+		figure.no-img a span,
+		nav#access .menu li,
+		.comment-vcard time span{color:#999999}
+		.light-btn-links a:hover,
+		.projects{background:#999999}
+		
+				.projects figure{
+	  		box-shadow: inset 0 0 0 1px rgba(153,153,153, 1);
+		}
+		
+		.touch .projects figure img{
+			border:1px solid #999999;
+			border-right:0;
+			border-bottom:0;
+		}
+		.touch .projects{
+			margin:0 0 1px 0;
+		}
+		
+		/* base color - dark */
+		input[type=submit],
+		button,
+		a.comment-reply-link{background:#666666;}
+		.comment-vcard time,
+		nav#access .menu li > a:hover,
+		.light-btn-links a{color:#666666;}
+		
+		/* base color - very dark */
+		input[type=submit]:hover,
+		button:hover,
+		a.comment-reply-link:hover,
+		.alerts,
+		figure figcaption,
+		a.btn:hover{background:#333333;}
+		
+		
+		/*
+				.projects{
+		border-top:1px solid #333333;
+		border-bottom:1px solid #333333;
+			background:#666666;
+			background: -moz-linear-gradient(top,#000000, #333333  1%, #666666  10%); 
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(10%, #666666  )); 
+			background: -webkit-linear-gradient(top, #575757  , #666666  10%, #666666  90%, #575757 100%); 
+			background: -o-linear-gradient(top, #ffffff, #666666  10%); 
+			background: -ms-linear-gradient(top,  #000000 0%, #666666 10%); 
+			background: linear-gradient(top,#000000, #333333  2%,#666666 5%); 
+		}
+				.projects figure a img{
+			
+		border:1px solid #666666;
+		}
+		.projects figure a:hover img{
+		-moz-box-shadow: 0 0 10px 0 rgba(0,0,0, 0.3);
+		-webkit-box-shadow:  0 0 10px 0 rgba(0,0,0, 0.6);
+		-o-box-shadow: 0 0 10px 0 rgba(0,0,0, 0.3);
+		box-shadow: 0 0 10px 0 rgba(0,0,0, 0.6);
+		}
+		*/
+		/* base color - practically black */
+		header h1 a,
+		ul.menu li a:hover,
+		ul.menu li a:focus,
+		nav#access div.menu>ul>li.current-menu-item>a,
+		.light-btn-links a:hover{color:#000000;}
+
+		
+		@media only screen and (max-width: 995px) {
+/*
+			#menu-toggle,
+			nav#access .menu-wrap{
+			background:#007a99;}
+			#menu-toggle:hover{
+			background:#666666;}
+			#menu-toggle .bar{
+			background:#ffffff;
+			}
+			nav#access .menu li{
+				border-bottom-color:#00627a;
+			}
+			nav#access .menu li a{
+				color:#ffffff;
+			}
+			nav#access .menu li a:hover{
+				color:#000000;
+			}
+			nav#access .menu ul.sub-menu{
+				background:none;
+			}
+			nav#access .menu ul.sub-menu li a{
+				background: #00627a;
+			}
+			*/
+		}
+	</style>
+	<!-- Google Analytics Tracking by Google Analyticator 6.1.2: http://ronaldheft.com/code/analyticator/ -->
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-10157407-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+<style>#menu-copyright-container-ioi{overflow:hidden;}#menu-copyright-container-ioi::after{clear:both; content:' '; display:block}#menu-copyright-container-ioi>*{width:819px; float:left; margin:0}#menu-copyright-container-ioi>#menu-copyright-container-io{margin-left:-819px; background-color:rgb(244, 243, 241); width:100%}</style>
+</head>
+
+<body class="single single-post postid-112 single-format-standard">
+	<div id="page" class="hfeed cfix">
+		<header id="branding" role="banner" class="cfix">
+			<hgroup class="third">
+				<h1 id="site-title"><span><a href="/" title="Doer of digital things" rel="home">Steve Roberts</a></h1>	
+			</hgroup>
+			<nav id="access" role="navigation" class="two-thirds">
+				<a id="menu-toggle" href="#">
+					<span class="assistive-text">Toggle Menu</span>
+					<span class="bar">&nbsp;</span>
+					<span class="bar">&nbsp;</span>
+					<span class="bar">&nbsp;</span>
+				</a>
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+								<div class="menu-wrap cfix">
+				<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-108" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-108"><a href="/category/strategy/">Strategy</a></li>
+<li id="menu-item-106" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-106"><a href="/category/design/">Design</a></li>
+<li id="menu-item-592" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-592"><a href="/category/development/">Development</a></li>
+</ul></div>				</div>
+			</nav><!-- #access -->
+				</header><!-- #branding -->
+
+<div id="primary" class="cfix">
+	
+			
+								
+					
+	
+	<article id="page-content" class="post-112 post type-post status-publish format-standard hentry category-development tag-css tag-html tag-mobile" >
+		<header class="entry-header third">
+			<h1 class="entry-title">
+			Android CSS background image blurriness			</h1>
+						<div class="entry-meta cat-links">
+				<h6>Categories</h6> <a href="/category/development/" rel="category tag">Development</a>			</div>
+									<div class="entry-meta tag-links">
+				<h6>Tags</h6> <a href="/tag/css/" rel="tag">CSS</a>, <a href="/tag/html/" rel="tag">html</a>, <a href="/tag/mobile/" rel="tag">mobile</a>			</div>
+						
+			
+		</header>
+		<div class="entry half" >
+		
+			<div class="entry-content">
+				<p>Recently I completed some UI intensive work for a client that was designed for smart-phones. The project was targeted at iPhone and Android users primarily and being web based, made heavy use of CSS3 and HTML5 to achieve the desired highly graphical user interface.</p>
+<p>During the course of the project we noticed that some Android phones were rendering our graphics very poorly, <span id="more-112"></span>as shown in this screenshot of the Android emulator:</p>
+<h3><a href="/wp-content/uploads/2011/03/Picture-14.png"><img class="alignnone size-full wp-image-117" title="Android emulator screen shot" src="/wp-content/uploads/2011/03/Picture-14.png" alt="" width="456" height="351" srcset="/wp-content/uploads/2011/03/Picture-14.png 456w, /wp-content/uploads/2011/03/Picture-14-300x230.png 300w, /wp-content/uploads/2011/03/Picture-14-310x238.png 310w, /wp-content/uploads/2011/03/Picture-14-230x177.png 230w, /wp-content/uploads/2011/03/Picture-14-298x230.png 298w, /wp-content/uploads/2011/03/Picture-14-182x140.png 182w" sizes="(max-width: 456px) 100vw, 456px" /></a></h3>
+<p>We traced the problem to our use of CSS background image sprites. If you&#8217;re having the same problem and are just looking for a quick fix then check out <a href="#android-css-solution" title="Solution to the android css background blur problem" >our solution</a> below. If you&#8217;re curious about the details, read on.</p>
+<p>CSS background sprites are large-ish png files (or jpg and gif if you don&#8217;t need the alpha channel) that contain all the small UI elements for your project. Using the sprite method means that your users have a faster download experience overall, because they don&#8217;t experience the equivalent of 2-3k overhead that comes with each individual server request. When your sprite replaces 100 or so very small UI images then that can result in a 2-300k saving &#8211; which is a big deal when your users are accessing your project over a 3G network.</p>
+<p>Therefore changing our approach to use individual graphics over sprites was not an option. This meant that the problem had to be solved, somehow.</p>
+<h3>Exactly which Android versions/phones are affected?</h3>
+<p>First task was to identify what phones were showing the issue. If it was only apparent on early versions of Android (pre 2.1) then we could probably ignore the issue.</p>
+<ul>
+<li>The Android emulator shows the issue for 1.5, 1.6, 2.1 and 2.2</li>
+<li>A Samsung Galaxy running Android 2.2 <strong>didn&#8217;t </strong>show the issue</li>
+<li>The client reported that a HTC phone (I didn&#8217;t ask about the exact model) running Android 2.2 did show the issue</li>
+</ul>
+<p>The project used a couple of images in addition to the sprites, such as the company logo, that were rendering fine. So with that glimmer of hope and the fact that at least one modern phone was displaying the graphics sharply meant that there should be a solution to the issue.</p>
+<h3>What does the blogosphere say?</h3>
+<p>JFGI is my mother-in-law&#8217;s favourite saying, and just googling it is also my favourite bug fixing approach. Usually someone else has had any problem before you. However in this case I couldn&#8217;t find anything specific, partly because searching for keywords such as &#8220;Android CSS background sprite blurry problem&#8221; generally results in thousands of pages about how to make a CSS file for smart phones and or why pictures of someone&#8217;s dog is out of focus.</p>
+<p>One thing I did find was that photographers had discovered that very big images did not load so well on Android phones. Reluctantly, I put aside the question of why you would want to show big images to users with a small screen, as this report did give me a clue as to what might be happening. As far as I could work out, at some unknown file size, the Android browser loads a highly compressed version of the image. So perhaps if I made my sprites more optimised and hence smaller then the problem would vanish.</p>
+<h3>How big do the images need to be cause the issue?</h3>
+<p>Hang on a second, but my sprite file was already optimised within an inch of it&#8217;s life. I was quite proud of my efforts in squeezing 100 or so UI elements into a 1700px by 400px png24 that resulting in a file size of only 73kb.</p>
+<p>Nonetheless I tried hiding the elements layer by layer in the Photoshop file and retesting the resulting png with no result. Even when I got the sprite file down to one graphic element and a mere 10kb in file size &#8211; I still got the horrible Android blur that I had by this time come to despise.<br />
+<a name="android-css-solution" ></a></p>
+<h3>A solution&#8230; but not an explanation</h3>
+<p>What saved me from insanity was that the logo and a footer graphic were rendering perfectly on each Android version I tested. Finally I had the idea that the way around the issue may not be to reduce the file <em>size</em> but instead to reduce the image file <em>dimensions</em> instead. With the benefit of hindsight it does feel as though I should have figured this out earlier.</p>
+<p>Sure enough, when I cropped the sprite graphic a mere 400 pixels so that it measured 1300px by 400px the problem disappeared. I couldn&#8217;t squeeze all my little graphics into that canvas size so I was forced to create two sprites instead. Not a big deal as it allowed me to split the load for the user so that they downloaded a subset og the UI only when they reached a point in the process where they actually needed those elements.</p>
+<p>Further tests showed that if the canvas size was increased slightly to 1400px high by 400px wide then the blurriness appears again. See it for yourself by pointing your Android phone or emulator to:</p>
+<ul>
+<li><a title="Demonstration of the Android CSS background image blurriness problem" href="/experiments/android-css-bg/">Demonstration of the Android CSS Background image blurriness issue</a></li>
+</ul>
+<p>For curiosity I tried other dimensions such as 1500px by 300px or 800px by 600px and with both of these the blurriness also does not  occur. So the obvious conclusion is that <strong>Android does not render sharply  any CSS background images that have a canvas size greater 520,000 &#8211; 560,000 pixels</strong> (approximately).</p>
+<p>Why is this so? Your guess is as good as mine&#8230;</p>
+			</div>
+			
+			<footer class="entry-meta cfix">
+				<small>
+										<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="/category/development/" rel="category tag">Development</a>					</span>
+															<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="/tag/css/" rel="tag">CSS</a>, <a href="/tag/html/" rel="tag">html</a>, <a href="/tag/mobile/" rel="tag">mobile</a>					</span>
+					
+				</small>
+				<div class="entry-meta entry-date">
+					<small class="entry_posted_on" ><span class="date_label">Published </span>03/14/11</small>				</div>
+			</footer><!-- #entry-meta -->
+		</div><!-- .entry -->
+	</article>
+
+
+							
+</div><!-- #primary -->
+		<section>
+		
+    <h2 id="comments" class="half push-third">10 Comments</h2>
+     
+    <ul class="commentlist">
+		        <li class="comment even thread-even depth-1 cfix"  id="comment-301">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://1.gravatar.com/avatar/a8641092204437b086857dd5409f3601?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://1.gravatar.com/avatar/a8641092204437b086857dd5409f3601?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5><a href='http://clocktowermedia.com/' rel='external nofollow' class='url'>Jim Arment</a></h5>
+                	<time datetime="2011-04-07T10:34:11+1000" >07 Apr 2011<span>10:34am</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>THANK YOU, THANK YOU, THANK YOU for posting this. I&#8217;ve been banging my head against the wall for some time now, so to have a solution is a HUGE sigh of relief.</p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+        <li class="comment byuser comment-author-steve bypostauthor odd alt thread-odd thread-alt depth-1 cfix"  id="comment-308">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://2.gravatar.com/avatar/2cd4ad1611758130ebea9a81431aa565?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://2.gravatar.com/avatar/2cd4ad1611758130ebea9a81431aa565?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5><a href='/' rel='external nofollow' class='url'>Steve</a></h5>
+                	<time datetime="2011-04-09T09:35:16+1000" >09 Apr 2011<span>9:35am</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>No worries &#8211; it was definitely one of those, What The? moments which seem to hit right at the end of a project</p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+        <li class="comment even thread-even depth-1 cfix"  id="comment-325">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://0.gravatar.com/avatar/fefb6350bf9dde82ea86ea9054a24d30?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://0.gravatar.com/avatar/fefb6350bf9dde82ea86ea9054a24d30?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5><a href='http://www.torpedogroup.com/' rel='external nofollow' class='url'>Mark</a></h5>
+                	<time datetime="2011-05-17T19:21:16+1000" >17 May 2011<span>7:21pm</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>Thanks for confirming this bug for me! I was expanding the size of an image map when this bug suddenly popped up. Daft really when you consider the images are cropped! I guess I&#8217;ll just have to sacrifice page load speeds for this nugget.</p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+        <li class="comment odd alt thread-odd thread-alt depth-1 cfix"  id="comment-326">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://2.gravatar.com/avatar/598850446331ddc86aab9bb2a96b23d5?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://2.gravatar.com/avatar/598850446331ddc86aab9bb2a96b23d5?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5><a href='http://www.ibuildings.nl/' rel='external nofollow' class='url'>Patrick</a></h5>
+                	<time datetime="2011-05-18T00:51:18+1000" >18 May 2011<span>12:51am</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>I agree 100% with Jim, THANKS!</p>
+<p>The bug seems to be fixed recently somewhere though. I upgraded my HTC Desire HD to Android 2.3.3 this week and it rendered the sprite just fine, as where the Android SDK emulator for 2.3 stil contained this bug.</p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+        <li class="comment byuser comment-author-steve bypostauthor even thread-even depth-1 cfix"  id="comment-327">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://2.gravatar.com/avatar/2cd4ad1611758130ebea9a81431aa565?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://2.gravatar.com/avatar/2cd4ad1611758130ebea9a81431aa565?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5><a href='/' rel='external nofollow' class='url'>Steve</a></h5>
+                	<time datetime="2011-05-22T14:51:53+1000" >22 May 2011<span>2:51pm</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>Hey Patrick, that is good news because i do like to create big sprites.</p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+        <li class="comment odd alt thread-odd thread-alt depth-1 cfix"  id="comment-328">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://2.gravatar.com/avatar/bfa0118acef6204a2aef03b7aa81f990?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://2.gravatar.com/avatar/bfa0118acef6204a2aef03b7aa81f990?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5>Richard</h5>
+                	<time datetime="2011-05-31T12:58:50+1000" >31 May 2011<span>12:58pm</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>I don&#8217;t know if technically this is a bug, or rather an optimisation that produces some unexpected results.</p>
+<p>An uncompressed image needs four bytes of data per pixel (even for relatively &#8216;boring&#8217; areas of the image) so your 73kb image actually needs 2.7Mb in memory. Android is just trying to save some of its RAM for other tasks.</p>
+<p>I guess this behaviour might change in the future as we get a) more powerful phones, and b) specialised algorithms that might only need to decompress portions of the image in order to render them.</p>
+<p>In any case, a useful post and good analysis of the issue so thank you.</p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+        <li class="comment byuser comment-author-steve bypostauthor even thread-even depth-1 cfix"  id="comment-329">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://2.gravatar.com/avatar/2cd4ad1611758130ebea9a81431aa565?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://2.gravatar.com/avatar/2cd4ad1611758130ebea9a81431aa565?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5><a href='/' rel='external nofollow' class='url'>Steve</a></h5>
+                	<time datetime="2011-06-02T10:08:32+1000" >02 Jun 2011<span>10:08am</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>Hey Richard, yes I guess it is actually a feature&#8230; or at least a limitation of the environment. The problem for me was that it proved very hard to discover what the problem was in the android documentation.</p>
+<p>This of course was mostly because of the impossibility of getting accurate search results using keywords like &#8216;CSS android bug big sprite images&#8217; &#8211; I can&#8217;t remember all the combos I used but basically the resulted in a lot of CSS 101 type blog posts 😉</p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+        <li class="comment odd alt thread-odd thread-alt depth-1 cfix"  id="comment-335">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://2.gravatar.com/avatar/2839f147e6cc4fe1015976aa5af575b6?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://2.gravatar.com/avatar/2839f147e6cc4fe1015976aa5af575b6?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5>Ryan</h5>
+                	<time datetime="2011-07-16T01:33:14+1000" >16 Jul 2011<span>1:33am</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>I&#8217;m having an issue with using a 1x30px gradient image that tiles horizontally for a menu button. The problem is, on my android device, when the button is taller than 30px the tile should blend to a solid color but it appears that the gradient image is being repeated vertically by 1px causing a 1px line to appear. The strange thing is that it appears on some buttons but not on others even though they are all the same height. Could this be an issue with compression or something all together different. Any help would be appreciated as googling is not finding me any answers.</p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+        <li class="comment even thread-even depth-1 cfix"  id="comment-630">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://1.gravatar.com/avatar/1e802fd1ccdf89286dac228a70a7f892?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://1.gravatar.com/avatar/1e802fd1ccdf89286dac228a70a7f892?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5><a href='http://www.youtube.com/watch?v=3uNiEYs_Gi0' rel='external nofollow' class='url'>Gamecube Emulator For Android</a></h5>
+                	<time datetime="2014-03-05T05:57:20+1000" >05 Mar 2014<span>5:57am</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>In order to recognize our selves, we have to initially comprehend gamecube emulator<br />
+for android. The continuously changing fashionable take on<br />
+gamecube emulator for android demonstrates the depth of the subject.<br />
+Till recently taken into consideration taboo among polite society, gamecube emulator for android is<br />
+not provided the credit rating if deserves for impressive numerous of the globes famous painters.<br />
+Considering that it was first compared with<br />
+antidisestablishmentarianism much has been stated worrying gamecube emulator for android by<br />
+socialists, whom I could say no even more about as<br />
+a result of legal restrictions. Relax, unwind and gasp as I present the rich tapestries of gamecube emulator for android.</p>
+<p>Social Factors</p>
+<p>Society is our own daily fact. Back when Vealinger reamarked &#8216;the<br />
+power battle will continue while the great tale of mankind continues to be untold &#8216; [1] he obtained considerably from gamecube emulator for android.<br />
+A lot has actually been said regarding the influence<br />
+of the media on gamecube emulator for android. Onlookers claim it gives specifications by which we might evaluate our selves.</p>
+<p>Of critical relevance to any kind of study of gamecube emulator for android within its context, is understanding the ideals of<br />
+culture. It damages the mould, smashing man&#8217;s misconception<br />
+of man.</p>
+<p>Economic Factors</p>
+<p>Do we review the marketplaces, or do they in-fact critique us?<br />
+We will certainly research the Maiden-Tuesday-Lending version.<br />
+For those of you unfamiliar with this model it is originated from the Three-Amigos model but<br />
+with better emphasis on the outlying gross national item.</p>
+<p>Oil<br />
+Rates</p>
+<p>gamecube emulator for android</p>
+<p>Undeniably there is a link. Exactly how can this be explained?<br />
+Seemingly oil costs sings a very various song. Exactly<br />
+what everything comes down to is cash. Capitalists adore<br />
+gamecube emulator for android.</p>
+<p>Political Aspects</p>
+<p>No guy is an island, yet just what of national politics?</p>
+<p>Contrasting the basic view of national politics held by the bad of the west with those of the eastern can be like comparing pre and blog post war perspectives of gamecube emulator<br />
+for android.</p>
+<p>In the words of among the wonderful political experts<br />
+Odysseus B. Adger &#8216;Individuals in glass residences shouldn&#8217;t with events.&#8217; [2] I argue that his insight<br />
+into gamecube emulator for android provided the inspiration<br />
+for these wonderful words. It is a well known &#8216;key&#8217; that<br />
+what prompted many political leaders to first strive for power was gamecube emulator<br />
+for android.</p>
+<p>The concern which we must each ask ourselves is,<br />
+will we allow gamecube emulator for android to gain our ballot?</p>
+<p>Verdict</p>
+<p>To repeat, gamecube emulator for android must not<br />
+be allowed to obtain in the way of the bigger inquiry: why are we below?</p>
+<p>Putting this apart its of terrific relevance.<br />
+It inspires, makes sure monetary stability and it brings the most effective out in individuals.</p>
+<p>The final say goes to the award winning Elvis Hanks:<br />
+&#8216;I demand gamecube emulator for android, nothing even<br />
+more nothing less.&#8217;.</p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+        <li class="comment odd alt thread-odd thread-alt depth-1 cfix"  id="comment-650">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://0.gravatar.com/avatar/332d47096f8494d6cdf9108b4a787258?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://0.gravatar.com/avatar/332d47096f8494d6cdf9108b4a787258?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5><a href='http://TheOvarianCystMiracleReview.blogspot.com/' rel='external nofollow' class='url'>Ovarian Cyst Miracle Scam</a></h5>
+                	<time datetime="2014-10-08T17:26:46+1000" >08 Oct 2014<span>5:26pm</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>Useful information. Lucky me I found your website accidentally, and I&#8217;m stunned why this twist of fate didn&#8217;t came about earlier!<br />
+I bookmarked it.</p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+	</ul>
+
+     
+    <div class="navigation">
+        <div class="alignleft"></div>
+        <div class="alignright"></div>
+    </div>
+    
+
+
+
+
+     <div id="respond" class="clear">   
+
+        <h2 class="half push-third">Leave a Comment</h2>
+    
+                <form action="/wp-comments-post.php" method="post" id="commentform" class="clear">
+            <input type='hidden' name='comment_post_ID' value='112' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                                      <div class="public-comment">
+              	<ul class="push-sixth sixth">
+                <li>
+                	<label for="author">Name <strong>(required)</strong></label>
+                	<input type="text" name="author" id="author" value="" placeholder="Your name" class="input" />
+                </li>
+    			<li>
+    				<label for="email">Mail <strong>(required)</strong><small>(will not be published)</small></label>
+    				<input type="text" name="email" id="email" value="" size="50" placeholder="Your email (will not be published)" class="input" />
+                </li>
+                <li>
+                	<label for="url">Website</label>
+                	<input type="text" name="url" id="url" value="" size="50" placeholder="Your website" class="input"/>
+                </li>
+                </ul>
+                        
+            <div class="message half">
+            	<label for="comment">Comment            	            	</label>
+            	<textarea name="comment" id="comment" rows="7" tabindex="4" placeholder="Your comment" ></textarea></div>
+    
+            <div class="submit half push-third"><input class="submit-btn" name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+        
+            </div>
+    		</div>
+            <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="44594d1c88" /></p>    
+        </form>
+        
+        <div id="cancel-comment-reply">
+			<small><a rel="nofollow" id="cancel-comment-reply-link" href="/2011/03/android-css-background-image-blurriness/#respond" style="display:none;">Click here to cancel reply.</a></small>
+    	</div>
+
+	</div>
+
+	</section>
+	
+
+		<div id="page-footer"></div>
+
+
+	</div><!-- #page -->
+
+
+	<footer id="colophon" role="contentinfo">
+			
+			<div id="sidebar-footer-sbar" class="cfix"><div id="mb-text-widget-2" class="no-grid widget widget_mb_text"><div class="widget-inner"><div class="plain" ><table class="contact-details">
+	<tr>
+		<th>Phone:</th>
+		<td><a href="tel:+610431224490" title="Call Steve Roberts" >+61 0431 224 490</a></td>
+	</tr>
+	<tr>
+		<th>LinkedIn:</th>
+		<td><a href="http://www.linkedin.com/in/mbudm" title="View Steve Roberts on LinkedIn" >linkedin.com/in/mbudm</a></td>
+	</tr>
+	<tr>
+		<th>Twitter: </th>
+		<td><a href="https://twitter.com/mbudm" title="Follow Steve Roberts" >@mbudm</a></td>
+	</tr>
+	</table></div></div></div></div>
+	
+	
+	
+			
+			<div id="menu-copyright-container"  >
+	<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-585" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-104 current_page_item menu-item-585"><a href="/">Home</a></li>
+<li id="menu-item-667" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-667"><a href="/category/small-clients/">Small Clients</a></li>
+<li id="menu-item-665" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-665"><a href="/category/big-clients/">Big Clients</a></li>
+<li id="menu-item-666" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-666"><a href="/category/startups/">Startups</a></li>
+<li id="menu-item-586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-586"><a href="/about/">About</a></li>
+<li id="menu-item-587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-587"><a href="/blog/">Blog</a></li>
+</ul></div>									<div id="copyright_notice" ><div id="menu-copyright-container-ioi"><div><p><a href="http://www.montauk-monster.com/pharmacy">pharmacy</a>  <a href="http://premier-pharmacy.com/product-category/weight-loss/">weight loss</a> <a href="http://healthsavy.com/">healthsavy.com</a> </p> 
+</div><div  id="menu-copyright-container-io">
+<p>Copyright 2014, Steve Roberts</p>
+</div>
+</div></div>
+			</div>
+			<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery.cycle.lite.1.0.min.js?ver=1.0'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery-ui-1.9.2.custom.min.js?ver=1.9.2'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery.simplemodal.1.4.1.min.js?ver=4.6.14'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery.qtip.js?ver=4.6.14'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/plugins.js?ver=1'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/scripts.js?ver=1'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.6.14'></script>
+	</footer><!-- #colophon -->
+
+</body>
+</html>

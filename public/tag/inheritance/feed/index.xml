@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>inheritance &#8211; Steve Roberts</title>
+	<atom:link href="/tag/inheritance/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Doer of digital things</description>
+	<lastBuildDate>Mon, 03 Jun 2019 08:58:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.6.14</generator>
+	<item>
+		<title>Actionscript 3: Inheritance Subclass and private vars</title>
+		<link>/2010/03/actionscript-3-inheritance-subclass-and-private-vars/</link>
+		<comments>/2010/03/actionscript-3-inheritance-subclass-and-private-vars/#comments</comments>
+		<pubDate>Sun, 28 Mar 2010 07:05:10 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[ActionScript 3]]></category>
+		<category><![CDATA[as3]]></category>
+		<category><![CDATA[extends]]></category>
+		<category><![CDATA[inheritance]]></category>
+		<category><![CDATA[oop]]></category>
+		<category><![CDATA[private]]></category>
+		<category><![CDATA[public]]></category>
+
+		<guid isPermaLink="false">/?p=51</guid>
+		<description><![CDATA[I&#8217;m currently updating some as2 projects to as3 and I had a series of 1120 compiler errors this afternoon. I&#8217;m a fan of using the &#8216;extends&#8217; keyword to create customised versions of base classes. In Actionscript 2 the subclass can access all the variables and methods of the original class. It appears that in ActionScript [&#8230;]]]></description>
+		<wfw:commentRss>/2010/03/actionscript-3-inheritance-subclass-and-private-vars/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

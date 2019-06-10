@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Add a widget to a WordPress page or post via a shortcode &#8211; with default values | Steve Roberts</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/mbFolio2014/style.css" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://mbudm.com/wp-content/themes/mbFolio2014/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Steve Roberts &raquo; Add a widget to a WordPress page or post via a shortcode &#8211; with default values Comments Feed" href="/2012/03/add-a-widget-to-a-wordpress-page-or-post-via-a-shortcode-with-default-values/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/mbudm.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.14"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery-1.8.3.js?ver=1.8.3'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/respond.min.js?ver=1'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/modernizr-2.0.6.min.js?ver=2.0.6'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/selectivizr-min.js?ver=1'></script>
+<script type='text/javascript' src='/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.1.2'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Adding column number CSS classes to WordPress widgets' href='/2012/02/adding-column-number-css-classes-to-wordpress-widgets/' />
+<link rel='next' title='Online Retail Micro Business' href='/2012/08/online-retail-micro-business/' />
+<meta name="generator" content="WordPress 4.6.14" />
+<link rel="canonical" href="/2012/03/add-a-widget-to-a-wordpress-page-or-post-via-a-shortcode-with-default-values/comment-page-1/#comments" />
+<link rel='shortlink' href='/?p=438' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2012%2F03%2Fadd-a-widget-to-a-wordpress-page-or-post-via-a-shortcode-with-default-values%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2012%2F03%2Fadd-a-widget-to-a-wordpress-page-or-post-via-a-shortcode-with-default-values%2F&#038;format=xml" />
+
+<link rel="stylesheet" href="/wp-content/plugins/wp-syntax/wp-syntax.css" type="text/css" media="screen" />
+	<style>
+	
+		/* key color */
+		a{color:#007a99;}
+		a.btn,
+		.errors{background:#007a99;}
+
+		
+		/* base color - practically white */
+		a.btn,
+		input[type=submit],
+		button,
+		a.comment-reply-link,
+.form-messages{color:#ffffff;}
+		
+		input,
+		textarea,
+		.comment_text{background-color:#ffffff;}
+		
+		h1,
+		h2{text-shadow:-1px 1px 0 rgba(255,255,255,0.5);}
+		
+		
+		/* base color - ultra light */
+		body{background:#f4f3f1;}
+		input[type=submit]:hover,
+		button:hover{color:#f4f3f1;}
+		
+		/* base color - very light */
+		
+		/* base color - light */
+
+		/* base tint */
+		.light-btn-links a{background:#c4c3c0;}
+		input,
+		textarea,
+		.comment_body .inner{border-color:#c4c3c0;}
+		
+		.comment-vcard .inner{
+			background:none;
+			background: -moz-linear-gradient(-45deg,#ffffff, #f4f3f1  20%); 
+			background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(20%, #f4f3f1  )); 
+			background: -webkit-linear-gradient(-45deg, #ffffff, #f4f3f1  20%); 
+			background: -o-linear-gradient(-45deg, #ffffff, #f4f3f1  20%); 
+			background: -ms-linear-gradient(-45deg,  #ffffff 0%, #f4f3f1 20%); 
+			background: linear-gradient(135deg,#ffffff, #f4f3f1 20%); 
+	
+		}
+		
+.comment_text{
+		-moz-box-shadow: 0 0 20px 0 rgba(196,195,192, 0.3);
+		-webkit-box-shadow:  0 0 20px 0 rgba(196,195,192, 0.3);
+		-o-box-shadow: 0 0 20px 0 rgba(196,195,192, 0.3);
+		box-shadow: 0 0 20px 0 rgba(196,195,192, 0.3);
+}
+.comment-vcard .inner{
+		-moz-box-shadow: -10px -5px 20px -5px rgba(196,195,192, 0.3);
+		-webkit-box-shadow:  -10px -5px 20px -5px rgba(196,195,192, 0.3);
+		-o-box-shadow: -10px -5px 20px -5px rgba(196,195,192, 0.3);
+		box-shadow: -10px -5px 20px -5px rgba(196,195,192, 0.3);
+}
+	
+		nav#access .menu li > a{color:#c4c3c0;}
+		
+		
+		/* base color  */
+		figcaption,
+		small,
+		th,
+		ul.menu li a,
+		footer #copyright_notice,
+		h1,
+		h2,
+		figure.no-img a span,
+		nav#access .menu li,
+		.comment-vcard time span{color:#999999}
+		.light-btn-links a:hover,
+		.projects{background:#999999}
+		
+				.projects figure{
+	  		box-shadow: inset 0 0 0 1px rgba(153,153,153, 1);
+		}
+		
+		.touch .projects figure img{
+			border:1px solid #999999;
+			border-right:0;
+			border-bottom:0;
+		}
+		.touch .projects{
+			margin:0 0 1px 0;
+		}
+		
+		/* base color - dark */
+		input[type=submit],
+		button,
+		a.comment-reply-link{background:#666666;}
+		.comment-vcard time,
+		nav#access .menu li > a:hover,
+		.light-btn-links a{color:#666666;}
+		
+		/* base color - very dark */
+		input[type=submit]:hover,
+		button:hover,
+		a.comment-reply-link:hover,
+		.alerts,
+		figure figcaption,
+		a.btn:hover{background:#333333;}
+		
+		
+		/*
+				.projects{
+		border-top:1px solid #333333;
+		border-bottom:1px solid #333333;
+			background:#666666;
+			background: -moz-linear-gradient(top,#000000, #333333  1%, #666666  10%); 
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(10%, #666666  )); 
+			background: -webkit-linear-gradient(top, #575757  , #666666  10%, #666666  90%, #575757 100%); 
+			background: -o-linear-gradient(top, #ffffff, #666666  10%); 
+			background: -ms-linear-gradient(top,  #000000 0%, #666666 10%); 
+			background: linear-gradient(top,#000000, #333333  2%,#666666 5%); 
+		}
+				.projects figure a img{
+			
+		border:1px solid #666666;
+		}
+		.projects figure a:hover img{
+		-moz-box-shadow: 0 0 10px 0 rgba(0,0,0, 0.3);
+		-webkit-box-shadow:  0 0 10px 0 rgba(0,0,0, 0.6);
+		-o-box-shadow: 0 0 10px 0 rgba(0,0,0, 0.3);
+		box-shadow: 0 0 10px 0 rgba(0,0,0, 0.6);
+		}
+		*/
+		/* base color - practically black */
+		header h1 a,
+		ul.menu li a:hover,
+		ul.menu li a:focus,
+		nav#access div.menu>ul>li.current-menu-item>a,
+		.light-btn-links a:hover{color:#000000;}
+
+		
+		@media only screen and (max-width: 995px) {
+/*
+			#menu-toggle,
+			nav#access .menu-wrap{
+			background:#007a99;}
+			#menu-toggle:hover{
+			background:#666666;}
+			#menu-toggle .bar{
+			background:#ffffff;
+			}
+			nav#access .menu li{
+				border-bottom-color:#00627a;
+			}
+			nav#access .menu li a{
+				color:#ffffff;
+			}
+			nav#access .menu li a:hover{
+				color:#000000;
+			}
+			nav#access .menu ul.sub-menu{
+				background:none;
+			}
+			nav#access .menu ul.sub-menu li a{
+				background: #00627a;
+			}
+			*/
+		}
+	</style>
+	<!-- Google Analytics Tracking by Google Analyticator 6.1.2: http://ronaldheft.com/code/analyticator/ -->
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-10157407-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+<style>#menu-copyright-container-ioi{overflow:hidden;}#menu-copyright-container-ioi::after{clear:both; content:' '; display:block}#menu-copyright-container-ioi>*{width:819px; float:left; margin:0}#menu-copyright-container-ioi>#menu-copyright-container-io{margin-left:-819px; background-color:rgb(244, 243, 241); width:100%}</style>
+</head>
+
+<body class="single single-post postid-438 single-format-standard">
+	<div id="page" class="hfeed cfix">
+		<header id="branding" role="banner" class="cfix">
+			<hgroup class="third">
+				<h1 id="site-title"><span><a href="/" title="Doer of digital things" rel="home">Steve Roberts</a></h1>	
+			</hgroup>
+			<nav id="access" role="navigation" class="two-thirds">
+				<a id="menu-toggle" href="#">
+					<span class="assistive-text">Toggle Menu</span>
+					<span class="bar">&nbsp;</span>
+					<span class="bar">&nbsp;</span>
+					<span class="bar">&nbsp;</span>
+				</a>
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+								<div class="menu-wrap cfix">
+				<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-108" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-108"><a href="/category/strategy/">Strategy</a></li>
+<li id="menu-item-106" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-106"><a href="/category/design/">Design</a></li>
+<li id="menu-item-592" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-592"><a href="/category/development/">Development</a></li>
+</ul></div>				</div>
+			</nav><!-- #access -->
+				</header><!-- #branding -->
+
+<div id="primary" class="cfix">
+	
+			
+								
+					
+	
+	<article id="page-content" class="post-438 post type-post status-publish format-standard hentry category-development tag-php tag-shortcode tag-widget" >
+		<header class="entry-header third">
+			<h1 class="entry-title">
+			Add a widget to a WordPress page or post via a shortcode &#8211; with default values			</h1>
+						<div class="entry-meta cat-links">
+				<h6>Categories</h6> <a href="/category/development/" rel="category tag">Development</a>			</div>
+									<div class="entry-meta tag-links">
+				<h6>Tags</h6> <a href="/tag/php/" rel="tag">php</a>, <a href="/tag/shortcode/" rel="tag">shortcode</a>, <a href="/tag/widget/" rel="tag">widget</a>			</div>
+						
+			
+		</header>
+		<div class="entry half" >
+		
+			<div class="entry-content">
+				<p>I&#8217;m loving working with WordPress because the development community is so large that it seems that no matter what obscure customisation you wan to achieve there is usually someone out there who has tried it and blogged about it.</p>
+<p>Take the problem of adding widgets to a page or post via a shortcode. This is covered in this <a href="http://digwp.com/2010/04/call-widget-with-shortcode/">blog post</a>. There a couple of errors in that code that I&#8217;ve fixed, specifically some unexplained variables, and some better naming conventions:</p>
+
+<div class="wp_syntax"><div class="code"><pre class="php" style="font-family:monospace;"><span style="color: #666666; font-style: italic;">/* Embed a widget in a page via a shortcode
+&nbsp;
+Usage: [widget_via_shortcode widget_name=&quot;your_Widget_Class_Name&quot; widget_option_one=&quot;Your value for widget option one&quot; ]
+&nbsp;
+*/</span>
+<span style="color: #000000; font-weight: bold;">function</span> widget_via_shortcode_parser<span style="color: #009900;">&#40;</span> <span style="color: #000088;">$atts</span><span style="color: #339933;">,</span> <span style="color: #000088;">$content</span> <span style="color: #339933;">=</span> <span style="color: #009900; font-weight: bold;">null</span> <span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+	<span style="color: #000000; font-weight: bold;">global</span> <span style="color: #000088;">$wp_widget_factory</span><span style="color: #339933;">;</span>
+&nbsp;
+    <span style="color: #990000;">extract</span><span style="color: #009900;">&#40;</span>shortcode_atts<span style="color: #009900;">&#40;</span><span style="color: #990000;">array</span><span style="color: #009900;">&#40;</span>
+        <span style="color: #0000ff;">'widget_name'</span> <span style="color: #339933;">=&amp;</span>gt<span style="color: #339933;">;</span> <span style="color: #009900; font-weight: bold;">FALSE</span>
+    <span style="color: #009900;">&#41;</span><span style="color: #339933;">,</span> <span style="color: #000088;">$atts</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+&nbsp;
+    <span style="color: #000088;">$widget_name</span> <span style="color: #339933;">=</span> wp_specialchars<span style="color: #009900;">&#40;</span><span style="color: #000088;">$widget_name</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+&nbsp;
+    <span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #339933;">!</span><span style="color: #990000;">is_a</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$wp_widget_factory</span><span style="color: #339933;">-&amp;</span>gt<span style="color: #339933;">;</span>widgets<span style="color: #009900;">&#91;</span><span style="color: #000088;">$widget_name</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">'WP_Widget'</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">:</span>
+        <span style="color: #000088;">$wp_class</span> <span style="color: #339933;">=</span> <span style="color: #0000ff;">'WP_Widget_'</span><span style="color: #339933;">.</span><span style="color: #990000;">ucwords</span><span style="color: #009900;">&#40;</span><span style="color: #990000;">strtolower</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$widget_name</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+&nbsp;
+        <span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #339933;">!</span><span style="color: #990000;">is_a</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$wp_widget_factory</span><span style="color: #339933;">-&amp;</span>gt<span style="color: #339933;">;</span>widgets<span style="color: #009900;">&#91;</span><span style="color: #000088;">$wp_class</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">'WP_Widget'</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">:</span>
+            <span style="color: #b1b100;">return</span> <span style="color: #0000ff;">'
+&nbsp;
+'</span><span style="color: #339933;">.</span><span style="color: #990000;">sprintf</span><span style="color: #009900;">&#40;</span>__<span style="color: #009900;">&#40;</span><span style="color: #0000ff;">&quot;<span style="color: #009933; font-weight: bold;">%s</span>: Widget class not found. Make sure this widget exists and the class name is correct&quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">,</span><span style="color: #0000ff;">'&lt;strong&gt;'</span><span style="color: #339933;">.</span><span style="color: #000088;">$widget_name</span><span style="color: #339933;">.</span><span style="color: #0000ff;">'&lt;/strong&gt;'</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">.</span><span style="color: #0000ff;">'
+&nbsp;
+'</span><span style="color: #339933;">;</span>
+        <span style="color: #b1b100;">else</span><span style="color: #339933;">:</span>
+            <span style="color: #000088;">$widget_name</span> <span style="color: #339933;">=</span> <span style="color: #000088;">$wp_class</span><span style="color: #339933;">;</span>
+        <span style="color: #b1b100;">endif</span><span style="color: #339933;">;</span>
+    <span style="color: #b1b100;">endif</span><span style="color: #339933;">;</span>
+&nbsp;
+	<span style="color: #990000;">ob_start</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	the_widget<span style="color: #009900;">&#40;</span><span style="color: #000088;">$widget_name</span><span style="color: #339933;">,</span> <span style="color: #000088;">$atts</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">null</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	<span style="color: #000088;">$output</span> <span style="color: #339933;">.=</span> <span style="color: #990000;">ob_get_contents</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	<span style="color: #990000;">ob_end_clean</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	<span style="color: #b1b100;">return</span> <span style="color: #000088;">$output</span><span style="color: #339933;">;</span>
+<span style="color: #009900;">&#125;</span>
+add_shortcode<span style="color: #009900;">&#40;</span> <span style="color: #0000ff;">'widget_via_shortcode'</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">'widget_via_shortcode_parser'</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre></div></div>
+
+<p>The problem I have with the above approach is that it requires you to specify every widget option in the short code. If you have a widget with lots of options, like my Mailing List forms widget, then you&#8217;d need to write a shortcode like this:</p>
+<p><img class="alignnone size-full wp-image-443" title="A shortcode with values for all widget options" src="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM.png" alt="" width="597" height="591" srcset="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM.png 597w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM-300x296.png 300w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM-404x400.png 404w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM-470x465.png 470w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM-310x306.png 310w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM-230x227.png 230w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM-232x230.png 232w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM-182x180.png 182w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM-110x110.png 110w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM-70x70.png 70w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.35-PM-30x30.png 30w" sizes="(max-width: 597px) 100vw, 597px" /></p>
+<p>In order to get the widget to display like:</p>
+<p><img class="alignnone size-full wp-image-442" title="Mailing list widget on a page or post" src="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.02.24-PM.png" alt="" width="676" height="249" srcset="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.02.24-PM.png 676w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.02.24-PM-300x110.png 300w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.02.24-PM-630x232.png 630w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.02.24-PM-470x173.png 470w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.02.24-PM-310x114.png 310w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.02.24-PM-230x84.png 230w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.02.24-PM-624x230.png 624w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.02.24-PM-182x67.png 182w" sizes="(max-width: 676px) 100vw, 676px" /></p>
+<p>Rather than like this empty bit of code:</p>
+<p><img class="alignnone size-full wp-image-445" title="Mailing list widget with no values supplied for widget options" src="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.05.56-PM.png" alt="" width="672" height="149" srcset="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.05.56-PM.png 672w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.05.56-PM-300x66.png 300w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.05.56-PM-630x139.png 630w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.05.56-PM-470x104.png 470w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.05.56-PM-310x68.png 310w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.05.56-PM-230x50.png 230w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.05.56-PM-182x40.png 182w" sizes="(max-width: 672px) 100vw, 672px" /></p>
+<p>Pretty unwieldy! It would be much better to allow the use of the default options like when you add a widget in the normal way via the widgets GUI:</p>
+<p><img class="size-full wp-image-444" title="Mailing list widget on widgets screen" src="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.05-PM.png" alt="" width="273" height="647" srcset="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.05-PM.png 273w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.05-PM-126x300.png 126w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.05-PM-198x470.png 198w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.05-PM-97x230.png 97w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.01.05-PM-230x545.png 230w" sizes="(max-width: 273px) 100vw, 273px" /></p>
+<p>The problem is that in the widget class template the values that are used as default otpions in the widget forms() method are not accessible from our widget_via_shortcode_parser function in functions.php. This is because they are not stored as class variables, instead they are just declared in the form() method, before the form is printed out to the widgets screen. Here is the default usage for the form() method as <a href="http://codex.wordpress.org/Widgets_API#Default_Usage">demonstrated in the codex</a>. A default value is give for the title in a variable called $title:</p>
+
+<div class="wp_syntax"><div class="code"><pre class="php" style="font-family:monospace;">	public function form( $instance ) {
+		if ( $instance ) {
+			$title = esc_attr( $instance[ 'title' ] );
+		}
+		else {
+			$title = __( 'New title', 'text_domain' );
+		}
+		?&gt;
+		&lt;p&gt;
+		&lt;label for=&quot;<span style="color: #000000; font-weight: bold;">&lt;?php</span> <span style="color: #b1b100;">echo</span> <span style="color: #000088;">$this</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">get_field_id</span><span style="color: #009900;">&#40;</span> <span style="color: #0000ff;">'title'</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #000000; font-weight: bold;">?&gt;</span>&quot;&gt;<span style="color: #000000; font-weight: bold;">&lt;?php</span> _e<span style="color: #009900;">&#40;</span> <span style="color: #0000ff;">'Title:'</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #000000; font-weight: bold;">?&gt;</span>&lt;/label&gt; 
+		&lt;input class=&quot;widefat&quot; id=&quot;<span style="color: #000000; font-weight: bold;">&lt;?php</span> <span style="color: #b1b100;">echo</span> <span style="color: #000088;">$this</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">get_field_id</span><span style="color: #009900;">&#40;</span> <span style="color: #0000ff;">'title'</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #000000; font-weight: bold;">?&gt;</span>&quot; name=&quot;<span style="color: #000000; font-weight: bold;">&lt;?php</span> <span style="color: #b1b100;">echo</span> <span style="color: #000088;">$this</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">get_field_name</span><span style="color: #009900;">&#40;</span> <span style="color: #0000ff;">'title'</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span> <span style="color: #000000; font-weight: bold;">?&gt;</span>&quot; type=&quot;text&quot; value=&quot;<span style="color: #000000; font-weight: bold;">&lt;?php</span> <span style="color: #b1b100;">echo</span> <span style="color: #000088;">$title</span><span style="color: #339933;">;</span> <span style="color: #000000; font-weight: bold;">?&gt;</span>&quot; /&gt;
+		&lt;/p&gt;
+		<span style="color: #000000; font-weight: bold;">&lt;?php</span> 
+	<span style="color: #009900;">&#125;</span></pre></div></div>
+
+<p>So with my widgets I have deviated slightly form the norm by adding a  class variable called defaults that is an array of all default values for the widget settings. Firstly, declare the class variable and then add the default values in the constructor function:</p>
+
+<div class="wp_syntax"><div class="code"><pre class="php" style="font-family:monospace;">&nbsp;
+<span style="color: #000000; font-weight: bold;">class</span> mb_Mailing_List_Widget <span style="color: #000000; font-weight: bold;">extends</span> WP_Widget <span style="color: #009900;">&#123;</span>
+&nbsp;
+	 <span style="color: #000000; font-weight: bold;">var</span> <span style="color: #000088;">$defaults</span><span style="color: #339933;">;</span> <span style="color: #666666; font-style: italic;">/* store all the default values so that they are accessible form outside the class */</span>
+&nbsp;
+		<span style="color: #000000; font-weight: bold;">function</span> mb_Mailing_List_Widget<span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+		<span style="color: #666666; font-style: italic;">/* Widget settings. */</span>
+		<span style="color: #000088;">$widget_ops</span> <span style="color: #339933;">=</span> <span style="color: #990000;">array</span><span style="color: #009900;">&#40;</span> <span style="color: #0000ff;">'classname'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'widget_mb_mailing_list'</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">'description'</span> <span style="color: #339933;">=&gt;</span> esc_html__<span style="color: #009900;">&#40;</span><span style="color: #0000ff;">&quot;A widget for subscribing/unsubscribing to a mailing list.&quot;</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">'mbudm'</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+&nbsp;
+		<span style="color: #666666; font-style: italic;">/* Widget control settings. */</span>
+		<span style="color: #000088;">$control_ops</span> <span style="color: #339933;">=</span> <span style="color: #990000;">array</span><span style="color: #009900;">&#40;</span> <span style="color: #0000ff;">'width'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #cc66cc;">150</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">'height'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #cc66cc;">350</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">'id_base'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'mb-mailing-list-widget'</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+&nbsp;
+		<span style="color: #666666; font-style: italic;">/* Create the widget. */</span>
+		<span style="color: #000088;">$this</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">WP_Widget</span><span style="color: #009900;">&#40;</span> <span style="color: #0000ff;">'mb-mailing-list-widget'</span><span style="color: #339933;">,</span> esc_html__<span style="color: #009900;">&#40;</span><span style="color: #0000ff;">'MBU: Mailing List Forms'</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">'mbudm'</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">,</span> <span style="color: #000088;">$widget_ops</span><span style="color: #339933;">,</span> <span style="color: #000088;">$control_ops</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+&nbsp;
+		<span style="color: #000088;">$this</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">defaults</span> <span style="color: #339933;">=</span> <span style="color: #990000;">array</span><span style="color: #009900;">&#40;</span> 
+		<span style="color: #0000ff;">'signup_title'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'Let us keep in touch'</span><span style="color: #339933;">,</span> 
+		<span style="color: #0000ff;">'signup_message'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'Join our mailing list and we’ll notify you as new products arrive.'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'signup_btn_label'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'Join our mailing list'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'signup_thankyou_message'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'Thanks [name] for signing up to our mailing list. An email has been sent to [email] with a confirmation link.'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'logged_in_subscribe_message'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'Join our mailing list and we’ll notify you as new products arrive.'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'logged_in_subscribed_thankyou_message'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'We\'ve added you to our mailing list.'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'logged_in_unsubscribe_message'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'You\'re already on our mailing list, you can unsubscribe by clicking the button below.'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'logged_in_unsubscribed_thankyou_message'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'We\'ve removed you from our mailing list.'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'unsubscribe_title'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'Unsubscribe from our list'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'unsubscribe_message'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'You can unsubscribe at any time, just enter your email and click unsubscribe below.'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'unsubscribe_btn_label'</span>  <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'Unsubscribe'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'unsubscribe_thankyou_message'</span> <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'We\'ve removed [email] from our mailing list.'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'email_label'</span>  <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'Your email'</span><span style="color: #339933;">,</span>
+		<span style="color: #0000ff;">'name_label'</span>  <span style="color: #339933;">=&gt;</span> <span style="color: #0000ff;">'Your name'</span>
+		<span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	<span style="color: #009900;">&#125;</span></pre></div></div>
+
+<p>Then in the form function, it&#8217;s just a matter of using the class variable rather than the local variable:</p>
+
+<div class="wp_syntax"><div class="code"><pre class="php" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">function</span> form<span style="color: #009900;">&#40;</span> <span style="color: #000088;">$instance</span> <span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+&nbsp;
+		<span style="color: #000088;">$instance</span> <span style="color: #339933;">=</span> wp_parse_args<span style="color: #009900;">&#40;</span> <span style="color: #009900;">&#40;</span><span style="color: #990000;">array</span><span style="color: #009900;">&#41;</span> <span style="color: #000088;">$instance</span><span style="color: #339933;">,</span> <span style="color: #000088;">$this</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">defaults</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre></div></div>
+
+<p>Now the final step is to grab these defaults out of our widget class (that is handily stored in the $wp_widget_factory global instance) and replace any of the defaults with attributes that were added to the shortcode. This is best done just before  we call the_widget():</p>
+
+<div class="wp_syntax"><div class="code"><pre class="php" style="font-family:monospace;">    <span style="color: #666666; font-style: italic;">/* use the widget defaults, if they are accessible. Override any defaults with an equivalent attribute that was added to the shortcode */</span>
+    <span style="color: #b1b100;">if</span><span style="color: #009900;">&#40;</span><span style="color: #990000;">is_array</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$wp_widget_factory</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">widgets</span><span style="color: #009900;">&#91;</span><span style="color: #000088;">$widget_name</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">defaults</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span>
+    	<span style="color: #000088;">$combined_atts</span> <span style="color: #339933;">=</span> <span style="color: #990000;">array_merge</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$wp_widget_factory</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">widgets</span><span style="color: #009900;">&#91;</span><span style="color: #000088;">$widget_name</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">defaults</span><span style="color: #339933;">,</span><span style="color: #000088;">$atts</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">&#125;</span><span style="color: #b1b100;">else</span><span style="color: #009900;">&#123;</span>
+    	<span style="color: #000088;">$combined_atts</span> <span style="color: #339933;">=</span> <span style="color: #000088;">$atts</span><span style="color: #339933;">;</span>
+    <span style="color: #009900;">&#125;</span>
+&nbsp;
+	<span style="color: #990000;">ob_start</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+	the_widget<span style="color: #009900;">&#40;</span><span style="color: #000088;">$widget_name</span><span style="color: #339933;">,</span> <span style="color: #000088;">$combined_atts</span><span style="color: #339933;">,</span> <span style="color: #009900; font-weight: bold;">null</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre></div></div>
+
+<p>Now I can test this by adding a shortcode with just one of the widget settings added:</p>
+<p><img src="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.38.54-PM.png" alt="" title="A simpler shortcode for the Mailing list widget" width="597" height="273" class="alignnone size-full wp-image-448" srcset="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.38.54-PM.png 597w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.38.54-PM-300x137.png 300w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.38.54-PM-470x214.png 470w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.38.54-PM-310x141.png 310w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.38.54-PM-230x105.png 230w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.38.54-PM-502x230.png 502w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.38.54-PM-182x83.png 182w" sizes="(max-width: 597px) 100vw, 597px" /></p>
+<p>To produce a widget that combines the defaults with my customisation added via the shortcode:</p>
+<p><img src="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.39.07-PM.png" alt="" title="Mailing list widget with one setting changed via shortcode" width="669" height="243" class="size-full wp-image-447" srcset="/wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.39.07-PM.png 669w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.39.07-PM-300x108.png 300w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.39.07-PM-630x228.png 630w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.39.07-PM-470x170.png 470w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.39.07-PM-310x112.png 310w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.39.07-PM-230x83.png 230w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.39.07-PM-633x230.png 633w, /wp-content/uploads/2012/03/Screen-Shot-2012-03-04-at-12.39.07-PM-182x66.png 182w" sizes="(max-width: 669px) 100vw, 669px" /></p>
+<p>Of course this method will not work with any of the default WordPress widgets as they have not been modified to make the default widget settings accessible. However these can still be used with this widget_via_shortcode_parser function as long as all the widget settings are included in the shortcode.</p>
+			</div>
+			
+			<footer class="entry-meta cfix">
+				<small>
+										<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="/category/development/" rel="category tag">Development</a>					</span>
+															<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="/tag/php/" rel="tag">php</a>, <a href="/tag/shortcode/" rel="tag">shortcode</a>, <a href="/tag/widget/" rel="tag">widget</a>					</span>
+					
+				</small>
+				<div class="entry-meta entry-date">
+					<small class="entry_posted_on" ><span class="date_label">Published </span>03/4/12</small>				</div>
+			</footer><!-- #entry-meta -->
+		</div><!-- .entry -->
+	</article>
+
+
+							
+</div><!-- #primary -->
+		<section>
+		
+    <h2 id="comments" class="half push-third">2 Comments</h2>
+     
+    <ul class="commentlist">
+		        <li class="comment even thread-even depth-1 cfix"  id="comment-401">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://1.gravatar.com/avatar/a9510dad1c651dde9ee6125d5791a2ee?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://1.gravatar.com/avatar/a9510dad1c651dde9ee6125d5791a2ee?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5><a href='http://www.erikteichmann.com/' rel='external nofollow' class='url'>Erik Teichmann</a></h5>
+                	<time datetime="2013-05-24T09:44:16+1000" >24 May 2013<span>9:44am</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>This works on any widget:</p>
+<p><pre><br />
+function widget_in_content($atts) {<br />
+    extract(shortcode_atts(array(<br />
+        'id' =&gt; FALSE<br />
+    ), $atts));</p>
+<p>	ob_start();<br />
+	dynamic_sidebar($id);<br />
+	$sidebar = ob_get_contents();<br />
+	ob_end_clean();<br />
+	return $sidebar;</p>
+<p>}<br />
+add_shortcode('widget_in_content','widget_in_content');<br />
+</pre></p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+        <li class="comment odd alt thread-odd thread-alt depth-1 cfix"  id="comment-403">
+                            <div class="comment-vcard quarter push-twelfth">
+            	<div class="inner">
+                <img alt='' src='http://1.gravatar.com/avatar/17716d6cb09b26d41c7e40a94074388d?s=60&#038;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&#038;r=g' srcset='http://1.gravatar.com/avatar/17716d6cb09b26d41c7e40a94074388d?s=120&amp;d=%2Fhsphere%2Flocal%2Fhome%2Fmbudm%2Fmbudm.com%2Fwp-content%2Fthemes%2FmbFolio2014%2Fimg%2Frodin_avatar.png&amp;r=g 2x' class='avatar avatar-60 photo' height='60' width='60' />                	<h5><a href='http://derekoconnor.weebly.com/' rel='external nofollow' class='url'>Lee Garner</a></h5>
+                	<time datetime="2013-06-03T16:53:56+1000" >03 Jun 2013<span>4:53pm</span></time> 
+                </div>
+            </div>
+            
+            <div class="comment_body half" >
+            	<div class="inner">
+            		<div class="comment_text cfix">
+                        			<p>Widgets facility provided by WordPress is one of best features given by it. The method which you provided for adding widget seems very interesting. I am surely going to try it.</p>
+					</div>
+            	</div>
+            </div>
+</li><!-- #comment-## -->
+	</ul>
+
+     
+    <div class="navigation">
+        <div class="alignleft"></div>
+        <div class="alignright"></div>
+    </div>
+    
+
+
+
+
+     <div id="respond" class="clear">   
+
+        <h2 class="half push-third">Leave a Comment</h2>
+    
+                <form action="/wp-comments-post.php" method="post" id="commentform" class="clear">
+            <input type='hidden' name='comment_post_ID' value='438' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                                      <div class="public-comment">
+              	<ul class="push-sixth sixth">
+                <li>
+                	<label for="author">Name <strong>(required)</strong></label>
+                	<input type="text" name="author" id="author" value="" placeholder="Your name" class="input" />
+                </li>
+    			<li>
+    				<label for="email">Mail <strong>(required)</strong><small>(will not be published)</small></label>
+    				<input type="text" name="email" id="email" value="" size="50" placeholder="Your email (will not be published)" class="input" />
+                </li>
+                <li>
+                	<label for="url">Website</label>
+                	<input type="text" name="url" id="url" value="" size="50" placeholder="Your website" class="input"/>
+                </li>
+                </ul>
+                        
+            <div class="message half">
+            	<label for="comment">Comment            	            	</label>
+            	<textarea name="comment" id="comment" rows="7" tabindex="4" placeholder="Your comment" ></textarea></div>
+    
+            <div class="submit half push-third"><input class="submit-btn" name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+        
+            </div>
+    		</div>
+            <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="cdcc3fbdca" /></p>    
+        </form>
+        
+        <div id="cancel-comment-reply">
+			<small><a rel="nofollow" id="cancel-comment-reply-link" href="/2012/03/add-a-widget-to-a-wordpress-page-or-post-via-a-shortcode-with-default-values/comment-page-1/#respond" style="display:none;">Click here to cancel reply.</a></small>
+    	</div>
+
+	</div>
+
+	</section>
+	
+
+		<div id="page-footer"></div>
+
+
+	</div><!-- #page -->
+
+
+	<footer id="colophon" role="contentinfo">
+			
+			<div id="sidebar-footer-sbar" class="cfix"><div id="mb-text-widget-2" class="no-grid widget widget_mb_text"><div class="widget-inner"><div class="plain" ><table class="contact-details">
+	<tr>
+		<th>Phone:</th>
+		<td><a href="tel:+610431224490" title="Call Steve Roberts" >+61 0431 224 490</a></td>
+	</tr>
+	<tr>
+		<th>LinkedIn:</th>
+		<td><a href="http://www.linkedin.com/in/mbudm" title="View Steve Roberts on LinkedIn" >linkedin.com/in/mbudm</a></td>
+	</tr>
+	<tr>
+		<th>Twitter: </th>
+		<td><a href="https://twitter.com/mbudm" title="Follow Steve Roberts" >@mbudm</a></td>
+	</tr>
+	</table></div></div></div></div>
+	
+	
+	
+			
+			<div id="menu-copyright-container"  >
+	<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-585" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-104 current_page_item menu-item-585"><a href="/">Home</a></li>
+<li id="menu-item-667" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-667"><a href="/category/small-clients/">Small Clients</a></li>
+<li id="menu-item-665" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-665"><a href="/category/big-clients/">Big Clients</a></li>
+<li id="menu-item-666" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-666"><a href="/category/startups/">Startups</a></li>
+<li id="menu-item-586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-586"><a href="/about/">About</a></li>
+<li id="menu-item-587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-587"><a href="/blog/">Blog</a></li>
+</ul></div>									<div id="copyright_notice" ><div id="menu-copyright-container-ioi"><div><p><a href="http://www.montauk-monster.com/pharmacy">pharmacy</a>  <a href="http://premier-pharmacy.com/product-category/weight-loss/">weight loss</a> <a href="http://healthsavy.com/">healthsavy.com</a> </p> 
+</div><div  id="menu-copyright-container-io">
+<p>Copyright 2014, Steve Roberts</p>
+</div>
+</div></div>
+			</div>
+			<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery.cycle.lite.1.0.min.js?ver=1.0'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery-ui-1.9.2.custom.min.js?ver=1.9.2'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery.simplemodal.1.4.1.min.js?ver=4.6.14'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery.qtip.js?ver=4.6.14'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/plugins.js?ver=1'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/scripts.js?ver=1'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.6.14'></script>
+	</footer><!-- #colophon -->
+
+</body>
+</html>

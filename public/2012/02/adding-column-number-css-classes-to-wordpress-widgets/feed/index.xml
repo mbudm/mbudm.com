@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Adding column number CSS classes to WordPress widgets</title>
+	<atom:link href="/2012/02/adding-column-number-css-classes-to-wordpress-widgets/feed/" rel="self" type="application/rss+xml" />
+	<link>/2012/02/adding-column-number-css-classes-to-wordpress-widgets/</link>
+	<description>Doer of digital things</description>
+	<lastBuildDate>Sat, 01 Sep 2018 11:08:24 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.6.14</generator>
+	<item>
+		<title>By: Joerg Niemann</title>
+		<link>/2012/02/adding-column-number-css-classes-to-wordpress-widgets/comment-page-1/#comment-631</link>
+		<dc:creator><![CDATA[Joerg Niemann]]></dc:creator>
+		<pubDate>Tue, 22 Apr 2014 07:18:33 +0000</pubDate>
+		<guid isPermaLink="false">/?p=430#comment-631</guid>
+		<description><![CDATA[Thanks Steve! That saved me a lot of work.
+I changed the cnum in 3 column layout to just the widgetcount ($cnum= $my_widget_num). That way I have the classes col1, col2, col3 added to the 3 columns.]]></description>
+		<content:encoded><![CDATA[<p>Thanks Steve! That saved me a lot of work.<br />
+I changed the cnum in 3 column layout to just the widgetcount ($cnum= $my_widget_num). That way I have the classes col1, col2, col3 added to the 3 columns.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

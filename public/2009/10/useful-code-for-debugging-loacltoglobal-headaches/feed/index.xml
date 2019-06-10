@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Useful code for debugging MovieClip.localToGlobal() headaches</title>
+	<atom:link href="/2009/10/useful-code-for-debugging-loacltoglobal-headaches/feed/" rel="self" type="application/rss+xml" />
+	<link>/2009/10/useful-code-for-debugging-loacltoglobal-headaches/</link>
+	<description>Doer of digital things</description>
+	<lastBuildDate>Sat, 01 Sep 2018 11:08:24 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.6.14</generator>
+	<item>
+		<title>By: Stella</title>
+		<link>/2009/10/useful-code-for-debugging-loacltoglobal-headaches/comment-page-1/#comment-655</link>
+		<dc:creator><![CDATA[Stella]]></dc:creator>
+		<pubDate>Fri, 29 May 2015 09:28:01 +0000</pubDate>
+		<guid isPermaLink="false">/?p=28#comment-655</guid>
+		<description><![CDATA[This helps, but could use more info or links to represented elpxames. For instance, including loader to allow one to import external movieclip objects from the folder hierarchy not necessarily from the library. Or how to reference movieclips within another movieclip&#039;s timeline once it has been cast as a child object. Once a child object is cast to the stage it is now a displayobject an no longer  usable  for all intensive purposes as an  interactive&#039; object.  Even the standard reference .syntax nomenclature goes out the door with addchild   since you can addchild to another movieclip but reference it with the child instance name from anywhere without going through the normal parentInstanceName.ChildInstanceName naming convention. I&#039;ve been with Flash since Flash 2 and have had the opportunity to slog through each new version and changes in coding   at its current state it looks to be a great IDE platform for people on different levels, positioned up against MS Dev IDE.]]></description>
+		<content:encoded><![CDATA[<p>This helps, but could use more info or links to represented elpxames. For instance, including loader to allow one to import external movieclip objects from the folder hierarchy not necessarily from the library. Or how to reference movieclips within another movieclip&#8217;s timeline once it has been cast as a child object. Once a child object is cast to the stage it is now a displayobject an no longer  usable  for all intensive purposes as an  interactive&#8217; object.  Even the standard reference .syntax nomenclature goes out the door with addchild   since you can addchild to another movieclip but reference it with the child instance name from anywhere without going through the normal parentInstanceName.ChildInstanceName naming convention. I&#8217;ve been with Flash since Flash 2 and have had the opportunity to slog through each new version and changes in coding   at its current state it looks to be a great IDE platform for people on different levels, positioned up against MS Dev IDE.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Steve</title>
+		<link>/2009/10/useful-code-for-debugging-loacltoglobal-headaches/comment-page-1/#comment-33</link>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+		<pubDate>Sat, 10 Oct 2009 04:06:15 +0000</pubDate>
+		<guid isPermaLink="false">/?p=28#comment-33</guid>
+		<description><![CDATA[Aha figured it out - I was putting the clip._x and clip._y values into the object that goes into localToGlobal... duh. This has the efeect of returning the global position of these values inside the target clip.]]></description>
+		<content:encoded><![CDATA[<p>Aha figured it out &#8211; I was putting the clip._x and clip._y values into the object that goes into localToGlobal&#8230; duh. This has the efeect of returning the global position of these values inside the target clip.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

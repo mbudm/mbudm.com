@@ -1,0 +1,4 @@
+h4#heading-1400,
+h4#heading-1300{text-indent:-9000px;width:300px;height:50px;}
+h4#heading-1400{background: url('/experiments/android-css-bg/sprite-1400.png') no-repeat 0 0;}
+h4#heading-1300{background: url('/experiments/android-css-bg/sprite-1300.png') no-repeat 0 0;}

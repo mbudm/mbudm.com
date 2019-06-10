@@ -1,0 +1,5 @@
+/* Reset default browser styles */
+
+#wrapper{width:100%}
+#masthead{display:none;}
+#content{margin:0;}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Agile UX for a javascript web application  | Steve Roberts</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="/wp-content/themes/mbFolio2014/style.css" />
+<link rel="pingback" href="/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://mbudm.com/wp-content/themes/mbFolio2014/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Steve Roberts &raquo; Agile UX for a javascript web application Comments Feed" href="/2013/06/agile-ux-for-a-javascript-web-application/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/mbudm.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.14"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery-1.8.3.js?ver=1.8.3'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/respond.min.js?ver=1'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/modernizr-2.0.6.min.js?ver=2.0.6'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/selectivizr-min.js?ver=1'></script>
+<script type='text/javascript' src='/wp-content/plugins/google-analyticator/external-tracking.min.js?ver=6.1.2'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Language. The most important UX tool' href='/2013/02/language-the-most-important-ux-tool/' />
+<link rel='next' title='xLabs Gaze' href='/2013/07/xlabs-gaze/' />
+<meta name="generator" content="WordPress 4.6.14" />
+<link rel="canonical" href="/2013/06/agile-ux-for-a-javascript-web-application/" />
+<link rel='shortlink' href='/?p=475' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2013%2F06%2Fagile-ux-for-a-javascript-web-application%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2013%2F06%2Fagile-ux-for-a-javascript-web-application%2F&#038;format=xml" />
+
+<link rel="stylesheet" href="/wp-content/plugins/wp-syntax/wp-syntax.css" type="text/css" media="screen" />
+	<style>
+	
+		/* key color */
+		a{color:#007a99;}
+		a.btn,
+		.errors{background:#007a99;}
+
+		
+		/* base color - practically white */
+		a.btn,
+		input[type=submit],
+		button,
+		a.comment-reply-link,
+.form-messages{color:#ffffff;}
+		
+		input,
+		textarea,
+		.comment_text{background-color:#ffffff;}
+		
+		h1,
+		h2{text-shadow:-1px 1px 0 rgba(255,255,255,0.5);}
+		
+		
+		/* base color - ultra light */
+		body{background:#f4f3f1;}
+		input[type=submit]:hover,
+		button:hover{color:#f4f3f1;}
+		
+		/* base color - very light */
+		
+		/* base color - light */
+
+		/* base tint */
+		.light-btn-links a{background:#c4c3c0;}
+		input,
+		textarea,
+		.comment_body .inner{border-color:#c4c3c0;}
+		
+		.comment-vcard .inner{
+			background:none;
+			background: -moz-linear-gradient(-45deg,#ffffff, #f4f3f1  20%); 
+			background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ffffff), color-stop(20%, #f4f3f1  )); 
+			background: -webkit-linear-gradient(-45deg, #ffffff, #f4f3f1  20%); 
+			background: -o-linear-gradient(-45deg, #ffffff, #f4f3f1  20%); 
+			background: -ms-linear-gradient(-45deg,  #ffffff 0%, #f4f3f1 20%); 
+			background: linear-gradient(135deg,#ffffff, #f4f3f1 20%); 
+	
+		}
+		
+.comment_text{
+		-moz-box-shadow: 0 0 20px 0 rgba(196,195,192, 0.3);
+		-webkit-box-shadow:  0 0 20px 0 rgba(196,195,192, 0.3);
+		-o-box-shadow: 0 0 20px 0 rgba(196,195,192, 0.3);
+		box-shadow: 0 0 20px 0 rgba(196,195,192, 0.3);
+}
+.comment-vcard .inner{
+		-moz-box-shadow: -10px -5px 20px -5px rgba(196,195,192, 0.3);
+		-webkit-box-shadow:  -10px -5px 20px -5px rgba(196,195,192, 0.3);
+		-o-box-shadow: -10px -5px 20px -5px rgba(196,195,192, 0.3);
+		box-shadow: -10px -5px 20px -5px rgba(196,195,192, 0.3);
+}
+	
+		nav#access .menu li > a{color:#c4c3c0;}
+		
+		
+		/* base color  */
+		figcaption,
+		small,
+		th,
+		ul.menu li a,
+		footer #copyright_notice,
+		h1,
+		h2,
+		figure.no-img a span,
+		nav#access .menu li,
+		.comment-vcard time span{color:#999999}
+		.light-btn-links a:hover,
+		.projects{background:#999999}
+		
+				.projects figure{
+	  		box-shadow: inset 0 0 0 1px rgba(153,153,153, 1);
+		}
+		
+		.touch .projects figure img{
+			border:1px solid #999999;
+			border-right:0;
+			border-bottom:0;
+		}
+		.touch .projects{
+			margin:0 0 1px 0;
+		}
+		
+		/* base color - dark */
+		input[type=submit],
+		button,
+		a.comment-reply-link{background:#666666;}
+		.comment-vcard time,
+		nav#access .menu li > a:hover,
+		.light-btn-links a{color:#666666;}
+		
+		/* base color - very dark */
+		input[type=submit]:hover,
+		button:hover,
+		a.comment-reply-link:hover,
+		.alerts,
+		figure figcaption,
+		a.btn:hover{background:#333333;}
+		
+		
+		/*
+				.projects{
+		border-top:1px solid #333333;
+		border-bottom:1px solid #333333;
+			background:#666666;
+			background: -moz-linear-gradient(top,#000000, #333333  1%, #666666  10%); 
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(10%, #666666  )); 
+			background: -webkit-linear-gradient(top, #575757  , #666666  10%, #666666  90%, #575757 100%); 
+			background: -o-linear-gradient(top, #ffffff, #666666  10%); 
+			background: -ms-linear-gradient(top,  #000000 0%, #666666 10%); 
+			background: linear-gradient(top,#000000, #333333  2%,#666666 5%); 
+		}
+				.projects figure a img{
+			
+		border:1px solid #666666;
+		}
+		.projects figure a:hover img{
+		-moz-box-shadow: 0 0 10px 0 rgba(0,0,0, 0.3);
+		-webkit-box-shadow:  0 0 10px 0 rgba(0,0,0, 0.6);
+		-o-box-shadow: 0 0 10px 0 rgba(0,0,0, 0.3);
+		box-shadow: 0 0 10px 0 rgba(0,0,0, 0.6);
+		}
+		*/
+		/* base color - practically black */
+		header h1 a,
+		ul.menu li a:hover,
+		ul.menu li a:focus,
+		nav#access div.menu>ul>li.current-menu-item>a,
+		.light-btn-links a:hover{color:#000000;}
+
+		
+		@media only screen and (max-width: 995px) {
+/*
+			#menu-toggle,
+			nav#access .menu-wrap{
+			background:#007a99;}
+			#menu-toggle:hover{
+			background:#666666;}
+			#menu-toggle .bar{
+			background:#ffffff;
+			}
+			nav#access .menu li{
+				border-bottom-color:#00627a;
+			}
+			nav#access .menu li a{
+				color:#ffffff;
+			}
+			nav#access .menu li a:hover{
+				color:#000000;
+			}
+			nav#access .menu ul.sub-menu{
+				background:none;
+			}
+			nav#access .menu ul.sub-menu li a{
+				background: #00627a;
+			}
+			*/
+		}
+	</style>
+	<!-- Google Analytics Tracking by Google Analyticator 6.1.2: http://ronaldheft.com/code/analyticator/ -->
+<script type="text/javascript">
+	var analyticsFileTypes = [''];
+	var analyticsEventTracking = 'enabled';
+</script>
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-10157407-1']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+<style>#menu-copyright-container-ioi{overflow:hidden;}#menu-copyright-container-ioi::after{clear:both; content:' '; display:block}#menu-copyright-container-ioi>*{width:819px; float:left; margin:0}#menu-copyright-container-ioi>#menu-copyright-container-io{margin-left:-819px; background-color:rgb(244, 243, 241); width:100%}</style>
+</head>
+
+<body class="single single-post postid-475 single-format-standard">
+	<div id="page" class="hfeed cfix">
+		<header id="branding" role="banner" class="cfix">
+			<hgroup class="third">
+				<h1 id="site-title"><span><a href="/" title="Doer of digital things" rel="home">Steve Roberts</a></h1>	
+			</hgroup>
+			<nav id="access" role="navigation" class="two-thirds">
+				<a id="menu-toggle" href="#">
+					<span class="assistive-text">Toggle Menu</span>
+					<span class="bar">&nbsp;</span>
+					<span class="bar">&nbsp;</span>
+					<span class="bar">&nbsp;</span>
+				</a>
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+								<div class="menu-wrap cfix">
+				<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-108" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-108"><a href="/category/strategy/">Strategy</a></li>
+<li id="menu-item-106" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-106"><a href="/category/design/">Design</a></li>
+<li id="menu-item-592" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-592"><a href="/category/development/">Development</a></li>
+</ul></div>				</div>
+			</nav><!-- #access -->
+				</header><!-- #branding -->
+
+<div id="primary" class="cfix">
+	
+			
+								
+					
+	
+	<article id="page-content" class="post-475 post type-post status-publish format-standard hentry category-big-clients category-design category-development tag-agile tag-javascript tag-user-experience-design tag-user-research" >
+		<header class="entry-header third">
+			<h1 class="entry-title">
+			Agile UX for a javascript web application			</h1>
+						<div class="entry-meta cat-links">
+				<h6>Categories</h6> <a href="/category/big-clients/" rel="category tag">Big Clients</a>, <a href="/category/design/" rel="category tag">Design</a>, <a href="/category/development/" rel="category tag">Development</a>			</div>
+									<div class="entry-meta tag-links">
+				<h6>Tags</h6> <a href="/tag/agile/" rel="tag">agile</a>, <a href="/tag/javascript/" rel="tag">JavaScript</a>, <a href="/tag/user-experience-design/" rel="tag">User Experience Design</a>, <a href="/tag/user-research/" rel="tag">User Research</a>			</div>
+						
+			
+		</header>
+		<div class="entry half" >
+		
+			<div class="entry-content">
+				<p>It&#8217;s been 10 months now since I decided to ramp up my javascript skills and take on a hybrid UX and front-end development role. I&#8217;ve worked with a few agile development teams in the past two years mainly as a UX consultant and Product Manager. I really enjoyed the iterative approach, doing some analysis, creating some wireframes, seeing the wireframes come to life very quickly and then facing some new and interesting problems that only the development of a real working version can reveal.</p>
+<p>I spent a fair bit of the 2000s building a big piece of software in Actionscript so I&#8217;ve always like getting stuck into code. With the death of Flash and the advent of responsive jQuery goodness in the digital world over the last 3 years my move into Javascript has been pretty smooth and a natural step. All I needed was a big project and a smart bunch of devs to work with to fully get my JS creds.</p>
+<p>The project is certainly big, and it&#8217;s complex, and the domain (the subject matter), mineral processing is also complex. It&#8217;s essentially a simulator, btu it takes in a huge amount of data and spits out a massive amount of results. My job has been to build UI&#8217;s and user flows that make entering and understanding that data eas(ier).</p>
+<p>We&#8217;ve been using the Ext-Js and mxgraph frameworks and an MVC architecture along with jasmine unit testing, selenium integration tests a robust build and deploymnet processes. This is just the sort of formalise development environment that I haven&#8217;t had as a developer before &#8211; it&#8217;s not that common on smaller web projects I find &#8211; and I&#8217;m definitely loving it.</p>
+<h3>Where&#8217;s the UX?</h3>
+<p>But what about the UX part &#8211; is it possible to take a step back from models, stores and whether the logic should be in the controller or the view? I must admit that in the first phase of the project where we were all working out about comminution and ball mills we were just focussed on getting a proof of concept built that you could feasibly use to simulate mining processes.</p>
+<p>Once we had our POC though and felt like we were starting to get a grasp of what these users wanted to do, my role became much more about iterating between meetings, balsamiq and spring source (I know, I&#8217;ve gotta get a better IDE). it helps that balsamiq now slots into JIRA so spec-ing out and discussing small parts of the UI is really useful especially when our business analyst, project manager and lead developer are all trying to vocalise a mental picture of what they reckon would work best.</p>
+<p>The other great thing about doing agile dev especially with js frameworks, is that it is very quick to get a working UI. This means that analysis and design in a UX sense is pretty risk avers, because you can test a (slightly buggy) prototype within a day or two of creating the wireframe. It also helps of course that there are smaller and well defined chunks of work because we are using user stories.</p>
+<p>I think back to the heady days of the mid 2000s when all of the environments &#8211; at least the one&#8217;s that I worked in &#8211; were waterfall to the point of being silos. Everything had to be signed off and triple checked before the next team in the chain got to be involved. I recall a lot of very intense meetings, especially in the pre UX or UX phases where the catalyst for that intensity was obviously caused by the knowledge that decisions made then would be practically irreversible or at least needed to be crystal clear so that the meaning wasn&#8217;t lost by the time the testers did their bit.</p>
+<h3>Not the messiah</h3>
+<p>Having put my agile fanboy-ness out there I&#8217;m just going to take a step back and say that I have also seen some truly awful &#8216;agile&#8217; implementations. This project and a couple of others I&#8217;ve been privileged to work on have managed to be agile because they have a very clear overarching project objective and boundaries. If you don&#8217;t have that then in my experience you can end up iterating to nowhere.</p>
+			</div>
+			
+			<footer class="entry-meta cfix">
+				<small>
+										<span class="cat-links">
+						<span class="entry-utility-prep entry-utility-prep-cat-links">Posted in</span> <a href="/category/big-clients/" rel="category tag">Big Clients</a>, <a href="/category/design/" rel="category tag">Design</a>, <a href="/category/development/" rel="category tag">Development</a>					</span>
+															<span class="tag-links">
+						<span class="entry-utility-prep entry-utility-prep-tag-links">Tagged</span> <a href="/tag/agile/" rel="tag">agile</a>, <a href="/tag/javascript/" rel="tag">JavaScript</a>, <a href="/tag/user-experience-design/" rel="tag">User Experience Design</a>, <a href="/tag/user-research/" rel="tag">User Research</a>					</span>
+					
+				</small>
+				<div class="entry-meta entry-date">
+					<small class="entry_posted_on" ><span class="date_label">Published </span>06/13/13</small>				</div>
+			</footer><!-- #entry-meta -->
+		</div><!-- .entry -->
+	</article>
+
+
+							
+</div><!-- #primary -->
+		<section>
+		
+
+
+
+
+     <div id="respond" class="clear">   
+
+        <h2 class="half push-third">Leave a Comment</h2>
+    
+                <form action="/wp-comments-post.php" method="post" id="commentform" class="clear">
+            <input type='hidden' name='comment_post_ID' value='475' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                                      <div class="public-comment">
+              	<ul class="push-sixth sixth">
+                <li>
+                	<label for="author">Name <strong>(required)</strong></label>
+                	<input type="text" name="author" id="author" value="" placeholder="Your name" class="input" />
+                </li>
+    			<li>
+    				<label for="email">Mail <strong>(required)</strong><small>(will not be published)</small></label>
+    				<input type="text" name="email" id="email" value="" size="50" placeholder="Your email (will not be published)" class="input" />
+                </li>
+                <li>
+                	<label for="url">Website</label>
+                	<input type="text" name="url" id="url" value="" size="50" placeholder="Your website" class="input"/>
+                </li>
+                </ul>
+                        
+            <div class="message half">
+            	<label for="comment">Comment            	            	</label>
+            	<textarea name="comment" id="comment" rows="7" tabindex="4" placeholder="Your comment" ></textarea></div>
+    
+            <div class="submit half push-third"><input class="submit-btn" name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+        
+            </div>
+    		</div>
+            <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="b73959323c" /></p>    
+        </form>
+        
+        <div id="cancel-comment-reply">
+			<small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/06/agile-ux-for-a-javascript-web-application/#respond" style="display:none;">Click here to cancel reply.</a></small>
+    	</div>
+
+	</div>
+
+	</section>
+	
+
+		<div id="page-footer"></div>
+
+
+	</div><!-- #page -->
+
+
+	<footer id="colophon" role="contentinfo">
+			
+			<div id="sidebar-footer-sbar" class="cfix"><div id="mb-text-widget-2" class="no-grid widget widget_mb_text"><div class="widget-inner"><div class="plain" ><table class="contact-details">
+	<tr>
+		<th>Phone:</th>
+		<td><a href="tel:+610431224490" title="Call Steve Roberts" >+61 0431 224 490</a></td>
+	</tr>
+	<tr>
+		<th>LinkedIn:</th>
+		<td><a href="http://www.linkedin.com/in/mbudm" title="View Steve Roberts on LinkedIn" >linkedin.com/in/mbudm</a></td>
+	</tr>
+	<tr>
+		<th>Twitter: </th>
+		<td><a href="https://twitter.com/mbudm" title="Follow Steve Roberts" >@mbudm</a></td>
+	</tr>
+	</table></div></div></div></div>
+	
+	
+	
+			
+			<div id="menu-copyright-container"  >
+	<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-585" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-104 current_page_item menu-item-585"><a href="/">Home</a></li>
+<li id="menu-item-667" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-667"><a href="/category/small-clients/">Small Clients</a></li>
+<li id="menu-item-665" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-665"><a href="/category/big-clients/">Big Clients</a></li>
+<li id="menu-item-666" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-666"><a href="/category/startups/">Startups</a></li>
+<li id="menu-item-586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-586"><a href="/about/">About</a></li>
+<li id="menu-item-587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-587"><a href="/blog/">Blog</a></li>
+</ul></div>									<div id="copyright_notice" ><div id="menu-copyright-container-ioi"><div><p><a href="http://www.montauk-monster.com/pharmacy">pharmacy</a>  <a href="http://premier-pharmacy.com/product-category/weight-loss/">weight loss</a> <a href="http://healthsavy.com/">healthsavy.com</a> </p> 
+</div><div  id="menu-copyright-container-io">
+<p>Copyright 2014, Steve Roberts</p>
+</div>
+</div></div>
+			</div>
+			<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery.cycle.lite.1.0.min.js?ver=1.0'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery-ui-1.9.2.custom.min.js?ver=1.9.2'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery.simplemodal.1.4.1.min.js?ver=4.6.14'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/libs/jquery.qtip.js?ver=4.6.14'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/plugins.js?ver=1'></script>
+<script type='text/javascript' src='/wp-content/themes/mbFolio2014/js/scripts.js?ver=1'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.6.14'></script>
+	</footer><!-- #colophon -->
+
+</body>
+</html>

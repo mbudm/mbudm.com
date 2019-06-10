@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>mobile &#8211; Steve Roberts</title>
+	<atom:link href="/tag/mobile/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Doer of digital things</description>
+	<lastBuildDate>Mon, 03 Jun 2019 08:58:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.6.14</generator>
+	<item>
+		<title>jQuery plugin for quickly making legacy sites responsive</title>
+		<link>/2014/01/jquery-plugin-for-quickly-making-legacy-sites-responsive/</link>
+		<comments>/2014/01/jquery-plugin-for-quickly-making-legacy-sites-responsive/#respond</comments>
+		<pubDate>Tue, 07 Jan 2014 05:41:07 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[mobile]]></category>
+
+		<guid isPermaLink="false">/?p=753</guid>
+		<description><![CDATA[Over the last few years I have occasionally had to revisit old web sites and work out a quick and easy way to make them responsive. Any site designed prior to 2010 is unlikely to have an css media queries that provide different CSS styles depending on the width of the device used to view [&#8230;]]]></description>
+		<wfw:commentRss>/2014/01/jquery-plugin-for-quickly-making-legacy-sites-responsive/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Android CSS background image blurriness</title>
+		<link>/2011/03/android-css-background-image-blurriness/</link>
+		<comments>/2011/03/android-css-background-image-blurriness/#comments</comments>
+		<pubDate>Mon, 14 Mar 2011 03:59:32 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[mobile]]></category>
+
+		<guid isPermaLink="false">/?p=112</guid>
+		<description><![CDATA[Recently I completed some UI intensive work for a client that was designed for smart-phones. The project was targeted at iPhone and Android users primarily and being web based, made heavy use of CSS3 and HTML5 to achieve the desired highly graphical user interface. During the course of the project we noticed that some Android [&#8230;]]]></description>
+		<wfw:commentRss>/2011/03/android-css-background-image-blurriness/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+	</channel>
+</rss>

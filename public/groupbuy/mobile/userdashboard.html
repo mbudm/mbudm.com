@@ -1,0 +1,288 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Chopsumi - [Username]: Your events</title>
+    <!-- variations: Voting in progress | Organised | Cancelled -->
+  	
+	<meta name="Description" content="Organise social events with your friends. Set up date and location ideas then get your friends to vote on the best options for all.">
+  	<meta name="Keywords" content="Organise, plan, vote, reunion, catchup with friends, plan social life, fun activities, have a drink, see a movie, have dinner, lunch, coffee, drinks after work"> 
+		<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="/groupbuy/mobile/styles/all.css">
+	
+
+	
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JavaScript -->
+<script src="/groupbuy/mobile/js/libs/modernizr-2.0.6.min.js"></script>
+
+</head>
+<body class="user-dashboard" >
+
+<div id="wrap">
+ <header>
+  	<hgroup>
+				<h1><a href="/groupbuy/mobile/home.html" title="Chopsumi.com - Organise your friends" >Chopsumi.com</a></h1>
+				<h2>Organise your friends by voting on social events</h2>
+			</hgroup>
+  	<ul>
+  		<li><a href="/groupbuy/mobile/userdashboard.html" title="Chopsumi.com - Your events" >My Events</a></li>
+  		<li><a href="/groupbuy/mobile/inbox.html" title="Chopsumi.com - Your messages" >My Messages</a></li>
+  		<li><a href="/groupbuy/mobile/about.html" title="About Chopsumi.com" >About</a></li>
+  		<li><a href="/groupbuy/mobile/help.html" title="Chopsumi.com help" >Help</a></li>
+  	</ul>
+  	<h6>Logged in as: <a href="/groupbuy/mobile/userdashboard.html" title="Chopsumi.com - Your events" >Steve</a> (<a href="/groupbuy/mobile/home.html" id="lnkLogout" title="Chopsumi.com - Logout" >Logout</a>)</h6>
+  </header>
+  <div id="content" class="cfix">
+	  <div class="s1">
+	   	<h1>Hi <strong>[firstname]</strong>, welcome back!</h1>
+	  </div>
+ 	  
+ 	  <div class="s7">
+ 	  	<h2>Your Chopsumi Events 
+ 	  		<label id="sorter">Sort by:
+ 	  			<select id="event-sort">
+						<option value="1" selected="selected">Date created</option>
+						<option value="2">Name</option>
+						<option value="3">Status</option>
+						<option value="4">Event date</option>
+					</select> 
+ 	  		</label>
+ 	  	</h2>
+ 	  	<table>
+ 	  		<thead>
+ 	  			<tr>
+ 	  				<th>What</th>
+ 	  				<th><span class="accessibility">Status</span></th>
+ 	  				<th>Where &amp; When</th>
+ 	  				<th><span class="accessibility">Actions</span></th>
+ 	  			</tr>
+ 	  		</thead>
+ 	  		<tbody>
+ 	  			<tr class="rowmsg">
+ 	  				<td colspan="5">
+ 	  					<h3>You have 0 events</h3>
+ 	  					<p>You don't have any events yet. Why not organise a new event with your friends?</p>
+ 	  					<p>Get started with the <strong>Organise a new event</strong> form at right.</p>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-organiser event-in-progress">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field that is very very long]</a></th>
+ 	  				<td class="event-status">In progress</td>
+ 	  				<td>Edinburgh Gardens<br />15 Mar, 6:00pm</td>
+ 	  				<td>
+ 	  					<a href="/groupbuy/mobile/dashboard-organiser.html" title="Organise [What field]">Organise</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-in-progress">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field]</a> <cite>Organiser Lastname</cite></th>
+ 	  				<td class="event-status">New event</td>
+ 	  				<td>Royston Hotel<br />18 Mar, 6:00pm</td>
+ 	  				<td><a href="/groupbuy/mobile/invitee-step1.html" title="RSVP  [What] and vote for locations and dates/times">Vote</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-cancelled">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field]</a><cite>Organiser Lastname</cite></th>
+ 	  				<td class="event-status">Cancelled</td>
+ 	  				<td>-</td>
+ 	  				<td><a href="/groupbuy/mobile/dashboard.html" title="View [What]">View</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-organiser event-in-progress">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field]</a></th>
+ 	  				<td class="event-status">In progress</td>
+ 	  				<td>Edinburgh Gardens location with a very very long name attached to it<br /> 15 Mar, 6:00pm</td>
+ 	  				<td><a href="/groupbuy/mobile/dashboard-organiser.html" title="Organise [What field]">Organise</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-organised">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field]</a> <cite>Organiser Lastname</cite></th>
+ 	  				<td class="event-status">Organised</td>
+ 	  				<td>Royston Hotel<br />18 Mar, 6:00pm</td>
+ 	  				<td><a href="/groupbuy/mobile/dashboard.html" title="View [What]">View</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-cancelled">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field]</a> <cite>Organiser Lastname</cite></th>
+ 	  				<td class="event-status">Cancelled</td>
+ 	  				<td>-</td>
+ 	  				<td><a href="/groupbuy/mobile/dashboard.html" title="View [What]">View</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-organised">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field]</a> <cite>Organiser Lastname</cite></th>
+ 	  				<td class="event-status">Organised</td>
+ 	  				<td>Royston Hotel<br />18 Mar, 6:00pm</td>
+ 	  				<td><a href="/groupbuy/mobile/dashboard.html" title="View [What]">View</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-organised">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field]</a> <cite>Organiser Lastname</cite></th>
+ 	  				<td class="event-status">Organised</td>
+ 	  				<td>Royston Hotel<br />18 Mar, 6:00pm</td>
+ 	  				<td><a href="/groupbuy/mobile/dashboard.html" title="View [What]">View</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-organised">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field]</a><cite>Organiser Lastname</cite></th>
+ 	  				<td class="event-status">Organised</td>
+ 	  				<td>Royston Hotel<br />18 Mar, 6:00pm</td>
+ 	  				<td><a href="/groupbuy/mobile/dashboard.html" title="View [What]">View</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-organised">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field]</a> <cite>Organiser Lastname</cite></th>
+ 	  				<td class="event-status">Organised</td>
+ 	  				<td>Royston Hotel<br />18 Mar, 6:00pm</td>
+ 	  				<td><a href="/groupbuy/mobile/dashboard.html" title="View [What]">View</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-organised">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field]</a> <cite>Organiser Lastname</cite></th>
+ 	  				<td class="event-status">Organised</td>
+ 	  				<td>Royston Hotel<br />18 Mar, 6:00pm</td>
+ 	  				<td><a href="/groupbuy/mobile/dashboard.html" title="View [What]">View</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  			<tr class="event-organised">
+ 	  				<th><a href="/groupbuy/mobile/dashboard.html" title="View [What field]">[What field]</a> <cite>Organiser Lastname</cite></th>
+ 	  				<td class="event-status">Organised</td>
+ 	  				<td>Royston Hotel<br />18 Mar, 6:00pm</td>
+ 	  				<td><a href="/groupbuy/mobile/dashboard.html" title="View [What]">View</a>
+ 	  				</td>
+ 	  			</tr>
+ 	  		</tbody>
+ 	  	</table>
+ 	  	<ul class="pagination">
+					<li class="prev"><a href="#" title="View results page X" >Previous</a></li>
+					<li class="active">1</li>
+					<li><a href="#" title="View results page X" >2</a></li>
+					<li><a href="#" title="View results page X" >3</a></li>
+					<li><a href="#" title="View results page X" >4</a></li>
+					<li>...</li>
+					<li><a href="#" title="View results page X" >10</a></li>
+					<li class="next"><a href="#" title="View results page X" >Next</a></li>
+				</ul>
+ 	  </div>
+ 	 <div class="s6 panel mobify">
+		  <h2><em>Organise</em> a new event</h2>		
+		  <fieldset>
+			
+			<ul>
+				<li>
+					<label for="what-txt">e.g. Catchup for a drink, See a movie</label>
+					<input class="txt" type="text" name="what-txt" placeholder="e.g. Catchup for a drink, See a show" /> 
+				</li>
+				<li>
+					<input class="btn btn-sml" type="submit" name="what-submit" value="Organise event" />
+				</li>
+			</ul>
+		  </fieldset>
+ 	  </div>
+ 	 <div class="s6 panel mobify">
+ 	  		<h2>Latest messages</h2>
+ 	  		<table>
+				<tr>
+					<td>18/03/11</td>
+					<th><a href="/groupbuy/mobile/inbox-message.html" title="[Organiser firstname] [Org LastName] has invited you to [What field]">Invite to [What field]</a></th>
+				</tr>
+				<tr>
+					<td>18/03/11</td>
+					<th><a href="/groupbuy/mobile/inbox-message.html" title="[Organiser firstname] [Org LastName] has invited you to [What field]">New location [Location name] for [What field]</a></th>
+				</tr>
+				<tr>
+					<td>18/03/11</td>
+					<th><a href="/groupbuy/mobile/inbox-message.html" title="[Organiser firstname] [Org LastName] has invited you to [What field]">New date [Short date] for [What field]</a></th>
+				</tr>
+				<tr>
+					<td>18/03/11</td>
+					<th><a href="/groupbuy/mobile/inbox-message.html" title="[Organiser firstname] [Org LastName] has confirmed [What field] for [Location] [Long date]">[What field] is confirmed for [Location] [Short date]</a></th>
+				</tr>
+				<tr>
+					<td>18/03/11</td>
+					<th><a href="/groupbuy/mobile/inbox-message.html" title="[Organiser firstname] [Org LastName] has cancelled [What field]">[What field] has been cancelled</a></th>
+				</tr>
+ 	  		</table>
+ 	  		<ul class="minilist">
+ 	  			<li><a href="/groupbuy/mobile/inbox.html">View all messages</a></li>
+ 	  		</ul>
+ 	  </div>
+ 	 <div class="s6 panel mobify">
+ 	  	<h2><em>Change</em> your details</h2>
+ 	  	  	<fieldset>
+				<ul>
+					<li>
+				<label for="firstname">First name</label>
+				<input class="txt" type="text" name="firstname" value="" placeholder="Your first name"/> 
+			</li>
+			<li>
+				<label for="lastname">Last name</label>
+				<input class="txt" type="text" name="lastname" value="" placeholder="Your last name"/> 
+			</li>
+  			<li>
+				<label for="email">Your email</label>
+				<input class="txt" type="email" name="email" value="" placeholder="Your email"/> 
+			</li>
+			<li>
+				<label for="password">Your password</label>
+				<input class="txt pwd" type="password" id="reg-password" name="password" value="" placeholder="Your password" /> 
+			</li>
+			<li>
+				<label for="confirm-password">Confirm password</label>
+				<input class="txt pwd" type="password" id="reg-conf-password" name="confirm-password" value="" placeholder="Confirm your password" /> 
+			</li>
+					<li>	
+						<input class="btn btn-sml" type="submit" name="screen-name" value="Update" />
+					</li>
+				</ul>
+			</fieldset>
+ 	  	
+ 	  </div>
+  </div>
+  <footer>
+    <small>&#169; Copyright Chopsumi.com 2012</small>
+    <ul>
+      <li><a href="/groupbuy/mobile/contactus.html" title="Contact Chopsumi.com">Contact us</a></li>
+      <li><a href="/groupbuy/mobile/privacy.html" title="Chopsumi.com privacy policy">Privacy</a></li>
+      <li><a href="/groupbuy/mobile/privacy.html" title="Chopsumi.com Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+    </ul>
+  </footer>
+  
+  	<div id="feedback" class="ajaxGroup">
+  		<h4><a href="/groupbuy/mobile/inc/feedback.html" class="ajaxlink" title="Send feedback, suggestions and any issues to Chopsumi" >Tell us what you think</a></h4> 
+  	</div>
+  </div><!-- #wrap -->
+   	<script src="/groupbuy/mobile/js/date-en-AU.js"></script>
+   	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<script src="/groupbuy/mobile/js/plugins.js"></script>
+<script src="/groupbuy/mobile/js/script.js"></script>
+<script src="/groupbuy/mobile/js/mylibs/helper.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/imgsizer.js"></script>
+<![endif]-->
+
+<script>
+// iOS scale bug fix
+MBP.scaleFix();
+
+// Respond.js
+yepnope({
+	test : Modernizr.mq('(only all)'),
+	nope : ['js/libs/respond.min.js']
+});
+</script>
+  	
+</body>
+</html>

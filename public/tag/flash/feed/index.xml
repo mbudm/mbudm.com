@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>flash &#8211; Steve Roberts</title>
+	<atom:link href="/tag/flash/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Doer of digital things</description>
+	<lastBuildDate>Mon, 03 Jun 2019 08:58:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.6.14</generator>
+	<item>
+		<title>Updating from AS2 to AS3 with Find and replace</title>
+		<link>/2011/01/updating-from-as2-to-as3-with-find-and-replace/</link>
+		<comments>/2011/01/updating-from-as2-to-as3-with-find-and-replace/#respond</comments>
+		<pubDate>Tue, 11 Jan 2011 02:50:58 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[ActionScript 2]]></category>
+		<category><![CDATA[ActionScript 3]]></category>
+		<category><![CDATA[as3]]></category>
+		<category><![CDATA[flash]]></category>
+
+		<guid isPermaLink="false">/?p=63</guid>
+		<description><![CDATA[I&#8217;m kidding really &#8211; there is no way you could find and replace your AS2 code into AS3 😉 Actionscript 3 is hugely different from Actionscript 2, but that doesn&#8217;t meant that you can&#8217;t do a lot of the grunt work using a simple find and replace on these like for like items: Find this [&#8230;]]]></description>
+		<wfw:commentRss>/2011/01/updating-from-as2-to-as3-with-find-and-replace/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Finding a specific node in an AS3 XML object</title>
+		<link>/2010/03/finding-a-specific-node-in-an-as3-xml-object/</link>
+		<comments>/2010/03/finding-a-specific-node-in-an-as3-xml-object/#comments</comments>
+		<pubDate>Tue, 30 Mar 2010 06:25:15 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[ActionScript 2]]></category>
+		<category><![CDATA[ActionScript 3]]></category>
+		<category><![CDATA[as3]]></category>
+		<category><![CDATA[flash]]></category>
+
+		<guid isPermaLink="false">/?p=56</guid>
+		<description><![CDATA[Continuing with my updating an Actionscript 2 project to Actionscript 3 I&#8217;m really enjoying the optimisation possibilities that AS3 provides. For example, In my as2 code I had a recursive method for finding a node. // recursive node search private function findNode(n:XMLNode,name:String,attname:String,attdata:String):XMLNode{ var xNode:XMLNode; if(n.hasChildNodes()){ for(var i = 0; i < n.childNodes.length; i++){ if(n.childNodes[i].nodeName == [&#8230;]]]></description>
+		<wfw:commentRss>/2010/03/finding-a-specific-node-in-an-as3-xml-object/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>SEO, small business and Flash</title>
+		<link>/2009/06/seo-small-business-and-flash/</link>
+		<comments>/2009/06/seo-small-business-and-flash/#comments</comments>
+		<pubDate>Thu, 11 Jun 2009 03:29:06 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[DIY web development]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[SEO]]></category>
+		<category><![CDATA[small business]]></category>
+		<category><![CDATA[SWFaddress]]></category>
+
+		<guid isPermaLink="false">/?p=7</guid>
+		<description><![CDATA[Whilst waiting for Google to discover my basic attempt at SEO for Flash I have been scouring the web and getting a better idea of progress down this road. What I&#8217;ve discovered is: There are already some great solutions out there (isn&#8217;t it always the way), but these are relatively recent &#8211; mid 2007 is [&#8230;]]]></description>
+		<wfw:commentRss>/2009/06/seo-small-business-and-flash/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+		<item>
+		<title>Where in the world is Sonia Kruschev?</title>
+		<link>/2009/06/where-in-the-world-is-sonia-kruschev/</link>
+		<comments>/2009/06/where-in-the-world-is-sonia-kruschev/#comments</comments>
+		<pubDate>Mon, 08 Jun 2009 08:33:57 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[flashden]]></category>
+		<category><![CDATA[SEO]]></category>
+		<category><![CDATA[site template]]></category>
+
+		<guid isPermaLink="false">/?p=3</guid>
+		<description><![CDATA[I recently added a flash site template to my Flashden.net folio and it seems to be selling quite well which is great. However I can&#8217;t ignore the fact that like most Flash sites it probably won&#8217;t be easily discovered by Google. With SEO being forefront in peoples minds nowadays when creating even the most simple [&#8230;]]]></description>
+		<wfw:commentRss>/2009/06/where-in-the-world-is-sonia-kruschev/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

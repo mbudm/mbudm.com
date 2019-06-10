@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>mbudm | experiments: Android CSS background images problem</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="stylesheet" type="text/css" href="/experiments/exp-style.css" media="screen and (min-device-width: 481px)" />
+  <link rel="stylesheet" type="text/css" href="/experiments/exp-mob-style.css" media="only screen and (max-device-width: 480px)"/>
+	<!--[if IE]>
+	<link rel="stylesheet" href="../exp-style.css" media="screen" type="text/css" />
+	<![endif]-->
+	<!-- tell iPhone not to shrink mobile website -->
+  <link rel="stylesheet" type="text/css" href="/experiments/android-css-bg/local.css" media="screen" />
+  
+  <script language="javascript" src="/stock/rssajax6.js"></script>
+
+</head>
+
+<body>
+<div id="wrapper" class="hfeed">
+	<div id="header">
+
+		<div id="masthead">
+ 
+			<div id="branding">
+				<div id="blog-title"><span><a href="/" title="mbudm" rel="home">mbudm</a></span></div>
+		    	<h1 id="blog-description">Steve Roberts - Digital media strategy, design and development</h1>
+			</div><!-- #branding -->
+ 
+ 			<div id="access">
+ 				<div class="skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+
+				
+			</div><!-- #access -->
+ 
+		</div><!-- #masthead -->	
+	</div><!-- #header -->
+ 
+	<div id="main">
+    	<div id="container">
+ 				<div id="content">
+
+					<h4><a href="/" title="mbudm.com - Steve Roberts Web and Mobile Strategy, Design and Development">mbudm.com</a> experiments</h4>
+					<h2>Android CSS Backgrounds</h2>
+					<p>Android 2.1 and 2.2 render large images at a very low resolution. This makes the use of large CSS background images for graphical UI elements - often called 'sprites' a problem, because obviously the UI elements need to be rendered sharply</p>
+					<h3>Demonstration</h3>
+					<p>Of course these 'sprites' only have a bit of gfx in them. A real sprite would have lots of UI elements, that may require you to have such a big overall png image. These sprites are both 400px wide.</p>
+					<h4 id="heading-1400">This is a heading that has a background image from a sprite that is 1400px high</h4>
+					<h4 id="heading-1300">This is a heading that has a background image from a sprite that is 1300px high</h4>
+					<p>The first heading will appear blurry and unreadable if you are viewing this page with an Android 2.1 or 2.2 smart phone. The second heading will be sharp and readable.</p>
+					<ul>
+					<li><a href="/2011/03/android-css-background-image-blurriness/" title="Explanation of the Android CSS background images problem">Explanation of the Android CSS images problem</a></li>
+					</ul>
+					
+					<h2>Recent articles on mbudm.com</h2>
+					<ul id="feedresults">
+					</ul>
+                    
+                    <script type="text/javascript">
+                        getRSS("http://mbudm.com/feed/");
+                    </script>
+                </div>
+       	</div>
+	</div>
+    
+    <div id="footer">
+		<div id="colophon">
+ 
+			<div id="site-info">
+				<p>
+				&copy; <a href="/" title="mbudm.com - Steve Roberts Web and Mobile Strategy, Design and Development">mbudm.com</a> 2011 All Rights Reserved.
+				</p>
+			</div><!-- #site-info -->
+ 
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div>
+
+
+ <script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+        // add your GA id here:
+		var pageTracker = _gat._getTracker("UA-10157407-1");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+</body>
+</html>

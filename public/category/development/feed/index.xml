@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Development &#8211; Steve Roberts</title>
+	<atom:link href="/category/development/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Doer of digital things</description>
+	<lastBuildDate>Mon, 03 Jun 2019 08:58:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.6.14</generator>
+	<item>
+		<title>jQuery plugin for quickly making legacy sites responsive</title>
+		<link>/2014/01/jquery-plugin-for-quickly-making-legacy-sites-responsive/</link>
+		<comments>/2014/01/jquery-plugin-for-quickly-making-legacy-sites-responsive/#respond</comments>
+		<pubDate>Tue, 07 Jan 2014 05:41:07 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[mobile]]></category>
+
+		<guid isPermaLink="false">/?p=753</guid>
+		<description><![CDATA[Over the last few years I have occasionally had to revisit old web sites and work out a quick and easy way to make them responsive. Any site designed prior to 2010 is unlikely to have an css media queries that provide different CSS styles depending on the width of the device used to view [&#8230;]]]></description>
+		<wfw:commentRss>/2014/01/jquery-plugin-for-quickly-making-legacy-sites-responsive/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>An ExtJS demo application</title>
+		<link>/2014/01/an-extjs-demo-application/</link>
+		<comments>/2014/01/an-extjs-demo-application/#respond</comments>
+		<pubDate>Tue, 07 Jan 2014 00:25:09 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[GitHub]]></category>
+		<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">/?p=732</guid>
+		<description><![CDATA[Recently I needed to refresh my memory of ExtJS and I figured the best way to do this was to build a simple demo app. It was only last August when I was using ExtJS day to day but as any developer will tell you, there is a limit to what you can keep at [&#8230;]]]></description>
+		<wfw:commentRss>/2014/01/an-extjs-demo-application/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Agile UX for a javascript web application</title>
+		<link>/2013/06/agile-ux-for-a-javascript-web-application/</link>
+		<comments>/2013/06/agile-ux-for-a-javascript-web-application/#respond</comments>
+		<pubDate>Thu, 13 Jun 2013 09:34:08 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Big Clients]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[Development]]></category>
+		<category><![CDATA[agile]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[User Experience Design]]></category>
+		<category><![CDATA[User Research]]></category>
+
+		<guid isPermaLink="false">/?p=475</guid>
+		<description><![CDATA[It&#8217;s been 10 months now since I decided to ramp up my javascript skills and take on a hybrid UX and front-end development role. I&#8217;ve worked with a few agile development teams in the past two years mainly as a UX consultant and Product Manager. I really enjoyed the iterative approach, doing some analysis, creating [&#8230;]]]></description>
+		<wfw:commentRss>/2013/06/agile-ux-for-a-javascript-web-application/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Add a widget to a WordPress page or post via a shortcode &#8211; with default values</title>
+		<link>/2012/03/add-a-widget-to-a-wordpress-page-or-post-via-a-shortcode-with-default-values/</link>
+		<comments>/2012/03/add-a-widget-to-a-wordpress-page-or-post-via-a-shortcode-with-default-values/#comments</comments>
+		<pubDate>Sun, 04 Mar 2012 01:43:33 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[php]]></category>
+		<category><![CDATA[shortcode]]></category>
+		<category><![CDATA[widget]]></category>
+
+		<guid isPermaLink="false">/?p=438</guid>
+		<description><![CDATA[I&#8217;m loving working with WordPress because the development community is so large that it seems that no matter what obscure customisation you wan to achieve there is usually someone out there who has tried it and blogged about it. Take the problem of adding widgets to a page or post via a shortcode. This is [&#8230;]]]></description>
+		<wfw:commentRss>/2012/03/add-a-widget-to-a-wordpress-page-or-post-via-a-shortcode-with-default-values/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Adding column number CSS classes to WordPress widgets</title>
+		<link>/2012/02/adding-column-number-css-classes-to-wordpress-widgets/</link>
+		<comments>/2012/02/adding-column-number-css-classes-to-wordpress-widgets/#comments</comments>
+		<pubDate>Mon, 27 Feb 2012 03:34:54 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[Small Clients]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">/?p=430</guid>
+		<description><![CDATA[I&#8217;m working on a WordPress theme that is designed to provide a  lot of flexibility. It has many widget areas (sidebars) and quite a few supplied custom widgets. The widget areas have different layouts, either: single column, full page width two columns, full page width three columns, full page width single column, one-third page width [&#8230;]]]></description>
+		<wfw:commentRss>/2012/02/adding-column-number-css-classes-to-wordpress-widgets/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Updating existing CSS to handle multiple screen sizes</title>
+		<link>/2011/10/updating-existing-css-to-handle-multiple-screen-sizes/</link>
+		<comments>/2011/10/updating-existing-css-to-handle-multiple-screen-sizes/#respond</comments>
+		<pubDate>Mon, 03 Oct 2011 00:00:02 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[CSS]]></category>
+
+		<guid isPermaLink="false">/?p=419</guid>
+		<description><![CDATA[I&#8217;m revisiting some old CSS this week with the aim of making it work across multiple screen sizes for devices such as android phones, iphones, ipads and whatever else is out there in the ever expanding device ecosystem. There are a bunch of great tips, frameworks and tools around for doing this. I&#8217;m using the [&#8230;]]]></description>
+		<wfw:commentRss>/2011/10/updating-existing-css-to-handle-multiple-screen-sizes/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Transferring WordPress sql data between localhost and production</title>
+		<link>/2011/06/transferring-wordpress-sql-data-between-localhost-and-production/</link>
+		<comments>/2011/06/transferring-wordpress-sql-data-between-localhost-and-production/#respond</comments>
+		<pubDate>Thu, 02 Jun 2011 03:49:25 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">/?p=376</guid>
+		<description><![CDATA[There are quite a few blog posts around that provide helpful tips on transferring the sql data (all the posts and category content in the wordpress database) between your local development environment and production (live) site. This is something that needs to be done when making significant changes to the site design &#8211; especially when [&#8230;]]]></description>
+		<wfw:commentRss>/2011/06/transferring-wordpress-sql-data-between-localhost-and-production/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Android CSS background image blurriness</title>
+		<link>/2011/03/android-css-background-image-blurriness/</link>
+		<comments>/2011/03/android-css-background-image-blurriness/#comments</comments>
+		<pubDate>Mon, 14 Mar 2011 03:59:32 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[mobile]]></category>
+
+		<guid isPermaLink="false">/?p=112</guid>
+		<description><![CDATA[Recently I completed some UI intensive work for a client that was designed for smart-phones. The project was targeted at iPhone and Android users primarily and being web based, made heavy use of CSS3 and HTML5 to achieve the desired highly graphical user interface. During the course of the project we noticed that some Android [&#8230;]]]></description>
+		<wfw:commentRss>/2011/03/android-css-background-image-blurriness/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+		</item>
+		<item>
+		<title>Semantic HTML</title>
+		<link>/2011/01/semantic-html/</link>
+		<comments>/2011/01/semantic-html/#comments</comments>
+		<pubDate>Sat, 15 Jan 2011 03:07:09 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[web standards]]></category>
+
+		<guid isPermaLink="false">/?p=96</guid>
+		<description><![CDATA[After reviewing the folios of over 50 front end developers and working with quite a few, I've come to the conclusion that when it comes to semantic markup, most developers talk the talk but in reality have no clue what it means. ]]></description>
+		<wfw:commentRss>/2011/01/semantic-html/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>Updating from AS2 to AS3 with Find and replace</title>
+		<link>/2011/01/updating-from-as2-to-as3-with-find-and-replace/</link>
+		<comments>/2011/01/updating-from-as2-to-as3-with-find-and-replace/#respond</comments>
+		<pubDate>Tue, 11 Jan 2011 02:50:58 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[ActionScript 2]]></category>
+		<category><![CDATA[ActionScript 3]]></category>
+		<category><![CDATA[as3]]></category>
+		<category><![CDATA[flash]]></category>
+
+		<guid isPermaLink="false">/?p=63</guid>
+		<description><![CDATA[I&#8217;m kidding really &#8211; there is no way you could find and replace your AS2 code into AS3 😉 Actionscript 3 is hugely different from Actionscript 2, but that doesn&#8217;t meant that you can&#8217;t do a lot of the grunt work using a simple find and replace on these like for like items: Find this [&#8230;]]]></description>
+		<wfw:commentRss>/2011/01/updating-from-as2-to-as3-with-find-and-replace/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Flash site templates that work on iPhone (&#038; iPad)</title>
+		<link>/2010/05/flash-site-templates-that-work-on-iphone-ipad/</link>
+		<comments>/2010/05/flash-site-templates-that-work-on-iphone-ipad/#respond</comments>
+		<pubDate>Sun, 23 May 2010 00:48:21 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">/?p=81</guid>
+		<description><![CDATA[There has been a lot of discussion on the web in recent weeks because Apple&#8217;s offerings iPhone and iPad do not (and probably will not) run the Adobe Flash Player on their in-built Safari web browser. To some this is great news &#8211; who needs those annoying Flash Ads anyway? But to others, who recognise [&#8230;]]]></description>
+		<wfw:commentRss>/2010/05/flash-site-templates-that-work-on-iphone-ipad/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Finding a specific node in an AS3 XML object</title>
+		<link>/2010/03/finding-a-specific-node-in-an-as3-xml-object/</link>
+		<comments>/2010/03/finding-a-specific-node-in-an-as3-xml-object/#comments</comments>
+		<pubDate>Tue, 30 Mar 2010 06:25:15 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[ActionScript 2]]></category>
+		<category><![CDATA[ActionScript 3]]></category>
+		<category><![CDATA[as3]]></category>
+		<category><![CDATA[flash]]></category>
+
+		<guid isPermaLink="false">/?p=56</guid>
+		<description><![CDATA[Continuing with my updating an Actionscript 2 project to Actionscript 3 I&#8217;m really enjoying the optimisation possibilities that AS3 provides. For example, In my as2 code I had a recursive method for finding a node. // recursive node search private function findNode(n:XMLNode,name:String,attname:String,attdata:String):XMLNode{ var xNode:XMLNode; if(n.hasChildNodes()){ for(var i = 0; i < n.childNodes.length; i++){ if(n.childNodes[i].nodeName == [&#8230;]]]></description>
+		<wfw:commentRss>/2010/03/finding-a-specific-node-in-an-as3-xml-object/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>Actionscript 3: Inheritance Subclass and private vars</title>
+		<link>/2010/03/actionscript-3-inheritance-subclass-and-private-vars/</link>
+		<comments>/2010/03/actionscript-3-inheritance-subclass-and-private-vars/#comments</comments>
+		<pubDate>Sun, 28 Mar 2010 07:05:10 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[ActionScript 3]]></category>
+		<category><![CDATA[as3]]></category>
+		<category><![CDATA[extends]]></category>
+		<category><![CDATA[inheritance]]></category>
+		<category><![CDATA[oop]]></category>
+		<category><![CDATA[private]]></category>
+		<category><![CDATA[public]]></category>
+
+		<guid isPermaLink="false">/?p=51</guid>
+		<description><![CDATA[I&#8217;m currently updating some as2 projects to as3 and I had a series of 1120 compiler errors this afternoon. I&#8217;m a fan of using the &#8216;extends&#8217; keyword to create customised versions of base classes. In Actionscript 2 the subclass can access all the variables and methods of the original class. It appears that in ActionScript [&#8230;]]]></description>
+		<wfw:commentRss>/2010/03/actionscript-3-inheritance-subclass-and-private-vars/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Useful code for debugging MovieClip.localToGlobal() headaches</title>
+		<link>/2009/10/useful-code-for-debugging-loacltoglobal-headaches/</link>
+		<comments>/2009/10/useful-code-for-debugging-loacltoglobal-headaches/#comments</comments>
+		<pubDate>Fri, 09 Oct 2009 03:06:12 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[ActionScript 2]]></category>
+		<category><![CDATA[localToGlobal]]></category>
+
+		<guid isPermaLink="false">/?p=28</guid>
+		<description><![CDATA[I hate localToGlobal. There I&#8217;ve said it. It seems that there are some things in Actionscript that always seem to throw me off &#8211; this is my main one. Today I had another issue while adding a generic tooltip to buttons that in an assortment of sub clips and components &#8211; the tooltip needs to [&#8230;]]]></description>
+		<wfw:commentRss>/2009/10/useful-code-for-debugging-loacltoglobal-headaches/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>SEO friendly Flash templates</title>
+		<link>/2009/08/seo-friendly-flash-templates/</link>
+		<comments>/2009/08/seo-friendly-flash-templates/#comments</comments>
+		<pubDate>Sat, 15 Aug 2009 08:54:50 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">/?p=24</guid>
+		<description><![CDATA[This weekend I have updated my existing FlashDen template and added a new one to the queue which should be available early next week. I have been doing some research over the past few months into making my Flash Templates more SEO friendly. Initially I avoided the SWFAddress solution as this involves editing a .htaccess [&#8230;]]]></description>
+		<wfw:commentRss>/2009/08/seo-friendly-flash-templates/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Guide to adding an image gallery (or other actionscript 2 component) to the mbudm#001 template</title>
+		<link>/2009/06/16guide-to-adding-image-gallery/</link>
+		<comments>/2009/06/16guide-to-adding-image-gallery/#comments</comments>
+		<pubDate>Mon, 15 Jun 2009 05:28:12 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">/?p=16</guid>
+		<description><![CDATA[A few buyers and potential buyers have been asking me about adding an external SWF to my &#8220;Minimalist, versatile, corporate site template&#8221; on FlashDen.net. This is something I expected as the template is purposefully a &#8216;lite&#8217; version &#8211; it has an inbuilt text module and support for external SWFs only. Other site templates on FlashDen [&#8230;]]]></description>
+		<wfw:commentRss>/2009/06/16guide-to-adding-image-gallery/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

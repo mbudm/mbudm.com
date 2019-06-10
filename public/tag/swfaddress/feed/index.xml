@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>SWFaddress &#8211; Steve Roberts</title>
+	<atom:link href="/tag/swfaddress/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Doer of digital things</description>
+	<lastBuildDate>Mon, 03 Jun 2019 08:58:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.6.14</generator>
+	<item>
+		<title>SEO, small business and Flash</title>
+		<link>/2009/06/seo-small-business-and-flash/</link>
+		<comments>/2009/06/seo-small-business-and-flash/#comments</comments>
+		<pubDate>Thu, 11 Jun 2009 03:29:06 +0000</pubDate>
+		<dc:creator><![CDATA[admin]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[DIY web development]]></category>
+		<category><![CDATA[flash]]></category>
+		<category><![CDATA[SEO]]></category>
+		<category><![CDATA[small business]]></category>
+		<category><![CDATA[SWFaddress]]></category>
+
+		<guid isPermaLink="false">/?p=7</guid>
+		<description><![CDATA[Whilst waiting for Google to discover my basic attempt at SEO for Flash I have been scouring the web and getting a better idea of progress down this road. What I&#8217;ve discovered is: There are already some great solutions out there (isn&#8217;t it always the way), but these are relatively recent &#8211; mid 2007 is [&#8230;]]]></description>
+		<wfw:commentRss>/2009/06/seo-small-business-and-flash/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+	</channel>
+</rss>

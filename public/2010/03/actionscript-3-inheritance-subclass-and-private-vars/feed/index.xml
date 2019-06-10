@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: Actionscript 3: Inheritance Subclass and private vars</title>
+	<atom:link href="/2010/03/actionscript-3-inheritance-subclass-and-private-vars/feed/" rel="self" type="application/rss+xml" />
+	<link>/2010/03/actionscript-3-inheritance-subclass-and-private-vars/</link>
+	<description>Doer of digital things</description>
+	<lastBuildDate>Sat, 01 Sep 2018 11:08:24 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.6.14</generator>
+	<item>
+		<title>By: Christmas Gifts</title>
+		<link>/2010/03/actionscript-3-inheritance-subclass-and-private-vars/comment-page-1/#comment-693</link>
+		<dc:creator><![CDATA[Christmas Gifts]]></dc:creator>
+		<pubDate>Fri, 11 Nov 2016 10:02:17 +0000</pubDate>
+		<guid isPermaLink="false">/?p=51#comment-693</guid>
+		<description><![CDATA[Great items from you, man. I&#039;ve keep in mind your stuff prior to and you are simply too magnificent. I really like what you have bought here, certainly like what you are stating and the way by which you say it. You make it entertaining and you still care for to keep it sensible. I can not wait to learn far more from you. That is really a tremendous web site.]]></description>
+		<content:encoded><![CDATA[<p>Great items from you, man. I&#8217;ve keep in mind your stuff prior to and you are simply too magnificent. I really like what you have bought here, certainly like what you are stating and the way by which you say it. You make it entertaining and you still care for to keep it sensible. I can not wait to learn far more from you. That is really a tremendous web site.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Steve</title>
+		<link>/2010/03/actionscript-3-inheritance-subclass-and-private-vars/comment-page-1/#comment-234</link>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+		<pubDate>Thu, 26 Aug 2010 00:34:28 +0000</pubDate>
+		<guid isPermaLink="false">/?p=51#comment-234</guid>
+		<description><![CDATA[Hi Paul, Yep you&#039;re right. I did a quick bit of research. As I understand it now the keyword internal is like private but for the entire package, not just the individual class. So that would make it usable in the above example as extended classes are in the same package.
+
+Thanks]]></description>
+		<content:encoded><![CDATA[<p>Hi Paul, Yep you&#8217;re right. I did a quick bit of research. As I understand it now the keyword internal is like private but for the entire package, not just the individual class. So that would make it usable in the above example as extended classes are in the same package.</p>
+<p>Thanks</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Paul Dixon</title>
+		<link>/2010/03/actionscript-3-inheritance-subclass-and-private-vars/comment-page-1/#comment-233</link>
+		<dc:creator><![CDATA[Paul Dixon]]></dc:creator>
+		<pubDate>Wed, 25 Aug 2010 13:03:05 +0000</pubDate>
+		<guid isPermaLink="false">/?p=51#comment-233</guid>
+		<description><![CDATA[your situation (and mine as ov 5 minutes ago) can be solved by swapping &quot;private&quot; for &quot;internal&quot;. I&#039;ve had errors with private functions, which won&#039;t compile when I&#039;m trying to do simple overrides, and say for example inheriting a variable. A bunch of examples I had a while back from a cookbook kept using internal.  I&#039;m no oop guru, I&#039;m still trying to get to grips with the whole thing, so i don&#039;t know why private fails and internal works or what their difference is]]></description>
+		<content:encoded><![CDATA[<p>your situation (and mine as ov 5 minutes ago) can be solved by swapping &#8220;private&#8221; for &#8220;internal&#8221;. I&#8217;ve had errors with private functions, which won&#8217;t compile when I&#8217;m trying to do simple overrides, and say for example inheriting a variable. A bunch of examples I had a while back from a cookbook kept using internal.  I&#8217;m no oop guru, I&#8217;m still trying to get to grips with the whole thing, so i don&#8217;t know why private fails and internal works or what their difference is</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Sprague</title>
+		<link>/2010/03/actionscript-3-inheritance-subclass-and-private-vars/comment-page-1/#comment-212</link>
+		<dc:creator><![CDATA[Sprague]]></dc:creator>
+		<pubDate>Mon, 28 Jun 2010 15:39:10 +0000</pubDate>
+		<guid isPermaLink="false">/?p=51#comment-212</guid>
+		<description><![CDATA[Thanks - This was a total help!]]></description>
+		<content:encoded><![CDATA[<p>Thanks &#8211; This was a total help!</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

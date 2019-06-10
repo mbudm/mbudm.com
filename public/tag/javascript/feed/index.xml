@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>JavaScript &#8211; Steve Roberts</title>
+	<atom:link href="/tag/javascript/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Doer of digital things</description>
+	<lastBuildDate>Mon, 03 Jun 2019 08:58:45 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.6.14</generator>
+	<item>
+		<title>jQuery plugin for quickly making legacy sites responsive</title>
+		<link>/2014/01/jquery-plugin-for-quickly-making-legacy-sites-responsive/</link>
+		<comments>/2014/01/jquery-plugin-for-quickly-making-legacy-sites-responsive/#respond</comments>
+		<pubDate>Tue, 07 Jan 2014 05:41:07 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[mobile]]></category>
+
+		<guid isPermaLink="false">/?p=753</guid>
+		<description><![CDATA[Over the last few years I have occasionally had to revisit old web sites and work out a quick and easy way to make them responsive. Any site designed prior to 2010 is unlikely to have an css media queries that provide different CSS styles depending on the width of the device used to view [&#8230;]]]></description>
+		<wfw:commentRss>/2014/01/jquery-plugin-for-quickly-making-legacy-sites-responsive/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>An ExtJS demo application</title>
+		<link>/2014/01/an-extjs-demo-application/</link>
+		<comments>/2014/01/an-extjs-demo-application/#respond</comments>
+		<pubDate>Tue, 07 Jan 2014 00:25:09 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Development]]></category>
+		<category><![CDATA[ExtJS]]></category>
+		<category><![CDATA[GitHub]]></category>
+		<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">/?p=732</guid>
+		<description><![CDATA[Recently I needed to refresh my memory of ExtJS and I figured the best way to do this was to build a simple demo app. It was only last August when I was using ExtJS day to day but as any developer will tell you, there is a limit to what you can keep at [&#8230;]]]></description>
+		<wfw:commentRss>/2014/01/an-extjs-demo-application/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Agile UX for a javascript web application</title>
+		<link>/2013/06/agile-ux-for-a-javascript-web-application/</link>
+		<comments>/2013/06/agile-ux-for-a-javascript-web-application/#respond</comments>
+		<pubDate>Thu, 13 Jun 2013 09:34:08 +0000</pubDate>
+		<dc:creator><![CDATA[Steve]]></dc:creator>
+				<category><![CDATA[Big Clients]]></category>
+		<category><![CDATA[Design]]></category>
+		<category><![CDATA[Development]]></category>
+		<category><![CDATA[agile]]></category>
+		<category><![CDATA[JavaScript]]></category>
+		<category><![CDATA[User Experience Design]]></category>
+		<category><![CDATA[User Research]]></category>
+
+		<guid isPermaLink="false">/?p=475</guid>
+		<description><![CDATA[It&#8217;s been 10 months now since I decided to ramp up my javascript skills and take on a hybrid UX and front-end development role. I&#8217;ve worked with a few agile development teams in the past two years mainly as a UX consultant and Product Manager. I really enjoyed the iterative approach, doing some analysis, creating [&#8230;]]]></description>
+		<wfw:commentRss>/2013/06/agile-ux-for-a-javascript-web-application/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

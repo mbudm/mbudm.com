@@ -1,0 +1,146 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Chopsumi - Step 1: RSVP to [What Field]</title>
+	<meta name="Description" content="Organise social events with your friends. Set up date and location ideas then get your friends to vote on the best options for all.">
+  	<meta name="Keywords" content="Organise, plan, vote, reunion, catchup with friends, plan social life, fun activities, have a drink, see a movie, have dinner, lunch, coffee, drinks after work"> 
+		<!-- http://t.co/dKP3o1e -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="/groupbuy/mobile/styles/all.css">
+	
+  
+
+	
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/selectivizr-min.js"></script>
+<![endif]-->
+
+<!-- JavaScript -->
+<script src="/groupbuy/mobile/js/libs/modernizr-2.0.6.min.js"></script>
+
+</head>
+<body class="invitee-step1">
+
+<div id="wrap">
+  <header>
+<hgroup>
+				<h1><a href="/groupbuy/mobile/home.html" title="Chopsumi.com - Organise your friends" >Chopsumi.com</a></h1>
+				<h2>Organise your friends by voting on social events</h2>
+			</hgroup>
+    <ul>
+      <li><a href="/groupbuy/mobile/loginregister.html" title="Chopsumi.com - Login or Register">Login/Register</a></li>
+      <li><a href="/groupbuy/mobile/about.html" title="About Chopsumi.com">About</a></li>
+      <li><a href="/groupbuy/mobile/help.html" title="Chopsumi.com help">Help</a></li>
+    </ul>
+  </header>
+  <div id="content" class="cfix">
+  <!--
+	  <ul class="error">
+		<li>Before continuing, you need to select an RSVP for <strong>[What field]</strong>.</li>
+	  </ul>
+	  -->
+  <div class="s1 umsg">
+	  <h1>Hi <strong>[InviteeName]</strong>, welcome to <strong>Chopsumi</strong></h1>
+	  <h4>Your friend <strong>[OrganiserName]</strong>  has invited you to take part in <strong>[What field]</strong>. Here are the current date and location options suggested by <strong>[OrganiserName]</strong> and friends:</h4>
+	 
+	  <!-- if only Organiser has 'suggested' then use:
+	  
+	  Here are the current date and location options suggested by <strong>[OrganiserName]</strong>:
+	  
+	  -->
+	  <div id="eventPreview" class="cfix">
+			<div id="eventLocations">
+				<h4>Current Favourite</h4>
+				<h3><strong>[LocationName]</strong> [LocationAddress]</h3>
+				<ol>
+					<li>[LocationName that is really really really really long]
+					</li>
+					<li>[LocationName]
+					</li>
+					<li>[LocationName]
+					</li>
+					<li>[LocationName]
+					</li>
+					<li>[LocationName] <span>239 Stewart Street, Brunswick East VIC 3057 How does this look if it wraps Australia</span></li><!-- show address field ONLY if location is identical to another in the list? -->
+					<li>[LocationName item #7]
+					</li>
+				</ol>
+			</div>
+			<div id="eventDates">
+				<h4>Current Favourite</h4>
+				<h3><strong>Friday 26 August</strong> 6:30pm - 10:30pm</h4>
+				<!-- <h5>Less popular</h5> -->
+				<ol>
+					<li>Fri 26 Aug <span>6 - 10:30pm</span></li><!-- show time ONLY if date is identical to another in the list? -->
+					<li>Fri 26 - Sat 28 Aug</li>
+					<li>26 Aug 2010 - 31 Mar 2011</li>
+					<li>Fri 26 Aug - Thu 1 Sep</li>
+					<li>Fri 26 Aug <span>4 - 6:30pm</span></li><!-- show time ONLY if date is identical to another in the list? -->
+				</ol>
+			</div>
+	  </div>
+  </div> 
+  
+  <form action="/groupbuy/mobile/invitee-step2.html" method="GET">
+  <h2>Step 1 of 3 - Your RSVP</h2>
+  <h4>Would you like to participate in <strong>[What field]</strong>?</h4>
+  <fieldset class="requires-setup">
+  <ul>
+  	<li><input type="radio" name="rsvp" value="yes" /> Yes, count me in</li>
+  	<li><input type="radio" name="rsvp" value="maybe" />Maybe</li>
+  	<li><input type="radio" name="rsvp" value="no" />No thanks</li>
+  </ul>
+  </fieldset>
+  
+ <fieldset class="s1 requires-setup">
+    <input class="btn" type="submit" name="rsvp" value="Submit RSVP" />
+    <!-- This label gets changed in invitee-step1.js -->
+  </fieldset>
+  </form>
+  
+  </div>
+  <footer>
+    <small>&#169; Copyright Chopsumi.com 2012</small>
+    <ul>
+      <li><a href="/groupbuy/mobile/contactus.html" title="Contact Chopsumi.com">Contact us</a></li>
+      <li><a href="/groupbuy/mobile/privacy.html" title="Chopsumi.com privacy policy">Privacy</a></li>
+      <li><a href="/groupbuy/mobile/privacy.html" title="Chopsumi.com Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+    </ul>
+  </footer>
+  
+  <div id="feedback" class="ajaxGroup">
+  		<h4><a href="/groupbuy/mobile/inc/feedback.html" class="ajaxlink" title="Send feedback, suggestions and any issues to Chopsumi" >Tell us what you think</a></h4> 
+  	</div>
+  </div><!-- #wrap -->
+   	<script src="/groupbuy/mobile/js/date-en-AU.js"></script>
+   	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<script src="/groupbuy/mobile/js/plugins.js"></script>
+<script src="/groupbuy/mobile/js/script.js"></script>
+<script src="/groupbuy/mobile/js/mylibs/helper.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/libs/imgsizer.js"></script>
+<![endif]-->
+
+<script>
+// iOS scale bug fix
+MBP.scaleFix();
+
+// Respond.js
+yepnope({
+	test : Modernizr.mq('(only all)'),
+	nope : ['js/libs/respond.min.js']
+});
+</script>
+  	
+	<script  src="/groupbuy/mobile/js/invitee-step1.js"></script>
+</body>
+</html>
