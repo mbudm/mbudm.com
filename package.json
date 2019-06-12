@@ -1,0 +1,24 @@
+{
+  "name": "mbudm.com",
+  "version": "1.0.0",
+  "description": "static site",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbudm/mbudm.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbudm/mbudm.com/issues"
+  },
+  "homepage": "https://github.com/mbudm/mbudm.com#readme",
+  "devDependencies": {
+    "serverless-cloudfront-invalidate": "^1.3.0",
+    "serverless-s3-remover": "^0.6.0",
+    "serverless-s3-sync": "^1.8.0"
+  }
+}
