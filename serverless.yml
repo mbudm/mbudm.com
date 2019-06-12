@@ -94,10 +94,7 @@ resources:
               QueryString: 'false'
               Cookies:
                 Forward: none
-            ViewerProtocolPolicy: redirect-to-https
-          ViewerCertificate:
-            AcmCertificateArn: ${self:provider.environment.ACM_CERT_ARN}
-            SslSupportMethod: sni-only
+            ViewerProtocolPolicy: allow-all
     DnsRecord:
       Type: "AWS::Route53::RecordSet"
       Properties:
