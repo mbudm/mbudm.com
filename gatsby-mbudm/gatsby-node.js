@@ -11,13 +11,23 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slug,
     })
+    // add the source filesystem name as a collection field, for queries
+    // https://github.com/gatsbyjs/gatsby/issues/1634#issuecomment-388899348
+    const parent = getNode(_.get(node, 'parent'))
+    createNodeField({
+      node,
+      name: 'collection',
+      value: _.get(parent, 'sourceInstanceName'),
+    })
   }
 }
 
 const createPosts = (graphql, createPage) => {
     graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: {fields: {collection: {eq: "posts"}}}
+      ) {
         edges {
           node {
             fields {
@@ -28,6 +38,9 @@ const createPosts = (graphql, createPage) => {
       }
     }
   `).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       createPage({
         path: node.fields.slug,
@@ -50,6 +63,7 @@ const createTagPages = (graphql, createPage) => {
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { fields: {collection: {eq: "posts"}}}
         limit: 2000
       ) {
         edges {
@@ -102,18 +116,23 @@ const createCategoryPages = (graphql, createPage) => {
   return graphql(`
     {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 2000
+        sort: {order: DESC, fields: [frontmatter___date]}, 
+        limit: 1000
       ) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              categories
+        group(field: fields___collection) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                categories
+              }
+              html
             }
           }
+          fieldValue
         }
       }
     }
@@ -122,12 +141,13 @@ const createCategoryPages = (graphql, createPage) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.allMarkdownRemark.group.find((g) => g.fieldValue === "posts").edges
+    const categoriesMetadata = result.data.allMarkdownRemark.group.find((g) => g.fieldValue === "categories").edges
 
     // Category pages:
     let categories = []
     // Iterate through each post, putting all found categories into `categories`
-    _.each(posts, edge => {
+    posts.forEach((edge) => {
       if (_.get(edge, "node.frontmatter.categories")) {
         categories = categories.concat(edge.node.frontmatter.categories)
       }
@@ -137,11 +157,19 @@ const createCategoryPages = (graphql, createPage) => {
 
     // Make category pages
     categories.forEach(category => {
+      // get the category title and description
+      const catKebabCase = _.kebabCase(category)
+      const catMetaEdge = categoriesMetadata.find(edge => {
+        return _.get(edge, "node.fields.slug") &&
+          edge.node.fields.slug.split('/').includes(catKebabCase)
+      })
       createPage({
-        path: `/category/${_.kebabCase(category)}/`,
+        path: `/category/${catKebabCase}/`,
         component: categoryTemplate,
         context: {
           category,
+          title: catMetaEdge && catMetaEdge.node.frontmatter.title,
+          description: catMetaEdge && catMetaEdge.node.html
         },
       })
     })

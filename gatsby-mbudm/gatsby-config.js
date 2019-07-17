@@ -20,6 +20,13 @@ module.exports = {
         path: `${__dirname}/src/pages/posts`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `categories`,
+        path: `${__dirname}/src/pages/categories`,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
