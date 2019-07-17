@@ -168,8 +168,8 @@ const createCategoryPages = (graphql, createPage) => {
         component: categoryTemplate,
         context: {
           category,
-          title: catMetaEdge && catMetaEdge.node.frontmatter.title,
-          description: catMetaEdge && catMetaEdge.node.html
+          categoryTitle: catMetaEdge && catMetaEdge.node.frontmatter.title,
+          categoryDescription: catMetaEdge && catMetaEdge.node.html
         },
       })
     })

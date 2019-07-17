@@ -32,7 +32,7 @@ export default BlogPage
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: {fields: {collection: {eq: "posts"}}}, sort: {fields: frontmatter___date, order: DESC}) {
       totalCount
       edges {
         node {

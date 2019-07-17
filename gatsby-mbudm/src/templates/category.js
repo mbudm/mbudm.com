@@ -2,18 +2,24 @@ import React from "react"
 import PropTypes from "prop-types"
 
 // Components
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import { Link, graphql } from "gatsby"
 
 const Category = ({ pageContext, data }) => {
-  const { category } = pageContext
+  const { category, categoryTitle, categoryDescription } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const categoryHeader = `${totalCount} post${
     totalCount === 1 ? "" : "s"
   } in category "${category}"`
 
   return (
-    <div>
-      <h1>{categoryHeader}</h1>
+    <Layout>
+      <SEO title={category} />
+      <h1>{category}</h1>
+      {categoryTitle && <h4>{categoryTitle}</h4>}
+      {categoryDescription && <div dangerouslySetInnerHTML={{ __html: categoryDescription }} />}
+      <h5>{categoryHeader}</h5>
       <ul>
         {edges.map(({ node }) => {
           const { slug } = node.fields
@@ -26,7 +32,7 @@ const Category = ({ pageContext, data }) => {
         })}
       </ul>
       <Link to="/categories">All categories</Link>
-    </div>
+    </Layout>
   )
 }
 

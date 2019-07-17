@@ -27,18 +27,50 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
-        }}
+        className="font-body"
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <table>
+            <tbody>
+              <tr>
+                <th>Phone:</th>
+                <td>
+                  <a href="tel:+610431224490" title="Call Steve Roberts">
+                    +61 0431 224 490
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th>LinkedIn:</th>
+                <td>
+                  <a
+                    href="http://www.linkedin.com/in/mbudm"
+                    title="View Steve Roberts on LinkedIn"
+                  >
+                    linkedin.com/in/mbudm
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th>Twitter: </th>
+                <td>
+                  <a
+                    href="https://twitter.com/mbudm"
+                    title="Follow Steve Roberts"
+                  >
+                    @mbudm
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <nav>Home Small Clients Big Clients Startups About Blog</nav>
+          <div>
+            © {new Date().getFullYear()} Steve Roberts, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </div>
         </footer>
       </div>
     </>
