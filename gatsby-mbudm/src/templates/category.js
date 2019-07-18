@@ -3,35 +3,22 @@ import PropTypes from "prop-types"
 
 // Components
 import Layout from "../components/layout"
+import PageBody from "../components/pageBody"
+import PostList from "../components/postList"
 import SEO from "../components/seo"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 const Category = ({ pageContext, data }) => {
   const { category, categoryTitle, categoryDescription } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
-  const categoryHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } in category "${category}"`
 
   return (
     <Layout>
       <SEO title={category} />
-      <h1>{category}</h1>
-      {categoryTitle && <h4>{categoryTitle}</h4>}
-      {categoryDescription && <div dangerouslySetInnerHTML={{ __html: categoryDescription }} />}
-      <h5>{categoryHeader}</h5>
-      <ul>
-        {edges.map(({ node }) => {
-          const { slug } = node.fields
-          const { title } = node.frontmatter
-          return (
-            <li key={slug}>
-              <Link to={slug}>{title}</Link>
-            </li>
-          )
-        })}
-      </ul>
-      <Link to="/categories">All categories</Link>
+      <PageBody pageTitle={category} subTitle={categoryTitle} >
+        {categoryDescription && <div dangerouslySetInnerHTML={{ __html: categoryDescription }} />}
+      </PageBody>
+      <PostList posts={edges} label={category}/>
     </Layout>
   )
 }
@@ -71,12 +58,15 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
+          id
           fields {
             slug
           }
           frontmatter {
             title
+            date(formatString: "DD MMMM, YYYY")
           }
+          excerpt
         }
       }
     }
