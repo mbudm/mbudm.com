@@ -63,7 +63,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Source Sans Pro:200,700', 'Open Sans']
+          families: ['Source Sans Pro:200,600', 'Open Sans:400,700']
         }
       }
     },
