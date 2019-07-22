@@ -10,7 +10,7 @@ import { graphql } from "gatsby"
 
 const Category = ({ pageContext, data }) => {
   const { category, categoryTitle, categoryDescription } = pageContext
-  const { edges, totalCount } = data.allMarkdownRemark
+  const { edges } = data.allMarkdownRemark
 
   return (
     <Layout>

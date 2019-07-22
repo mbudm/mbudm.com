@@ -2,31 +2,21 @@ import React from "react"
 import PropTypes from "prop-types"
 
 // Components
-import { Link, graphql } from "gatsby"
+import Layout from "../components/layout"
+import PageTitle from "../components/pageTitle"
+import PostList from "../components/postList"
+import SEO from "../components/seo"
+import { graphql } from "gatsby"
 
 const Tag = ({ pageContext, data }) => {
   const { tag } = pageContext
-  const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
-
+  const { edges } = data.allMarkdownRemark
   return (
-    <div>
-      <h1>{tagHeader}</h1>
-      <ul>
-        {edges.map(({ node }) => {
-          const { slug } = node.fields
-          const { title } = node.frontmatter
-          return (
-            <li key={slug}>
-              <Link to={slug}>{title}</Link>
-            </li>
-          )
-        })}
-      </ul>
-      <Link to="/tags">All tags</Link>
-    </div>
+    <Layout>
+      <SEO title={tag} />
+      <PageTitle title={tag} />
+      <PostList posts={edges} label={tag}/>
+    </Layout>
   )
 }
 
@@ -40,12 +30,15 @@ Tag.propTypes = {
       edges: PropTypes.arrayOf(
         PropTypes.shape({
           node: PropTypes.shape({
+            id: PropTypes.string,
             frontmatter: PropTypes.shape({
               title: PropTypes.string.isRequired,
+              date: PropTypes.string,
             }),
             fields: PropTypes.shape({
               slug: PropTypes.string.isRequired,
             }),
+            excerpt: PropTypes.string
           }),
         }).isRequired
       ),
@@ -65,12 +58,15 @@ export const pageQuery = graphql`
       totalCount
       edges {
         node {
+          id
           fields {
             slug
           }
           frontmatter {
             title
+            date(formatString: "DD MMMM, YYYY")
           }
+          excerpt
         }
       }
     }

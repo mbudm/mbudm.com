@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 
 const Footer = () => (
-  <footer className="p-2 lg:flex lg:items-end text-gray-600">
+  <footer className="md:fixed md:bottom-0 w-full p-2 lg:flex lg:items-end text-gray-600 bg-gradient-gray-100-to-transparent">
     <table className="lg:w-1/3">
       <tbody>
         <tr>

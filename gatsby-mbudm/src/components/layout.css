@@ -13,8 +13,18 @@
   @apply text-gray-700
 }
 
+html{
+  @apply h-full;
+}
+
 body {
-  @apply bg-gray-100;
+  @apply bg-gray-100 h-full;
+}
+#___gatsby{
+  @apply h-full;
+}
+#gatsby-focus-wrapper{
+  @apply flex flex-col h-full;
 }
 
 a{
@@ -57,6 +67,10 @@ article p {
   article h5 {
     @apply text-lg;
   }
+}
+
+.bg-gradient-gray-100-to-transparent {
+  background-image: linear-gradient(to top, theme('colors.gray.100'), theme('colors.gray.100') 2em, transparent 3em);
 }
 
 @tailwind utilities;
