@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 
 // Components
 import Layout from "../components/layout"
-import PageTitle from "../components/pageTitle"
 import PostList from "../components/postList"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
