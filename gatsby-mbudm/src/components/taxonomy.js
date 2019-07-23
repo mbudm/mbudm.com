@@ -23,7 +23,7 @@ const Taxonomy = ({ title, items, slugPrefix}) => (
   <>
     { title ?
       <>
-        <h4 className="md:text-right font-display text-gray-500 text-xl md:text-2xl lg:text-3xl">{title}</h4>
+        <h4 className="mt-2 md:text-right font-display font-bold md:font-normal text-gray-800 text-lg md:text-xl lg:text-2xl">{title}</h4>
         <p className="md:text-right">
           <ItemLinks items={items} slugPrefix={slugPrefix}/>
         </p>

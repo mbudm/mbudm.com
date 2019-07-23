@@ -12,7 +12,7 @@ const PostList = ({ posts, label }) => {
     <>
       {
         listHeader &&
-        <h2 className="md:w-2/3 mb-2 md:text-center font-display text-gray-900 text-xl md:text-2xl lg:text-3xl">{listHeader}</h2>
+        <h2 className="md:w-2/3 mb-2 md:text-center font-display text-gray-900 text-xl md:text-2xl lg:text-3xl px-2">{listHeader}</h2>
       }
       <ul>
         {posts.map(({ node }) => {
