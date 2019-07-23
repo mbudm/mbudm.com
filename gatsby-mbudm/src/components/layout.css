@@ -70,7 +70,7 @@ article p {
 }
 
 .bg-gradient-gray-100-to-transparent {
-  background-image: linear-gradient(to top, theme('colors.gray.100'), theme('colors.gray.100') 2em, transparent 3em);
+  background-image: linear-gradient(to top, theme('colors.gray.100'), theme('colors.gray.100') 20%, transparent);
 }
 
 @tailwind utilities;

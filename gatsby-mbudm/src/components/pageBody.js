@@ -1,10 +1,10 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-
 import PageTitle from "./pageTitle"
+import Taxonomy from "./taxonomy"
 
-const PageBody = ({ subTitle, pageTitle, children }) => (
+const PageBody = ({ subTitle, pageTitle, date, categories, tags, children }) => (
   <>
     {pageTitle && <PageTitle title={pageTitle} />}
     <section className="md:flex">
@@ -14,9 +14,24 @@ const PageBody = ({ subTitle, pageTitle, children }) => (
           <h2 className="md:text-right text-gray-900 font-display text-xl md:text-2xl lg:text-3xl">{subTitle}</h2> :
           <h1 className="md:text-right text-gray-500 font-display text-3xl md:text-4xl lg:text-5xl">{subTitle}</h1>
         }
+        {
+          categories &&
+          <Taxonomy title="Categories" slugPrefix="/category/" items={categories} />
+        }
+        {
+          tags &&
+          <Taxonomy title="Tags" slugPrefix="/tag/" items={tags} />
+        }
       </header>
       <article className="md:w-1/2 p-2">
         {children}
+        <p>
+          { categories && <>Posted in <Taxonomy slugPrefix="/category/" items={categories} />. </>}
+          { tags && <>Tagged with <Taxonomy slugPrefix="/tag/" items={tags} />. </> }
+        </p>
+        <p>
+          Published {date}
+        </p>
       </article>
     </section>
   </>

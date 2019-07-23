@@ -1,13 +1,22 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
+import PageBody from "../components/pageBody"
+import SEO from "../components/seo"
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <SEO title={post.frontmatter.title} />
+      <PageBody
+        subTitle={post.frontmatter.title}
+        categories={post.frontmatter.categories}
+        date={post.frontmatter.date}
+        tags={post.frontmatter.tags}
+        >
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </PageBody>
     </Layout>
   )
 }
@@ -18,6 +27,9 @@ export const query = graphql`
       html
       frontmatter {
         title
+        categories
+        date(formatString: "DD MMMM, YYYY")
+        tags
       }
     }
   }
