@@ -14,7 +14,6 @@ const Tag = ({ pageContext, data }) => {
   return (
     <Layout>
       <SEO title={tag} />
-      <PageTitle title={tag} />
       <PostList posts={edges} label={tag}/>
     </Layout>
   )

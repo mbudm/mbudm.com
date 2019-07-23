@@ -18,7 +18,7 @@ const Category = ({ pageContext, data }) => {
       <PageBody pageTitle={category} subTitle={categoryTitle} >
         {categoryDescription && <div dangerouslySetInnerHTML={{ __html: categoryDescription }} />}
       </PageBody>
-      <PostList posts={edges} label={category}/>
+      <PostList posts={edges} label={categoryDescription && category}/>
     </Layout>
   )
 }

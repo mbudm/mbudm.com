@@ -25,13 +25,18 @@ const PageBody = ({ subTitle, pageTitle, date, categories, tags, children }) => 
       </header>
       <article className="md:w-1/2 p-2">
         {children}
-        <p>
-          { categories && <>Posted in <Taxonomy slugPrefix="/category/" items={categories} />. </>}
-          { tags && <>Tagged with <Taxonomy slugPrefix="/tag/" items={tags} />. </> }
-        </p>
-        <p>
-          Published {date}
-        </p>
+        {
+         categories || tags &&
+          <p>
+            { categories && <>Posted in <Taxonomy slugPrefix="/category/" items={categories} />. </>}
+            { tags && <>Tagged with <Taxonomy slugPrefix="/tag/" items={tags} />. </> }
+          </p>
+        }
+        { date &&
+          <p>
+            Published {date}
+          </p>
+        }
       </article>
     </section>
   </>

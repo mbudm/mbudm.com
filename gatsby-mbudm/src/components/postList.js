@@ -4,13 +4,16 @@ import React from "react"
 import { Link } from "gatsby"
 
 const PostList = ({ posts, label }) => {
-  const listHeader = `Post${
+  const listHeader = label && `Post${
     posts.length === 1 ? "" : "s"
   } related to ${label}`
 
   return (
     <>
-      <h2 className="md:w-2/3 mb-2 md:text-center font-display text-gray-900 text-xl md:text-2xl lg:text-3xl">{listHeader}</h2>
+      {
+        listHeader &&
+        <h2 className="md:w-2/3 mb-2 md:text-center font-display text-gray-900 text-xl md:text-2xl lg:text-3xl">{listHeader}</h2>
+      }
       <ul>
         {posts.map(({ node }) => {
             const { id, excerpt } = node
