@@ -5,7 +5,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `posts` })
+    const slug = createFilePath({ node, getNode })
     createNodeField({
       node,
       name: `slug`,
@@ -55,6 +55,40 @@ const createPosts = (graphql, createPage) => {
   })
 }
 
+
+const createProjects = (graphql, createPage) => {
+  graphql(`
+  {
+    allMarkdownRemark(
+      filter: {fields: {collection: {eq: "projects"}}}
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`).then(result => {
+  if (result.errors) {
+    return Promise.reject(result.errors)
+  }
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/templates/project.js`),
+      context: {
+        // Data passed to context is available
+        // in page queries as GraphQL variables.
+        slug: node.fields.slug,
+      },
+    })
+  })
+})
+}
+
 const createTagPages = (graphql, createPage) => {
 
   const tagTemplate = path.resolve("src/templates/tag.js")
@@ -63,7 +97,7 @@ const createTagPages = (graphql, createPage) => {
     {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { fields: {collection: {eq: "posts"}}}
+        filter: { fields: {collection: {regex: "/(posts|projects)/"}}}
         limit: 2000
       ) {
         edges {
@@ -116,7 +150,7 @@ const createCategoryPages = (graphql, createPage) => {
   return graphql(`
     {
       allMarkdownRemark(
-        sort: {order: DESC, fields: [frontmatter___date]}, 
+        sort: {order: DESC, fields: [frontmatter___date]},
         limit: 1000
       ) {
         group(field: fields___collection) {
@@ -142,12 +176,13 @@ const createCategoryPages = (graphql, createPage) => {
     }
 
     const posts = result.data.allMarkdownRemark.group.find((g) => g.fieldValue === "posts").edges
+    const projects = result.data.allMarkdownRemark.group.find((g) => g.fieldValue === "projects").edges
     const categoriesMetadata = result.data.allMarkdownRemark.group.find((g) => g.fieldValue === "categories").edges
 
     // Category pages:
     let categories = []
-    // Iterate through each post, putting all found categories into `categories`
-    posts.forEach((edge) => {
+    // Iterate through each post & project, putting all found categories into `categories`
+    posts.concat(projects).forEach((edge) => {
       if (_.get(edge, "node.frontmatter.categories")) {
         categories = categories.concat(edge.node.frontmatter.categories)
       }
@@ -180,6 +215,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return Promise.all([
     createPosts(graphql, createPage),
+    createProjects(graphql, createPage),
     createTagPages(graphql, createPage),
     createCategoryPages(graphql, createPage)
   ])
