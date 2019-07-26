@@ -10,7 +10,6 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
-      <ProjectDisclaimer />
       <PageBody
         subTitle={post.frontmatter.title}
         categories={post.frontmatter.categories}
@@ -19,6 +18,7 @@ export default ({ data }) => {
         >
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </PageBody>
+      <ProjectDisclaimer />
     </Layout>
   )
 }

@@ -1,11 +1,9 @@
 import React from "react"
 
 const ProjectDisclaimer = ({ title }) => (
-  <aside className="clearfix">
-    <div className="bg-gray-300 p-4 w-2/3 float-right">
-      <h2 className="font-display  text-gray-600 font-bold text-xl">Project confidentiality</h2>
-      <p className="text-gray-800 text-sm">Projects featured on this site are always written about sensitively, with any privacy concerns, agreements or NDAs respected.</p>
-    </div>
+  <aside className="mb-4 p-2 md:pr-10 md:pb-6 md:w-2/3 md:float-right">
+    <h2 className="font-display  text-gray-600 font-bold text-xl">Confidentiality statement</h2>
+    <p className="text-gray-800 text-sm">Projects featured on my site are always written about sensitively, with any privacy concerns, agreements or NDAs respected.</p>
   </aside>
 )
 
