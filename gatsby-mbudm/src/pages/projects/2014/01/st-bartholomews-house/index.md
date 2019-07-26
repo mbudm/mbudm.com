@@ -13,4 +13,7 @@ With St Barts I have established what I believe to be a unique and mutually bene
 
 This method of working ensures that micro and macro digital needs are provided and the cost of my service is spread more evenly across the year.
 
-[![stbarts_home](./stbarts_home.png)](./stbarts_home.png)![hp_mockup](./hp_mockup.png)
+
+![](./hp_mockup.png) 
+
+![](./stbarts_home.png) 

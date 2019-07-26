@@ -11,4 +11,4 @@ Westfield were a very persistently assertive partner and it was essentially my j
 
 What this meant was that I had to say 'No, we can't do that' a lot, while still keeping our partners happy by implementing whatever initiatives that were possible using relatively few resources.
 
-[![](./jir-600x309.png "jir")](http://mbudm.com/wp-content/uploads/2011/04/jir.png)
+![](./jir.png "Jobs in Retail homepage") 

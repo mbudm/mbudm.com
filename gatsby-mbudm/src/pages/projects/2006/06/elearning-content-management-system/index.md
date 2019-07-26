@@ -11,29 +11,29 @@ Prime Online reduced the cost of eLearning development at DeakinPrime by up to 7
 
 ### Sydney Airport - Touchscreen quiz
 
-[![sacl_test_select](./sacl_test_select.jpg)](./sacl_test_select.jpg)
+![sacl_test_select](./sacl_test_select.jpg)
 
-[![sacl_test_answer](./sacl_test_answer.jpg)](./sacl_test_answer.jpg)  
+![sacl_test_answer](./sacl_test_answer.jpg) 
 Sydney Airport elected to conduct ASIC accreditation testing on site. After commissioning a program from DeakinPrime in 2002, that required applicants to use a regular PC, they have concluded that a touchscreen application would be better suited to their users.
 
 ### **Goldman Sachs JBWere - Working with us**
 
-[![gsjbw_org_menu](./gsjbw_org_menu.jpg)](./gsjbw_org_menu.jpg)
+![gsjbw_org_menu](./gsjbw_org_menu.jpg)
 
-[![gsjbw_individual_splash](./gsjbw_individual_splash.jpg)](./gsjbw_individual_splash.jpg)
+![gsjbw_individual_splash](./gsjbw_individual_splash.jpg)
 
-[![gsjbw_clients](./gsjbw_clients.jpg)](./gsjbw_clients.jpg)  
+![gsjbw_clients](./gsjbw_clients.jpg) 
 Part induction - part change management strategy, the newly merged Goldman Sachs JBWere are intending their induction program for all staff. Not only do they wish to streamline training on policies and procedures, team building and acceptance of the new workplace culture is also a goal of this package.
 
 At the time of my departure in 2006 we were negotiating the scope of the project, with development work scheduled for mid 2006.
 
 ### **CPA Self Assessment Testing**
 
-[![cpa_summary](./cpa_summary.jpg)](./cpa_summary.jpg)
+![cpa_summary](./cpa_summary.jpg)
 
-[![cpa_setup](./cpa_setup.jpg)](./cpa_setup.jpg)
+![cpa_setup](./cpa_setup.jpg)
 
-[![cpa_assess](./cpa_assess.jpg)](./cpa_assess.jpg)  
+![cpa_assess](./cpa_assess.jpg)
 A Prime Online based application that provided a simulated exam environment for CPA students. The application was used by approximately 4000 students per semester. The application was launched in Semester 2 2006, following extensive user acceptance and editorial testing.
 
 ### **Maritime Security Identification Card (MSIC) - Port of Melbourne Corporation**
@@ -42,15 +42,15 @@ The MSIC was a new requirement in 2005 that all Australian ports must adopt to m
 
 The MSIC training module had to be successfully completed by anyone who required access to restricted areas of the Port.
 
-[![pomelb_home](./pomelb_home.jpg)](./pomelb_home.jpg)
+![pomelb_home](./pomelb_home.jpg)
 
 ### **AusMeat Beef Product Specification**
 
-[![ausmeat_mfb](./ausmeat_mfb.jpg)](./ausmeat_mfb.jpg)
+![ausmeat_mfb](./ausmeat_mfb.jpg)
 
-[![ausmeat_ex2](./ausmeat_ex2.jpg)](./ausmeat_ex2.jpg)
+![ausmeat_ex2](./ausmeat_ex2.jpg)
 
-[![ausmeat_ex1](./ausmeat_ex1.jpg)](./ausmeat_ex1.jpg)  
+![ausmeat_ex1](./ausmeat_ex1.jpg)
 Meat industry workers need to know how to make the most of a beef carcasse. Incorrect or poorly cut products can lead to expensive losses over time.
 
 This CD was sold by AusMeat to its industry members as a training package to prepare meat workers for a practical examination.
@@ -71,7 +71,7 @@ Colac Otway Shire Council and seven other councils in the local area form the So
 
 DeakinPrime developed a Prime Online Induction program for the HR forum. This program covered the general HR issues faced by each council, and it also provided suggested areas for individual councils to include their specific content needs. The HR Manager of each council received a Prime Online editing tool that allowed them to tailor the induction program to suit their specific need.
 
-[![colac_video](./colac_video.jpg)](./colac_video.jpg)
+![colac_video](./colac_video.jpg)
 
 ### Melbourne Airport - Airside Access
 
@@ -83,13 +83,15 @@ DeakinPrime developed 25 training modules which the Airside Services Manager can
 
 The CASA Airside Services audit in 2003 and 2004 stated that Melbourne Airport was an industry leader in compliance with CASA Airside Access regulations.
 
-[![ma_vanilla](./ma_vanilla.jpg)](./ma_vanilla.jpg)
+![ma_vanilla](./ma_vanilla.jpg)
 
 ### Contractor Safety - Coles Myer Limited
 
 The maturity of the Prime Online application was well demonstrated by this project for Coles Myer in the astounding reliability and lack of support costs. Over 100,000 contractors completed the Coles Myer Contractor Safety program. At the time of my leaving DeakinPrime in 2006, we only had 7 bug reports escalated to us, which were resolved.
 
-[![cml_safety_eval_writing](./cml_safety_eval_writing.jpg)](./cml_safety_eval_writing.jpg) [![cml_safety_eval_scoring](./cml_safety_eval_scoring.jpg)](./cml_safety_eval_scoring.jpg) [![cml_safety_eval_scenario](./cml_safety_eval_scenario.jpg)](./cml_safety_eval_scenario.jpg) [![cml_safety_eval_fb](./cml_safety_eval_fb.jpg)](./cml_safety_eval_fb.jpg)
+![cml_safety_eval_writing](./cml_safety_eval_writing.jpg)
+![cml_safety_eval_scoring](./cml_safety_eval_scoring.jpg)
+![cml_safety_eval_scenario](./cml_safety_eval_scenario.jpg)![cml_safety_eval_fb](./cml_safety_eval_fb.jpg)
 
 ### Deakin University Induction
 
@@ -103,7 +105,7 @@ The HR department used the supplied editing tool to keep links to policies and p
 
 The Tatura Milk Induction was the very first Induction project that DeakinPrime completed. Tatura are a medium sized dairy processing plant with about 250 employees. This number increases seasonally when a lot of casual workers must be trained in safe work practices in a very short time.
 
-[![tatura_vanilla](./tatura_vanilla.jpg)](./tatura_vanilla.jpg)
+![tatura_vanilla](./tatura_vanilla.jpg)
 
 ### Beginning Practice in Child Protection – Department of Human Services Child Protection Professional Development Unit
 
@@ -113,13 +115,19 @@ The components of the Beginning Practice program are integrated to provide conti
 
 The Minister for Community Services launched the program in November 2002.
 
-[![dhs-pete](./dhs-pete.jpg)](./dhs-pete.jpg)![dhs-bensarah](./dhs-bensarah.jpg)[![dhs-evidence](./dhs-evidence.jpg)](./dhs-evidence.jpg)[![dhs-evidence-fb](./dhs-evidence-fb.jpg)](./dhs-evidence-fb.jpg)
+![dhs-pete](./dhs-pete.jpg)
+![dhs-bensarah](./dhs-bensarah.jpg)
+![dhs-evidence](./dhs-evidence.jpg)
+![dhs-evidence-fb](./dhs-evidence-fb.jpg)
 
 ### DeakinPrime Staff Induction
 
 A product that is used in house by the company that sells it is usually a pretty good sign of the product’s quality, it even has a name in industry jargon, 'eating your own dog food'. This program was an in-house implementation of the Prime Online eLearning publishing system built by me and my team. This induction program gave new employees a quick introduction to company policies and procedures. It complemented other face-to-face induction processes.
 
-[![steve-folio-dp4](./steve-folio-dp4.jpg)](./steve-folio-dp4.jpg) [![steve-folio-dp3](./steve-folio-dp3.jpg)](./steve-folio-dp3.jpg) [![steve-folio-dp2](./steve-folio-dp2.jpg)](./steve-folio-dp2.jpg) [![steve-folio-dp1](./steve-folio-dp1.jpg)](./steve-folio-dp1.jpg)
+![steve-folio-dp4](./steve-folio-dp4.jpg)
+![steve-folio-dp3](./steve-folio-dp3.jpg)
+![steve-folio-dp2](./steve-folio-dp2.jpg)
+![steve-folio-dp1](./steve-folio-dp1.jpg)
 
 ### BlueScope Steel Load Restraint
 
@@ -127,7 +135,12 @@ A training package in load handling for truck drivers. BlueScope Steel uses appr
 
 This was the first project in the BlueScope eLearning project, the success of which has led to a request for three more projects that were delivered in late 2006 after I left DeakinPrime.
 
-[![bss_truckdiagram](./bss_truckdiagram.jpg)](./bss_truckdiagram.jpg) [![bss_slideshow](./bss_slideshow.jpg)](./bss_slideshow.jpg) [![bss_editing_tool2](./bss_editing_tool2.jpg)](./bss_editing_tool2.jpg) [![bss_editing_tool](./bss_editing_tool.jpg)](./bss_editing_tool.jpg) [![bss_chkgrd](./bss_chkgrd.jpg)](./bss_chkgrd.jpg) [![bss_3danim](./bss_3danim.jpg)](./bss_3danim.jpg)
+![bss_truckdiagram](./bss_truckdiagram.jpg)
+![bss_slideshow](./bss_slideshow.jpg)
+![bss_editing_tool2](./bss_editing_tool2.jpg)
+![bss_editing_tool](./bss_editing_tool.jpg)
+![bss_chkgrd](./bss_chkgrd.jpg)
+![bss_3danim](./bss_3danim.jpg)
 
 ### ASF Lifetime Loan - Australian Seniors Finance
 
@@ -137,17 +150,17 @@ ASFs market demographic (asset rich retirees) expect ASF representatives to know
 
 This training site used case studies and simulators to prepare representatives for the tough quiz where they had to achieve 100% to receive certification.
 
-[![asf_hotspot](./asf_hotspot.jpg)](./asf_hotspot.jpg)
+![asf_hotspot](./asf_hotspot.jpg)
 
 ### FoodWorks Supermarkets Induction
 
 The FoodWorks supermarkets induction provided a consistent and friendly welcome for new staff. It also ensures that the young workforce are aware of occupational health and safety issues.
 
-[![fw_vanilla](./fw_vanilla.jpg)](./fw_vanilla.jpg)
+![fw_vanilla](./fw_vanilla.jpg)
 
 ### Information Privacy Awareness - Deakin University
 
-### ![duc_chkgrid](./duc_chkgrid.jpg)
+![duc_chkgrid](./duc_chkgrid.jpg)
 
 Privacy laws affect the use of personal information that Deakin University must collect legitimately from students. Staff need to be aware of what constitues correct use of personal information.
 
@@ -155,7 +168,7 @@ This small site guided staff through all the University guidelines on use of per
 
 ### Exam Supervisor Guide - Deakin University
 
-[![dua_dialogue](./dua_dialogue.jpg)](./dua_dialogue.jpg)  
+![dua_dialogue](./dua_dialogue.jpg)  
 The Assessments Department at Deakin University manages all examination supervisors. Exams can take place on or off-campus and it is important that exams are run in a consistent manner.
 
 This site guided examination supervisors through all the policies and procedures they must follow.
@@ -164,4 +177,4 @@ This site guided examination supervisors through all the policies and procedures
 
 The City West Water Induction site provided a consistent and professional induction for new staff. It also ensured that the large and diverse CWW workforce were aware of occupational health and safety policies and procedures.
 
-[![cww_home](./cww_home.jpg)](./cww_home.jpg)
+![cww_home](./cww_home.jpg)

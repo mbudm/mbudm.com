@@ -9,7 +9,7 @@ tags: ["User Experience Design", "wordpress"]
 
 [Life Insurance Made Easy](http://www.lifeinsurancemadeeasy.com.au/) is an Australian first - a 100% online Life Insurance advice service. It attempts to encourage under insured Australians (about 96% of us) to become more informed about the importance of Life Insurance and what options are appropriate to their specific circumstances. As a completely online service a lot of research and design work went in to the interactive interview that makes up the bulk of this offering.
 
-[![lime_logo_med](./lime_logo_med-310x155.png)](http://mbudm.com/wp-content/uploads/2013/02/lime_logo_med.png)
+![lime_logo_med](./lime_logo_med.png) 
 
 ### Brief
 

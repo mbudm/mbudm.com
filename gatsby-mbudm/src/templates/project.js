@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PageBody from "../components/pageBody"
+import ProjectDisclaimer from "../components/projectDisclaimer"
 import SEO from "../components/seo"
 
 export default ({ data }) => {
@@ -9,7 +10,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
-      <h1> --- project template -- </h1>
+      <ProjectDisclaimer />
       <PageBody
         subTitle={post.frontmatter.title}
         categories={post.frontmatter.categories}

@@ -12,3 +12,5 @@ The project was a merging of the online and print employment classifieds offerin
 In addition to the technical hurdles, there were also seemingly insurmountable HR issues between the Print and online worlds as two Sales teams merged into one.
 
 As one player in a project that encompassed almost all senior managers in print and online classifieds it was mine and my Project Manager's responsibility to keep stakeholders focused and in agreement with the technical steps we needed to take while deflecting a barrage of political issues that occurred on a regular basis.
+
+![](./myc_advertiser.png "MyCareer Advertiser page showing the combined print and web offer")

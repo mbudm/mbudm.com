@@ -13,8 +13,8 @@ Over the next year I managed to negotiate several improvements to The Big Chair,
 
 My contribution was to analyse the stats and identify process improvements. This involved making clearer navigation, better search options and converting the large amount of passive traffic that the content team attracted via engaging editorial into active jobseeking users.
 
-Some time in early 2011, after a bumpy couple of years for Fairfax it appears likely that they decided to cull some web sites, with The Big Chair being one of these. Thye have moved executive jobs back into MyCareer.com.au.
+Some time in early 2011, after a bumpy couple of years for Fairfax it appears likely that they decided to cull some web sites, with The Big Chair being one of these. They have moved executive jobs back into MyCareer.com.au.
 
-[![](./tbc2-600x309.png "The Big Chair home page")](http://mbudm.com/wp-content/uploads/2011/04/tbc2.png)
+![](./tbc2.png "The Big Chair home page") 
 
-[](http://mbudm.com/wp-content/uploads/2011/04/tbc2.png)[![](./tbc1-600x309.png "The Big Chair search results")](http://mbudm.com/wp-content/uploads/2011/04/tbc1.png)
+![](./tbc1.png "The Big Chair search results") 

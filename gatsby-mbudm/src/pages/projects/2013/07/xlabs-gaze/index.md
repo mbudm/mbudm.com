@@ -20,6 +20,6 @@ My role in this partnership is to assist in market analysis, business strategy a
 
 ### Result
 
-[![final](./final.png)](./final.png)
+![](./final.png) 
 
 [xLabs Gaze](http://xlabs.com.au) is now at proof of concept stage and we are taking to potential partners about the next steps. We will soon be demonstrating uses of our technology with selected eye tracking usability studies on well known web sites and testing assumptions of user behaviour and existing business models - for example, exactly how much attention do Facebook ads get? Additionally we have completed initial research into various market verticals and are assessing the business case of specific products that will leverage xLabs Gaze.

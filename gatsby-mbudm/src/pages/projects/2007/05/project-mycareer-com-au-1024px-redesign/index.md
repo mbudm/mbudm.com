@@ -12,3 +12,5 @@ The business case was predominantly to cater for standardised ad sizes, specific
 This involved a major redesign, with PSD mockups for the key user flows, and brand new CSS and html markup throughout the site.
 
 I was the Senior Designer, leading a team of three and coordinating the implementation strategy with the MyCareer technical team. This was my first introduction of working in an Agile project. The project was completed and received very well, with increased growth on all measures for MyCareer throughout 2007.
+
+![MyCareer search page, 2007](./myc_search.png)

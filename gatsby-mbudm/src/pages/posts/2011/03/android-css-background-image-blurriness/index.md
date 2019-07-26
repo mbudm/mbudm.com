@@ -9,7 +9,7 @@ Recently I completed some UI intensive work for a client that was designed for s
 
 During the course of the project we noticed that some Android phones were rendering our graphics very poorly, as shown in this screenshot of the Android emulator:
 
-### [![](./Picture-14.png "Android emulator screen shot")](./Picture-14.png)
+### ![](./Picture-14.png "Android emulator screen shot") ./Picture-14.png)
 
 We traced the problem to our use of CSS background image sprites. If you're having the same problem and are just looking for a quick fix then check out [our solution](#android-css-solution "Solution to the android css background blur problem") below. If you're curious about the details, read on.
 

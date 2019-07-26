@@ -11,6 +11,6 @@ Together we created a design that freed up the homepage, with less closed in box
 
 In online newspaper design you are very restricted in what you can achieve stylistically, so I am pleased to see that even as I write this in mid 2011 the 'bones' of our design remain strong despite the thousands of edits and minor updates that have taken place in that time.
 
-[![](./smh1-600x325.png "Sydney Morning Herald (smh.com.au) Home page")](http://mbudm.com/wp-content/uploads/2011/04/smh1.png)[](http://mbudm.com/wp-content/uploads/2011/04/smh2.png)
+![](./smh1.png "Sydney Morning Herald (smh.com.au) Home page") 
 
-[![](./smh2-600x325.png "Sydney Morning Herald (smh.com.au) Home page detail")](http://mbudm.com/wp-content/uploads/2011/04/smh2.png)
+![](./smh2.png "Sydney Morning Herald (smh.com.au) Home page detail") 

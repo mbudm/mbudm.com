@@ -17,6 +17,6 @@ As self funded operators without the usual checks and balances supplied by finan
 
 [Linguaposta.com](http://linguaposta.com) launched in August 2012 and has been growing steadily since that time. Feedback from our customers has been quite positive and has led us to explore new product ideas and provide alternate methods of product delivery. We are also exploring potential partnership options with other language learning organisations. We continue to run a lean operation and so consider our decisions and manoeuvres carefully.
 
-[![2-site-home](./2-site-home.png)](./2-site-home.png)
+![2-site-home](./2-site-home.png) 
 
-[![3-site-detail](./3-site-detail.png)](./3-site-detail.png)
+![3-site-detail](./3-site-detail.png) 
