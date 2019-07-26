@@ -3,6 +3,7 @@ title: "Corporate Education Consultancy web site"
 date: "2006-05-19"
 categories: ["Big Clients", "Design"]
 tags: ["Information Architecture", "User Experience Design", "User Research", "Visual Design", "Wireframes"]
+featuredImage: ./dp_www_home.jpg
 ---
 
 DeakinPrime.com is a web site that markets a lot of educational programs and services to a broad demographic encompassing SME's, large corporations and government departments. The site must present a complex product offering to suit this range of user expectations.

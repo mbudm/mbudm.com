@@ -5,20 +5,24 @@ import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import PageBody from "../components/pageBody"
 import PostList from "../components/postList"
+import ProjectBanner from "../components/projectBanner"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 
 const Category = ({ pageContext, data }) => {
   const { category, categoryTitle, categoryDescription } = pageContext
-  const { edges } = data.allMarkdownRemark
+
+  const postsEdges = data.allMarkdownRemark.group.find((g) => g.fieldValue === "posts").edges
+  const projectsEdges = data.allMarkdownRemark.group.find((g) => g.fieldValue === "projects").edges
 
   return (
     <Layout>
       <SEO title={category} />
+      <ProjectBanner projects={projectsEdges} />
       <PageBody pageTitle={category} subTitle={categoryTitle} >
         {categoryDescription && <div dangerouslySetInnerHTML={{ __html: categoryDescription }} />}
       </PageBody>
-      <PostList posts={edges} label={categoryDescription && category}/>
+      <PostList posts={postsEdges} label={categoryDescription && category}/>
     </Layout>
   )
 }
@@ -30,17 +34,22 @@ Category.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       totalCount: PropTypes.number.isRequired,
-      edges: PropTypes.arrayOf(
+      group: PropTypes.arrayOf(
         PropTypes.shape({
-          node: PropTypes.shape({
-            frontmatter: PropTypes.shape({
-              title: PropTypes.string.isRequired,
-            }),
-            fields: PropTypes.shape({
-              slug: PropTypes.string.isRequired,
-            }),
-          }),
-        }).isRequired
+          edges: PropTypes.arrayOf(
+            PropTypes.shape({
+              node: PropTypes.shape({
+                frontmatter: PropTypes.shape({
+                  title: PropTypes.string.isRequired,
+                }),
+                fields: PropTypes.shape({
+                  slug: PropTypes.string.isRequired,
+                }),
+              }),
+            }).isRequired
+          ),
+          fieldValue: PropTypes.string.isRequired,
+        })
       ),
     }),
   }),
@@ -55,22 +64,32 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
         frontmatter: { categories: { in: [$category] } }
-        fields: {collection: {eq: "posts"}}
+        fields: {collection: {regex: "/(posts|projects)/"}}
       }
     ) {
       totalCount
-      edges {
-        node {
-          id
-          fields {
-            slug
+      group(field: fields___collection) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              date(formatString: "DD MMMM, YYYY")
+              featuredImage {
+                childImageSharp {
+                  fluid(maxWidth: 600) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
+            excerpt
           }
-          frontmatter {
-            title
-            date(formatString: "DD MMMM, YYYY")
-          }
-          excerpt
         }
+        fieldValue
       }
     }
   }
