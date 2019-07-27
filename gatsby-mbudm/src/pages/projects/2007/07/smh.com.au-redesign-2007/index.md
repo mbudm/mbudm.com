@@ -3,6 +3,7 @@ title: "smh.com.au redesign 2007"
 date: "2007-07-04"
 categories: ["Big Clients", "Design", "Development"]
 tags: ["CSS", "html", "Visual Design"]
+featuredImage: ./smh1.png
 ---
 
 The revamp of the smh.com.au was a task that the Fairfax Media Creative Services Unit was asked to undertake in mid 2007.I worked with the Head of Design on this project, conducting extensive research into advances in web typography that we could feasibly use on a page that gets 8 million page impressions every month.

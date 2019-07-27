@@ -3,6 +3,7 @@ title: "Merging print and online businesses"
 date: "2008-11-17"
 categories: ["Big Clients", "Strategy"]
 tags: ["Business Case", "Information Architecture", "JIRA", "Product Management", "Relationship Management", "User Research", "Wireframes"]
+featuredImage: ./myc_advertiser.png
 ---
 
 In June 2008, I was appointed to a difficult and fast paced project which had been given the personal go ahead by the Fairfax Media CEO.

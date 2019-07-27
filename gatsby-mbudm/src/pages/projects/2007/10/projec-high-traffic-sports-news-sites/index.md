@@ -3,6 +3,7 @@ title: "High traffic sports news sites"
 date: "2007-10-04"
 categories: ["Big Clients", "Design", "Development"]
 tags: ["CSS", "html", "Visual Design"]
+featuredImage: ./rf1.png
 ---
 
 ### Real Footy

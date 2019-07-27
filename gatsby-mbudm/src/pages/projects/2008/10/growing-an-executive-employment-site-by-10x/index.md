@@ -3,6 +3,7 @@ title: "Growing an executive employment site by 10x"
 date: "2008-10-04"
 categories: ["Big Clients", "Design", "Strategy"]
 tags: ["Business Case", "Market Research", "Gallery", "Relationship Management", "User Experience Design", "User Research"]
+featuredImage: ./tbc1.png
 ---
 
 The Big Chair is was an executive employment site that was launched in April 2007, it's launch was leveraged of the existing generalist jobs site MyCareer.com.au.

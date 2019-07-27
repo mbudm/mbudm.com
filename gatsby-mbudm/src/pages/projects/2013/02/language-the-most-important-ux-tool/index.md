@@ -3,6 +3,7 @@ title: "Language. The most important UX tool"
 date: "2013-02-04"
 categories: ["Big Clients", "Design"]
 tags: ["User Experience Design", "wordpress"]
+featuredImage: ./lime_logo_med.png
 ---
 
 ### Background

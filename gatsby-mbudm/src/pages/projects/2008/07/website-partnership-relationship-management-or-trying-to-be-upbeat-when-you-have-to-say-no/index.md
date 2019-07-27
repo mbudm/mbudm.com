@@ -3,6 +3,7 @@ title: "Website partnership relationship management or trying to be upbeat when 
 date: "2008-07-04"
 categories: ["Big Clients", "Strategy"]
 tags: ["Relationship Management"]
+featuredImage: ./jir.png
 ---
 
 As Product Manager for  jobsinretail.com.au I was the key Fairfax Media representative in this partnership with Westfield.

@@ -3,6 +3,7 @@ title: "Stock marketplace folio"
 date: "2010-02-21"
 categories: ["Design", "Development", "Startups", "Strategy"]
 tags: ["ActionScript", "Business Development", "Marketing", "Product Roadmaps", "svn", "Visual Design"]
+featuredImage: ./Screen-Shot-2014-01-02-at-4.52.58-PM.png
 ---
 
 During 2009 I created a number of [stock components, site templates and animations](http://www.activeden.net/user/mbudm/?ref=mbudm) using Flash, a tool that I enjoy working with but don't get much use of in my consulting work. These files are hosted at the ActiveDen stock marketplace. I have had a reasonable amount of sales from this, and it was a great way to keep up my product management, design and development skills whilst travelling around the world.

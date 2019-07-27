@@ -4,6 +4,7 @@ date: "2013-08-10"
 categories: ["Big Clients", "Design", "Development", "User Experience Design", "User Research", "User Testing", "Wireframes"]
 tags: ["agile", "Confluence", "Continuous Integration", "ExtJS", "Git", "JavaScript", "JIRA", "MxGraph"]
 summary: "A cloud based web application that helps mining companies save power, water, time and money."
+featuredImage: ./uq-logo.jpg
 ---
 
 ### Background

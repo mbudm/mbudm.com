@@ -3,6 +3,7 @@ title: "Good Food Guides 2011"
 date: 2010-11-04T02:23:43+01:00
 categories: ["Big Clients", "Design", "Development"]
 tags: ["CSS", "html", "JavaScript", "Visual Design"]
+featuredImage: ./gfg_hp_loggedin_v2-crop.jpg
 ---
 
 The Sydney Morning Herald and The Age Good Food Guides are the Michelin Guides of Australia. If you are into food then you have these on your shelf and consult them regularly. If you work in the restaurant industry then you await their publication each year with a sense of foreboding or giddy hope that your eatery may gain a Chef's hat or two.

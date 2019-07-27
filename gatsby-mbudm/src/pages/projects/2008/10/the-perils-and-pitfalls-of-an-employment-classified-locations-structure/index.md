@@ -3,6 +3,7 @@ title: "The perils and pitfalls of an employment classified locations structure"
 date: "2008-10-04"
 categories: ["Big Clients", "Design"]
 tags: ["Business Case", "Information Architecture", "Relationship Management", "User Experience Design", "Wireframes"]
+featuredImage: ./myc_location.png
 ---
 
 In late 2007 Fairfax Media merged with Rural Press, creating a much more national footprint for Fairfax's offerings.

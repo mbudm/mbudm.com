@@ -3,6 +3,7 @@ title: "Environmental NGO online strategy"
 date: "2009-08-10"
 categories: ["Small Clients", "Strategy"]
 tags: ["business strategy", "seo"]
+featuredImage: ./caa.jpg
 ---
 
 [CRACYP](http://progresoverde.org/ "CRACYP") is an Ecuadorean Environmental NGO that acts as an umbrella organisation for many community development projects. Their most successful venture so far in is landing a contract with BodyShop to supply organic industrial alcohol for perfume production.

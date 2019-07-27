@@ -3,6 +3,7 @@ title: "Hippo.com.au redesign"
 date: "2010-06-04"
 categories: ["Big Clients", "Design", "Development"]
 tags: ["CSS", "Heuristic Evaluation", "html", "User Experience Design", "Visual Design", "Wireframes"]
+featuredImage: ./hippo-home-after.jpg
 ---
 
 Hippo.com.au is a youth focused employment site that was launched in 2005. Like other players in the market it's fortunes took a hit towards the end of 2008 as the GFC hit and many employers took a risk averse approach to hiring.

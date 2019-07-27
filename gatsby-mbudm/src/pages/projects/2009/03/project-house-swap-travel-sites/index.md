@@ -3,6 +3,7 @@ title: "House swap travel sites"
 date: "2009-03-04"
 categories: ["Design", "Small Clients"]
 tags: ["Visual Design"]
+featuredImage: ./yh4m.png
 ---
 
 The client brief for this [House Swap Holidays](http://houseswapholidays.com.au/ "House Swap Holidays") was for it to feel Australian but not overly 'ocker' or stereotypical/cringeworthy. Virgin Blue was cited as a good starting point - a little bit cheeky but 'modern'. As with the design for YourHomeForMine.com this site has to make do with relatively low inventory at launch, so the use of imagery and different approaches to browsing the content gives an impression of a broader depth of inventory than there is.

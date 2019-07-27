@@ -4,6 +4,7 @@ date: "2013-07-22"
 categories: ["Design", "Development", "Startups", "Strategy"]
 tags: ["Branding", "Business Case", "CSS",  "html", "JavaScript", "Market Research", "Marketing", "Product Management", "Product Roadmaps", "trello", "User Experience Design", "User Research", "Visual Design"]
 summary: "A revolutionary technology: mass scale eye tracking via standard web cams"
+featuredImage: ./final.png
 ---
 
 ### Background

@@ -3,6 +3,7 @@ title: "MyCareer.com.au 1024px redesign"
 date: "2007-05-09"
 categories: ["Big Clients", "Design", "Development"]
 tags: ["agile", , "CSS", "html", "JIRA", "svn", "Visual Design"]
+featuredImage: ./myc_search.png
 ---
 
 The MyCareer.com.au web site was originally built when 800x600 was the most common browser size. By December 2006, an expansion of the site to a wider aspect was needed.

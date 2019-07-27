@@ -4,29 +4,32 @@ import React from "react"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 
+const shorten = (str) => str.length > 60 ?
+  `${str.substring(0,60)}...` :
+  str
+
 const ProjectBanner = ({ projects }) => {
+  const gridClassNames = projects.length <=6 ?
+    "w-1/3 md:w-1/6 text-sm " :
+    "w-1/6 md:w-1/12 text-xs"
 
   return (
     <>
-      <ul className="flex flex-wrap" >
+      <ul className="flex flex-wrap pl-2 pt-2 bg-gray-600 " >
         {projects.map(({ node }) => {
-            const { id, excerpt } = node
+            const { id } = node
             const { slug } = node.fields
-            const { title, date} = node.frontmatter
+            const { title } = node.frontmatter
             const featuredImgFluid = node.frontmatter.featuredImage && node.frontmatter.featuredImage.childImageSharp.fluid
             return (
-              <li key={id} className="block w-1/3 md:w-1/6">
-                <span className="">
-                  {date}
-                </span>
-                <Link to={slug} className="">
-                  {featuredImgFluid && <Img fluid={featuredImgFluid} />}
-                  <h3 className="inline text-lg mr-2">
-                    {title}
+              <li key={id} className={`${gridClassNames} block relative overflow-hidden pr-2 pb-2`}>
+                <Link to={slug} >
+                  <h3 className="absolute flex items-center h-full">
+                    <span className="text-white block bg-gray-900 p-2 mr-2">
+                      {shorten(title)}
+                    </span>
                   </h3>
-                  <p className="inline text-gray-900">
-                    {excerpt}
-                  </p>
+                  {featuredImgFluid && <Img fluid={featuredImgFluid} className="opacity-100 hover:opacity-25 bg-white"/>}
                 </Link>
               </li>
             )

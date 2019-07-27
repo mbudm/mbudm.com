@@ -3,6 +3,7 @@ title: "Social voting with Chopsumi"
 date: "2012-02-09"
 categories: ["Design", "Development", "Startups", "Strategy"]
 tags: ["Business Case", "CSS", "html", "JavaScript", "Market Research", "Marketing", "mobile", "Product Management", "Product Roadmaps", "User Experience Design", "User Research", "User Testing", "Visual Design"]
+featuredImage: ./chopsumi-logo-reduced.png
 ---
 
 [Chopsumi.com](http://chopsumi.com "Social voting with Chopsumi") is a new online tool for easily organising your friends and improving your social life. The problem that Chopsumi solves is pinning down as many of your friends as possible to a specific date and location for your event. Previously this was achieved via long email discussions and a lot of work on by the organiser in trying to sift through everyone's available dates and particular location preferences.

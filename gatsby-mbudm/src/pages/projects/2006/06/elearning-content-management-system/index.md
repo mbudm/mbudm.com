@@ -3,6 +3,7 @@ title: "eLearning Content Management System"
 date: "2006-06-25"
 categories: ["Big Clients", "Design", "Development", "Strategy"]
 tags: ["ActionScript", "Architecture",  "Business Development", "Documentation", "Market Research", "Product Roadmaps",  "Training", "Visual Design"]
+featuredImage: ./sacl_test_select.jpg
 ---
 
 Prime Online was a clever and highly efficient way of producing customised eLearning solutions for a range of client needs. This Product was my core responsibility while at DeakinPrime from 2002-6. As well as leading the design and development of this product I had my first taste of Product Management with budget responsibility and contribution to the sales and marketing strategy along with the Business development and Marketing teams.

@@ -3,6 +3,7 @@ title: "Online Retail Micro Business"
 date: "2012-08-10"
 categories: ["Design", "Development", "Startups", "Strategy"]
 tags: ["Business Case", "CSS", "html", "JavaScript", "Marketing", "mobile", "paypal", "php", "Product Roadmaps", "User Experience Design", "User Research", "User Testing", "Visual Design", "wordpress"]
+featuredImage: ./boxshot.gif
 ---
 
 ### The Brief
