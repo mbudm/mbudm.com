@@ -4,16 +4,23 @@ import PropTypes from "prop-types"
 // Components
 import Layout from "../components/layout"
 import PostList from "../components/postList"
+import ProjectBanner from "../components/projectBanner"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 
 const Tag = ({ pageContext, data }) => {
   const { tag } = pageContext
-  const { edges } = data.allMarkdownRemark
+
+  const posts = data.allMarkdownRemark.group.find((g) => g.fieldValue === "posts")
+  const postsEdges = posts && posts.edges
+  const projects = data.allMarkdownRemark.group.find((g) => g.fieldValue === "projects")
+  const projectsEdges = projects && projects.edges
+
   return (
     <Layout>
       <SEO title={tag} />
-      <PostList posts={edges} label={tag}/>
+      {projectsEdges && <ProjectBanner projects={projectsEdges} /> }
+      <PostList posts={postsEdges} label={tag}/>
     </Layout>
   )
 }
@@ -47,16 +54,17 @@ Tag.propTypes = {
 export default Tag
 
 export const pageQuery = graphql`
-  query($tag: String) {
-    allMarkdownRemark(
-      limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: {
-        frontmatter: { tags: { in: [$tag] } }
-        fields: {collection: {eq: "posts"}}
-      }
-    ) {
-      totalCount
+query($tag: String) {
+  allMarkdownRemark(
+    limit: 2000
+    sort: { fields: [frontmatter___date], order: DESC }
+    filter: {
+      frontmatter: { tags: { in: [$tag] } }
+      fields: {collection: {regex: "/(posts|projects)/"}}
+    }
+  ) {
+    totalCount
+    group(field: fields___collection) {
       edges {
         node {
           id
@@ -66,10 +74,19 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 600, maxHeight:600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           excerpt
         }
       }
+      fieldValue
     }
   }
+}
 `
