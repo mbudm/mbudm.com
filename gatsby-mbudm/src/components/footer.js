@@ -2,8 +2,8 @@ import { Link } from "gatsby"
 import React from "react"
 
 const Footer = () => (
-  <footer className="md:fixed md:bottom-0 w-full p-2 lg:flex lg:items-end text-gray-600 bg-gradient-gray-100-to-transparent">
-    <table className="lg:w-1/3 bg-gradient-gray-100-to-transparent">
+  <footer className="p-2 w-full lg:flex lg:items-end text-gray-600">
+    <table className="lg:w-1/3 my-2">
       <tbody>
         <tr>
           <th>Phone:</th>
@@ -34,7 +34,7 @@ const Footer = () => (
         </tr>
       </tbody>
     </table>
-    <nav className="lg:w-2/3 mt-4">
+    <nav className="lg:w-2/3 my-2 lg:ml-2">
         <Link className="mr-5" activeClassName="font-bold" to="/">Home</Link>
         <Link className="mr-5" activeClassName="font-bold" to="/category/small-clients/">Small Clients</Link>
         <Link className="mr-5" activeClassName="font-bold" to="/category/big-clients/">Big Clients</Link>

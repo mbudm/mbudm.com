@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
-        className="font-body md:pb-16"
+        className="font-body"
       >
         <main>{children}</main>
       </div>

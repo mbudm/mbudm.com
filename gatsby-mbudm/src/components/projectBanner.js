@@ -9,9 +9,12 @@ const shorten = (str) => str.length > 45 ?
   str
 
 const ProjectBanner = ({ projects }) => {
+  const gridItemClasses = projects.length <= 8 ?
+    "w-1/4 sm:w-1/6 md:w-1/6 xl:w-1/8 " : // make a small row bigger
+    "w-1/4 sm:w-1/6 md:w-1/8 xl:w-1/12 "
   return (
     <>
-      <ul className="flex flex-wrap justify-end bg-gray-600 pl-2 pt-2" >
+      <ul className="flex flex-wrap justify-center bg-gray-600 pl-2 pt-2" >
         {projects.map(({ node }) => {
             const { id } = node
             const { slug } = node.fields
@@ -20,7 +23,7 @@ const ProjectBanner = ({ projects }) => {
               node.frontmatter.featuredImage.childImageSharp &&
               node.frontmatter.featuredImage.childImageSharp.fluid
             return (
-              <li key={id} className="w-1/4 sm:w-1/6 md:w-1/8 xl:w-1/12 text-xs block relative overflow-hidden pr-2 pb-2">
+              <li key={id} className={`${gridItemClasses} text-xs block relative overflow-hidden pr-2 pb-2`}>
                 <Link to={slug} classNames="overflow-hidden">
                   <h3 className="absolute max-h-full h-full flex items-center ">
                     <span className="text-white block bg-gray-900 p-2 mr-2">
