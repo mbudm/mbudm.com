@@ -12,17 +12,19 @@ import { graphql } from "gatsby"
 const Category = ({ pageContext, data }) => {
   const { category, categoryTitle, categoryDescription } = pageContext
 
-  const postsEdges = data.allMarkdownRemark.group.find((g) => g.fieldValue === "posts").edges
-  const projectsEdges = data.allMarkdownRemark.group.find((g) => g.fieldValue === "projects").edges
+  const posts = data.allMarkdownRemark.group.find((g) => g.fieldValue === "posts")
+  const postsEdges = posts && posts.edges
+  const projects = data.allMarkdownRemark.group.find((g) => g.fieldValue === "projects")
+  const projectsEdges = projects && projects.edges
 
   return (
     <Layout>
       <SEO title={category} />
-      <ProjectBanner projects={projectsEdges} />
+      {projectsEdges && <ProjectBanner category={category} projects={projectsEdges} /> }
       <PageBody pageTitle={category} subTitle={categoryTitle} >
         {categoryDescription && <div dangerouslySetInnerHTML={{ __html: categoryDescription }} />}
       </PageBody>
-      <PostList posts={postsEdges} label={categoryDescription && category}/>
+      {postsEdges && <PostList posts={postsEdges} label={categoryDescription && category}/>}
     </Layout>
   )
 }
