@@ -20,7 +20,7 @@ const Category = ({ pageContext, data }) => {
   return (
     <Layout>
       <SEO title={category} />
-      {projectsEdges && <ProjectBanner category={category} projects={projectsEdges} /> }
+      {projectsEdges && <ProjectBanner projects={projectsEdges} /> }
       <PageBody pageTitle={category} subTitle={categoryTitle} >
         {categoryDescription && <div dangerouslySetInnerHTML={{ __html: categoryDescription }} />}
       </PageBody>

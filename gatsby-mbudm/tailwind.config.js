@@ -4,20 +4,6 @@ module.exports = {
       display: ["Source Sans Pro", "Open Sans", "Helvetica", "sans-serif"],
       body: ["Open Sans", "Helvetica", "sans-serif"],
     },
-    fontSize: {
-      xs: ".75rem",
-      sm: ".875rem",
-      tiny: ".875rem",
-      base: "1rem",
-      lg: "1.125rem",
-      xl: "1.25rem",
-      "2xl": "1.5rem",
-      "3xl": "1.875rem",
-      "4xl": "2.25rem",
-      "5xl": "3rem",
-      "6xl": "4rem",
-      "7xl": "5rem",
-    },
     extend: {
       colors: {
         gray: {
@@ -32,6 +18,15 @@ module.exports = {
           800: "#3a3733",
           900: "#26201a",
         },
+      },
+      fontSize: {
+        "7xl": "5rem",
+      },
+      width: {
+        '1/8': '12.5%',
+        '3/8': '37.5%',
+        '5/8': '62.5%',
+        '7/8': '87.5%',
       },
     },
   },
