@@ -3,6 +3,7 @@ title: "St Bartholomew's House"
 date: "2014-01-02"
 categories: [ "Design", "Development", "Small Clients", "Strategy"]
 tags: ["CSS", "html", "JavaScript", "mobile", "Training", "User Research", "Visual Design", "wordpress"]
+featuredImage: ./stbarts_logo.png
 ---
 
 I have been consulting to St Bartholomew's House since 2009. Initially I acted in a pro-bono capacity, where I provided support and strategic advice whenever they need to conduct any campaigns or events that required an online presence.
