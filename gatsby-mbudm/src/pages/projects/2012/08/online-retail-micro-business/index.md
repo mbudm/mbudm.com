@@ -6,8 +6,6 @@ tags: ["Business Case", "CSS", "html", "JavaScript", "Marketing", "mobile", "pay
 featuredImage: ./featured-linguaposta.png
 ---
 
-### The Brief
-
 Almost as soon as I started working in Product Management, seeing products from inception through a full market lifecycle I knew that one day I would like to try and apply this practice to a product of my own creation. As a spanish language student I knew that the available support materials were a few and far between and of a fairly low and unexciting standard. I sensed that their was an opportunity to merge my design skills and web development expertise to create a viable language product that didn't, well, suck.
 
 ### The approach
