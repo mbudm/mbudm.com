@@ -53,6 +53,15 @@ article p {
   @apply mb-2;
 }
 
+article ul {
+  @apply list-disc pl-5 mb-2;
+}
+
+article ul li{
+  @apply pl-1;
+}
+
+
 
 @screen md {
   article h2 {

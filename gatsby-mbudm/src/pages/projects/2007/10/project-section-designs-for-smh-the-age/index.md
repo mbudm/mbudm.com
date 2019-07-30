@@ -12,8 +12,8 @@ As a Senior Designer in the Creative Services Unit of Fairfax Media I was respon
 
 These sites are constantly changing with an average of 18 months between each redesign. In 2006/7 I worked on these sections:
 
-*   BusinessDay section redesign
-*   Entertainment (Including Ajax film ratings UI)
-*   Digital life section
-*   Life & Style section
-*   FIFA world cup site 2006
+- BusinessDay section redesign
+- Entertainment (Including Ajax film ratings UI)
+- Digital life section
+- Life & Style section
+- FIFA world cup site 2006

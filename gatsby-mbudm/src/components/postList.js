@@ -21,10 +21,10 @@ const PostList = ({ posts, label }) => {
             const { title, date } = node.frontmatter
             return (
               <li className="md:flex mb-2" key={id}>
-                <span className="block md:w-1/3 md:text-right text-sm text-gray-500 px-2 py-1">
+                <span className="block md:w-1/3 md:text-right text-sm text-gray-500 px-2 py-1 md:pr-4">
                   {date}
                 </span>
-                <Link to={slug} className="block md:w-1/2 px-2">
+                <Link to={slug} className="block md:w-1/2 px-2 md:pl-4">
                   <h3 className="inline text-lg mr-2">
                     {title}
                   </h3>

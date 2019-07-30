@@ -21,10 +21,10 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       {projectsToRender && <ProjectBanner projects={projectsToRender} /> }
-      {postsToRender && <h2 className="md:w-2/3 mb-2 md:text-center font-display text-gray-900 text-xl md:text-2xl lg:text-3xl px-2">Latest posts</h2>}
+      {postsToRender && <h2 className="md:w-2/3 my-3 md:text-center font-display text-gray-900 text-xl md:text-2xl lg:text-3xl px-2">Latest posts</h2>}
       {postsToRender && <PostList posts={postsToRender} />}
       {hasMorePosts && <div class="md:flex justify-end">
-        <Link className="block md:w-2/3 mt-2 px-2 font-bold" to="/blog/" >More posts</Link>
+        <Link className="block md:w-2/3 mt-2 px-2 md:pl-4 font-bold" to="/blog/" >More posts</Link>
       </div>}
     </Layout>
   )

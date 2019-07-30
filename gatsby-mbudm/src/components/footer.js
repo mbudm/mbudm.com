@@ -34,7 +34,7 @@ const Footer = () => (
         </tr>
       </tbody>
     </table>
-    <nav className="lg:w-2/3 my-2 lg:ml-2">
+    <nav className="lg:w-2/3 my-2 lg:ml-4">
         <Link className="mr-5" activeClassName="font-bold" to="/">Home</Link>
         <Link className="mr-5" activeClassName="font-bold" to="/category/small-clients/">Small Clients</Link>
         <Link className="mr-5" activeClassName="font-bold" to="/category/big-clients/">Big Clients</Link>
