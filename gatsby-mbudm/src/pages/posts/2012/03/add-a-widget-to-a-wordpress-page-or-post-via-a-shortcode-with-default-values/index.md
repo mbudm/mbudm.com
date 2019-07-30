@@ -1,15 +1,15 @@
 ---
 title: "Add a widget to a WordPress page or post via a shortcode - with default values"
 date: "2012-03-04"
-categories: [ "php", "shortcode", "widget"]
-tags: ["Development"]
+tags: [ "php", "shortcode", "widget"]
+categories: ["Development"]
 ---
 
 I'm loving working with WordPress because the development community is so large that it seems that no matter what obscure customisation you wan to achieve there is usually someone out there who has tried it and blogged about it.
 
 Take the problem of adding widgets to a page or post via a shortcode. This is covered in this [blog post](http://digwp.com/2010/04/call-widget-with-shortcode/). There a couple of errors in that code that I've fixed, specifically some unexplained variables, and some better naming conventions:
 
-```
+```php
 /* Embed a widget in a page via a shortcode
 
 Usage: [widget_via_shortcode widget_name="your_Widget_Class_Name" widget_option_one="Your value for widget option one" ]
@@ -46,7 +46,6 @@ function widget_via_shortcode_parser( $atts, $content = null ){
 }
 add_shortcode( 'widget_via_shortcode', 'widget_via_shortcode_parser' );
 
-
 ```
 
 The problem I have with the above approach is that it requires you to specify every widget option in the short code. If you have a widget with lots of options, like my Mailing List forms widget, then you'd need to write a shortcode like this:
@@ -67,7 +66,7 @@ Pretty unwieldy! It would be much better to allow the use of the default options
 
 The problem is that in the widget class template the values that are used as default otpions in the widget forms() method are not accessible from our widget\_via\_shortcode\_parser function in functions.php. This is because they are not stored as class variables, instead they are just declared in the form() method, before the form is printed out to the widgets screen. Here is the default usage for the form() method as [demonstrated in the codex](http://codex.wordpress.org/Widgets_API#Default_Usage). A default value is give for the title in a variable called $title:
 
-```
+```php
 	public function form( $instance ) {
 		if ( $instance ) {
 			$title = esc_attr( $instance[ 'title' ] );
@@ -76,9 +75,7 @@ The problem is that in the widget class template the values that are used as def
 			$title = __( 'New title', 'text_domain' );
 		}
 		?>
-		
-
-		 
+```
 		
 		
 
@@ -86,7 +83,7 @@ The problem is that in the widget class template the values that are used as def
 
 So with my widgets I have deviated slightly form the norm by adding a  class variable called defaults that is an array of all default values for the widget settings. Firstly, declare the class variable and then add the default values in the constructor function:
 
-```
+```php
 
 class mb_Mailing_List_Widget extends WP_Widget {
 
@@ -120,12 +117,11 @@ class mb_Mailing_List_Widget extends WP_Widget {
 		);
 	}
 
-
 ```
 
 Then in the form function, it's just a matter of using the class variable rather than the local variable:
 
-```
+```php
 function form( $instance ) {
 
 		$instance = wp_parse_args( (array) $instance, $this->defaults ); 
@@ -135,7 +131,7 @@ function form( $instance ) {
 
 Now the final step is to grab these defaults out of our widget class (that is handily stored in the $wp_widget_factory global instance) and replace any of the defaults with attributes that were added to the shortcode. This is best done just before  we call the_widget():
 
-```
+```php
     /* use the widget defaults, if they are accessible. Override any defaults with an equivalent attribute that was added to the shortcode */
     if(is_array($wp_widget_factory->widgets[$widget_name]->defaults) ){
     	$combined_atts = array_merge($wp_widget_factory->widgets[$widget_name]->defaults,$atts);
@@ -158,5 +154,3 @@ To produce a widget that combines the defaults with my customisation added via t
 
 Of course this method will not work with any of the default WordPress widgets as they have not been modified to make the default widget settings accessible. However these can still be used with this widget_via_shortcode_parser function as long as all the widget settings are included in the shortcode.
 
-
-```

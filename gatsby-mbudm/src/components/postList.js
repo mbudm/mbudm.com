@@ -4,9 +4,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 const PostList = ({ posts, label }) => {
-  const listHeader = label && `Post${
-    posts.length === 1 ? "" : "s"
-  } related to ${label}`
+  const listHeader = posts.length > 0 ?
+    label && `Post${posts.length === 1 ? "" : "s"} related to ${label}` :
+    `No posts yet for ${label}. A few projects though ^.`
 
   return (
     <>

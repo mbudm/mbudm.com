@@ -1,8 +1,8 @@
 ---
 title: "The Conversation Jobs Board"
 date: "2011-11-18"
-categories: ["Big Clients", "Product Management", "Strategy"]
-tags: ["agile", "Market Research", "Gallery", , "User Research", "User Testing", "Wireframes"]
+categories: ["Big Clients", "Strategy"]
+tags: ["Product Management", "agile", "Market Research", "Gallery", , "User Research", "User Testing", "Wireframes"]
 featuredImage: ./Screen-Shot-2013-09-11-at-7.01.10-PM-630x547.png
 ---
 

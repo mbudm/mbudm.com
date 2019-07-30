@@ -1,8 +1,8 @@
 ---
 title: "Cloud-Based Simulation Software"
 date: "2013-08-10"
-categories: ["Big Clients", "Design", "Development", "User Experience Design", "User Research", "User Testing", "Wireframes"]
-tags: ["agile", "Confluence", "Continuous Integration", "ExtJS", "Git", "JavaScript", "JIRA", "MxGraph"]
+categories: ["Big Clients", "Design", "Development"]
+tags: ["agile", "Confluence", "Continuous Integration", "ExtJS", "Git", "JavaScript", "JIRA", "MxGraph", "User Experience Design", "User Research", "User Testing", "Wireframes"]
 summary: "A cloud based web application that helps mining companies save power, water, time and money."
 featuredImage: ./uq-logo.jpg
 ---

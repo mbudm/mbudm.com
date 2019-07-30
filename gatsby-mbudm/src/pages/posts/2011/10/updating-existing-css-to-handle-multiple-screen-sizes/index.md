@@ -1,8 +1,8 @@
 ---
 title: "Updating existing CSS to handle multiple screen sizes"
 date: "2011-10-03"
-categories: ["CSS", "Development"]
-tags: [] 
+categories: [ "Development"]
+tags: ["CSS"] 
 ---
 
 I'm revisiting some old CSS this week with the aim of making it work across multiple screen sizes for devices such as android phones, iphones, ipads and whatever else is out there in the ever expanding device ecosystem.

@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
-        className="font-body"
+        className="font-body flex-grow"
       >
         <main>{children}</main>
       </div>
