@@ -66,6 +66,7 @@ export const pageQuery = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
         fields: {collection: {regex: "/(posts|projects)/"}}
+        frontmatter: {draft: {ne: true}}
       }
     ) {
       totalCount
@@ -86,6 +87,7 @@ export const pageQuery = graphql`
                   }
                 }
               }
+              draft
             }
             excerpt
           }

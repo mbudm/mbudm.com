@@ -8,6 +8,24 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-10157407-1",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        // Delays sending pageview hits on route update (in milliseconds)
+        pageTransitionDelay: 0,
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 100,
+        cookieDomain: "mbudm.com",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -59,6 +77,7 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
+          `@weknow/gatsby-remark-twitter`
         ],
       },
     },

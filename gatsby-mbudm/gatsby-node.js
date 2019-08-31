@@ -26,7 +26,13 @@ const createPosts = (graphql, createPage) => {
     graphql(`
     {
       allMarkdownRemark(
-        filter: {fields: {collection: {eq: "posts"}}}
+        filter: {
+          fields: {
+            collection: {
+              eq: "posts"
+            }
+          }
+        }
       ) {
         edges {
           node {

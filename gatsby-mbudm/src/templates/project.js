@@ -7,11 +7,12 @@ import SEO from "../components/seo"
 
 export default ({ data }) => {
   const post = data.markdownRemark
+  const draftFlag = post.frontmatter.draft ? " (DRAFT)" : ""
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
       <PageBody
-        subTitle={post.frontmatter.title}
+        subTitle={post.frontmatter.title + draftFlag}
         categories={post.frontmatter.categories}
         date={post.frontmatter.date}
         tags={post.frontmatter.tags}
@@ -32,6 +33,7 @@ export const query = graphql`
         categories
         date(formatString: "DD MMMM, YYYY")
         tags
+        draft
       }
     }
   }
