@@ -59,7 +59,7 @@ query($tag: String) {
     limit: 2000
     sort: { fields: [frontmatter___date], order: DESC }
     filter: {
-      frontmatter: { tags: { in: [$tag] } }
+      frontmatter: { tags: { in: [$tag] }, draft: {ne: true} }
       fields: {collection: {regex: "/(posts|projects)/"}}
     }
   ) {

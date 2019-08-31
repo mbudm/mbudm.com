@@ -23,6 +23,7 @@ export const query = graphql`
     allMarkdownRemark(
         filter: {
           fields: {collection: {eq: "posts"}}
+          frontmatter: {draft: {ne: true}}
         },
         sort: {fields: frontmatter___date, order: DESC}
       ) {

@@ -65,7 +65,7 @@ export const pageQuery = graphql`
       limit: 2000
       sort: { fields: [frontmatter___date], order: DESC }
       filter: {
-        frontmatter: { categories: { in: [$category] } }
+        frontmatter: { categories: { in: [$category] }, draft: {ne: true}}
         fields: {collection: {regex: "/(posts|projects)/"}}
       }
     ) {
