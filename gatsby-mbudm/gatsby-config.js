@@ -19,8 +19,6 @@ module.exports = {
         respectDNT: true,
         // Delays sending pageview hits on route update (in milliseconds)
         pageTransitionDelay: 0,
-        // Any additional optional fields
-        sampleRate: 5,
         siteSpeedSampleRate: 100,
         cookieDomain: "mbudm.com",
       },
