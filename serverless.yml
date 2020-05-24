@@ -23,10 +23,10 @@ provider:
   runtime: nodejs8.10
   region: us-east-1
   environment:
-    CUSTOM_DOMAIN: mbudm.com
+    CUSTOM_DOMAIN: steve.sosnowski-roberts.com
     BUCKET_NAME: mbudm
-    HOSTED_ZONE_NAME: mbudm.com.
-    ACM_CERT_ARN: ${file(./serverless.env.yml):ACM_CERT_ARN}
+    HOSTED_ZONE_NAME: sosnowski-roberts.com.
+    ACM_CERT_ARN: arn:aws:acm:us-east-1:366399188066:certificate/e0ac4f7d-cd06-4d98-8b7b-3d17e3f9c346
 resources:
   Resources:
     Mbudm:
